@@ -129,7 +129,6 @@ public class MayAugust2018
         String june15t1 = "https://hqbuff.com/us/game/2018-06-15/1";
         String june15t2 = "https://hqbuff.com/us/game/2018-06-15/2";
         
-        
         String june16 = "https://hqbuff.com/us/game/2018-06-16/1";
         
         String june17 = "https://hqbuff.com/us/game/2018-06-17/1";
@@ -178,6 +177,8 @@ public class MayAugust2018
         
         String june30t1 = "https://hqbuff.com/us/game/2018-06-30/1";
         String june30t2 = "https://hqbuff.com/us/game/2018-06-30/2";
+        
+        //JULY
         
         
     }
