@@ -36,11 +36,6 @@ public class MayAugust2018
         ArrayList <String> list = new ArrayList <String>();
 
         
-        for(int element = 0; element <= list.size()-1; element++){
-            
-        }
-
-        //String URL = may08; (may08 = element)
         
         
         
