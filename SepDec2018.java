@@ -16,14 +16,13 @@ public class SepDec2018
     {
         ArrayList <String> list = new ArrayList<String>();
         //SEPTEMBER URL'S
-        File file = new File("SEPDEC_URLS.rtf");
+        File file = new File("SEPDEC_URLS.txt");
         Scanner in = new Scanner(file);
-        while(in.hasNext()){
-            String a = in.nextLine();
-            int i = 0;
-            while(i < a.length()){
+        while(in.hasNextLine()){
+                String URL = in.nextLine();
+            
                 try{
-                    Document hQdata = Jsoup.connect(a).get();
+                    Document hQdata = Jsoup.connect(URL).get();
                     //Elements hQdates = hQdata.select("question_number");
                     Elements hQdates = hQdata.select("script");
                     System.out.println(hQdates.size());
@@ -45,4 +44,4 @@ public class SepDec2018
         
         }
     }
-}
+
