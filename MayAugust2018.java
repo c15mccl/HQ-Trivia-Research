@@ -34,7 +34,7 @@ public class MayAugust2018
                 for(Element e : hQdates ){
                    for (DataNode node : e.dataNodes()){
                        //System.out.println(node.getWholeData());
-                       //writer.write(node.getWholeData());
+                       writer.write(node.getWholeData());
                     }
                 }
                 System.out.println("------------");
