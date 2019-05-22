@@ -15,9 +15,15 @@ public class SepDec2018
     public static void main(String [] args) throws FileNotFoundException
     {
         File file = new File("SEPDEC_URLS.txt");
+<<<<<<< HEAD
         Scanner in = new Scanner(file);
         while(in.hasNextLine()){
             String URL = in.nextLine();
+=======
+        Scanner scan = new Scanner(file);
+        while(scan.hasNextLine()){
+            String URL = scan.nextLine();
+>>>>>>> 4d23c41499c3c7dc800f08bba80db8ac0bfbb77a
             System.out.println(URL);
             String parse1 = URL.substring(27,37);
             String parse2 = URL.substring(38);
@@ -30,6 +36,7 @@ public class SepDec2018
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
+<<<<<<< HEAD
                 for (Element e : hQdates)
                     for(DataNode node: e.dataNodes())
                     {
@@ -41,12 +48,24 @@ public class SepDec2018
                 //writer.close();
                 Thread.sleep(1000);
 
+=======
+               
+                for(Element e : hQdates ){
+                   for (DataNode node : e.dataNodes()){
+                       //System.out.println(node.getWholeData());
+                       writer.write(node.getWholeData());
+                    }
+                }
+                System.out.println("------------");
+                writer.close();
+                Thread.sleep(1000);
+>>>>>>> 4d23c41499c3c7dc800f08bba80db8ac0bfbb77a
             }
-            catch(Exception e){
+            catch (Exception e){
                 e.printStackTrace();
+                //System.err.println(x);
                 System.exit(1);
             }
-
         }
 
     }
