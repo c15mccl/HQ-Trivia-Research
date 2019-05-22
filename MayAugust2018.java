@@ -18,9 +18,9 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
-            
+            String fileName = URL + ".txt";
             try{
-                FileWriter fwrite =  new FileWriter(URL + ".txt");
+                FileWriter fwrite =  new FileWriter(fileName);
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
