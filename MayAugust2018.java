@@ -17,16 +17,24 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
+            
+            
+            
             try{
+                File outFile = new File(URL + ".txt");
+                PrintWriter output = new PrintWriter(outFile);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
                
                 for(Element e : hQdates ){
                    for (DataNode node : e.dataNodes()){
                        System.out.println(node.getWholeData());
+                       output.println(node.getWholeData());
                     }
                 }
                 System.out.println("------------");
+                output.close();
+                Thread.sleep(1000);
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -35,12 +43,8 @@ public class MayAugust2018
         }
         ArrayList <String> list = new ArrayList <String>();
 
-        
-        for(int element = 0; element <= list.size()-1; element++){
-            
-        }
-
-        //String URL = may08; (may08 = element)
+        //in loop create new file and printwriter object 
+        //
         
         
         
