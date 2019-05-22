@@ -18,11 +18,7 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
-<<<<<<< HEAD
-            String fileName = URL + ".txt";
-=======
             System.out.println(URL);
->>>>>>> b61990d66dacb5fa669bd34f19386c2755790a97
             String parse1 = URL.substring(27,36);
             String parse2 = URL.substring(38);
             String parse3 = "-";
@@ -53,7 +49,8 @@ public class MayAugust2018
         }
         ArrayList <String> list = new ArrayList <String>();
 
-        
+        //in loop create new file and printwriter object 
+        //
         
         
         
