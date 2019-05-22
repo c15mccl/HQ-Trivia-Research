@@ -18,11 +18,7 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
-<<<<<<< HEAD
             String fileName = URL + ".txt";
-            try{
-                FileWriter fwrite =  new FileWriter(fileName);
-=======
             String parse1 = URL.substring(27,36);
             String parse2 = URL.substring(38);
             String parse3 = "-";
@@ -31,7 +27,6 @@ public class MayAugust2018
             System.out.println(filename);
             try{
                 FileWriter fwrite =  new FileWriter(filename);
->>>>>>> 265286a01ed7646f72a3de033aecef09caab070c
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
@@ -54,8 +49,7 @@ public class MayAugust2018
         }
         ArrayList <String> list = new ArrayList <String>();
 
-        //in loop create new file and printwriter object 
-        //
+        
         
         
         
