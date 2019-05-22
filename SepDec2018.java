@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Write a description of class SepDec2018 here.
  *
- * @author (your name)
+ * @author (Rachel Cleary)
  * @version (a version number or a date)
  */
 public class SepDec2018
@@ -19,29 +19,29 @@ public class SepDec2018
         File file = new File("SEPDEC_URLS.txt");
         Scanner in = new Scanner(file);
         while(in.hasNextLine()){
-                String URL = in.nextLine();
-            
-                try{
-                    Document hQdata = Jsoup.connect(URL).get();
-                    //Elements hQdates = hQdata.select("question_number");
-                    Elements hQdates = hQdata.select("script");
-                    System.out.println(hQdates.size());
-                    for (Element e : hQdates)
-                        for(DataNode node: e.dataNodes())
-                        {
-                            System.out.println(node.getWholeData());
-                        }
+            String URL = in.nextLine();
 
-                    System.out.println("->");
+            try{
+                Document hQdata = Jsoup.connect(URL).get();
+                //Elements hQdates = hQdata.select("question_number");
+                Elements hQdates = hQdata.select("script");
+                System.out.println(hQdates.size());
+                for (Element e : hQdates)
+                    for(DataNode node: e.dataNodes())
+                    {
+                        System.out.println(node.getWholeData());
+                    }
 
-                }
-                catch(Exception e){
-                    e.printStackTrace();
-                    System.exit(1);
-                }
+                System.out.println("->");
 
             }
-        
+            catch(Exception e){
+                e.printStackTrace();
+                System.exit(1);
+            }
+
         }
+
     }
+}
 

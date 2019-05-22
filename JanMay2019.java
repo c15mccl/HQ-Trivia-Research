@@ -7,12 +7,40 @@ import java.util.*;
 /**
  * Write a description of class JanMay2019 here.
  *
- * @author (your name)
+ * @author (Rachel Cleary, Mike Lostritto)
  * @version (a version number or a date)
  */
 public class JanMay2019
 
 {
+<<<<<<< HEAD
+    public static void main(String args[]) throws FileNotFoundException {
+        File file = new File("JanMay2019.txt");
+        Scanner in = new Scanner(file);
+        while(in.hasNextLine()){
+            String URL = in.nextLine();
+
+            try{
+                Document hQdata = Jsoup.connect(URL).get();
+                //Elements hQdates = hQdata.select("question_number");
+                Elements hQdates = hQdata.select("script");
+                System.out.println(hQdates.size());
+                for (Element e : hQdates)
+                    for(DataNode node: e.dataNodes())
+                    {
+                        System.out.println(node.getWholeData());
+                    }
+
+                System.out.println("->");
+
+            }
+            catch(Exception e){
+                e.printStackTrace();
+                System.exit(1);
+            }
+
+        }
+=======
     public static void main(String args[]){
         //begin january url's
         //wString jan01t1 = "https://hqbuff.com/us/game/2019-01-01/1";
@@ -522,5 +550,6 @@ public class JanMay2019
         String may20t1 = "";
         
         
+>>>>>>> 4bc27a9c10830cd8b1e40c46ffa367303aa4b30e
     }
 }
