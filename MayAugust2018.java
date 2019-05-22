@@ -18,6 +18,7 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
+            System.out.println(URL);
             String parse1 = URL.substring(27,36);
             String parse2 = URL.substring(38);
             String parse3 = "-";
@@ -33,11 +34,11 @@ public class MayAugust2018
                 for(Element e : hQdates ){
                    for (DataNode node : e.dataNodes()){
                        //System.out.println(node.getWholeData());
-                       writer.write(node.getWholeData());
+                       //writer.write(node.getWholeData());
                     }
                 }
                 System.out.println("------------");
-                writer.close();
+                //writer.close();
                 Thread.sleep(1000);
             }
             catch (Exception e){
