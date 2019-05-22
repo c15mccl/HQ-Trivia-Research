@@ -18,16 +18,27 @@ public class MayAugust2018
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
+<<<<<<< HEAD
             String fileName = URL + ".txt";
             try{
                 FileWriter fwrite =  new FileWriter(fileName);
+=======
+            String parse1 = URL.substring(27,36);
+            String parse2 = URL.substring(38);
+            String parse3 = "-";
+            String parse4 = parse1 + parse3 + parse2;
+            String filename = parse4 + ".txt";
+            System.out.println(filename);
+            try{
+                FileWriter fwrite =  new FileWriter(filename);
+>>>>>>> 265286a01ed7646f72a3de033aecef09caab070c
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
                
                 for(Element e : hQdates ){
                    for (DataNode node : e.dataNodes()){
-                       System.out.println(node.getWholeData());
+                       //System.out.println(node.getWholeData());
                        writer.write(node.getWholeData());
                     }
                 }
