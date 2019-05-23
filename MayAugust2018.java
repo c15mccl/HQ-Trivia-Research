@@ -4,6 +4,7 @@ import org.jsoup.select.*;
 import java.io.*;
 import java.util.*;
 import java.nio.file.*;
+import java.util.regex.*;
 /**
  * Class that ggrabsthe data from hqbuff for the months of May-August of 2018. 
  *
@@ -30,7 +31,7 @@ public class MayAugust2018
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
-               
+                Pattern p = Pattern.compile("'text':'(.+)'");
                 for(Element e : hQdates ){
                    for (DataNode node : e.dataNodes()){
                        //System.out.println(node.getWholeData());
