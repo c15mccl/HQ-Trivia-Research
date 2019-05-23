@@ -36,10 +36,11 @@ public class MayAugust2018
                     for (DataNode node : e.dataNodes()){
                             writer.write(node.getWholeData());
                     }
-                    System.out.println("------------");
-                    writer.close();
-                    Thread.sleep(1000);
+                    
                 }
+                System.out.println("------------");
+                writer.close();
+                Thread.sleep(1000);
             }
             catch (Exception e){
                 e.printStackTrace();
