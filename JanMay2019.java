@@ -41,17 +41,6 @@ public class JanMay2019
                 System.out.println("------------");
                 //writer.close();
                 Thread.sleep(1000);
-
-               
-                for(Element e : hQdates ){
-                   for (DataNode node : e.dataNodes()){
-                       //System.out.println(node.getWholeData());
-                       writer.write(node.getWholeData());
-                    }
-                }
-                System.out.println("------------");
-                writer.close();
-                Thread.sleep(1000);
             }
             catch (Exception e){
                 e.printStackTrace();
