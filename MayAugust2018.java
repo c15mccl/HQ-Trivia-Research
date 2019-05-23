@@ -14,7 +14,6 @@ import java.util.regex.*;
 public class MayAugust2018
 {
     public static void main(String[]args)throws FileNotFoundException, IOException, InterruptedException {
-        //May
         File myFile = new File("MAYAUG.txt");
         Scanner scan = new Scanner(myFile);
         while(scan.hasNextLine()){
@@ -26,21 +25,27 @@ public class MayAugust2018
             String parse4 = parse1 + parse3 + parse2;
             String filename = parse4 + ".txt";
             System.out.println(filename);
+            Pattern p = Pattern.compile("'text':'(.+)'");
+            Matcher m = p.matcher(URL);
+            String patternMatch = "";
+
             try{
                 FileWriter fwrite =  new FileWriter(filename);
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
-                Pattern p = Pattern.compile("'text':'(.+)'");
-                for(Element e : hQdates ){
-                   for (DataNode node : e.dataNodes()){
-                       //System.out.println(node.getWholeData());
-                       writer.write(node.getWholeData());
+                while (m.find()){
+                    for(Element e : hQdates ){
+                        for (DataNode node : e.dataNodes()){
+                            //System.out.println(node.getWholeData());
+                            patternMatch = m.group();
+                            writer.write(patternMatch);
+                        }
                     }
+                    System.out.println("------------");
+                    writer.close();
+                    Thread.sleep(1000);
                 }
-                System.out.println("------------");
-                writer.close();
-                Thread.sleep(1000);
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -48,15 +53,12 @@ public class MayAugust2018
                 System.exit(1);
             }
         }
-        ArrayList <String> list = new ArrayList <String>();
-
-        //in loop create new file and printwriter object 
-        //
-        
-        
-        
-
-        
-        
     }
+    ArrayList <String> list = new ArrayList <String>();
+
+    //in loop create new file and printwriter object 
+    //
+
+        
 }
+
