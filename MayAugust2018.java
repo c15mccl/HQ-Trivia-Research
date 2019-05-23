@@ -25,22 +25,16 @@ public class MayAugust2018
             String parse4 = parse1 + parse3 + parse2;
             String filename = parse4 + ".txt";
             System.out.println(filename);
-            Pattern p = Pattern.compile("'text':'(.+)'");
-            Matcher m = p.matcher(URL);
-            String patternMatch = "";
 
             try{
                 FileWriter fwrite =  new FileWriter(filename);
                 BufferedWriter writer = new BufferedWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
-                while (m.find()){
-                    for(Element e : hQdates ){
-                        for (DataNode node : e.dataNodes()){
-                            //System.out.println(node.getWholeData());
-                            patternMatch = m.group();
-                            writer.write(patternMatch);
-                        }
+
+                for(Element e : hQdates ){
+                    for (DataNode node : e.dataNodes()){
+                            writer.write(node.getWholeData());
                     }
                     System.out.println("------------");
                     writer.close();
@@ -59,6 +53,4 @@ public class MayAugust2018
     //in loop create new file and printwriter object 
     //
 
-        
 }
-
