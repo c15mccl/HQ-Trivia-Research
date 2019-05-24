@@ -16,16 +16,13 @@ public class CompressedData1
         File file = new File("MAYAUG.txt");
         Scanner scan = new Scanner(file);
         try{
-            FileWriter fwrite =  new FileWriter("MayAugQuestions");
-            BufferedWriter writer = new BufferedWriter(fwrite);
+            File myfile = new File("MayAugQuestions.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
                 String URL = scan.nextLine();
                 //System.out.println(URL);
-                String parse1 = URL.substring(27,37);
-                String parse2 = URL.substring(38);
-                String parse3 = "-";
-                String parse4 = parse1 + parse3 + parse2;
-                String filename = parse4 + ".txt";
+                String filename = URL.substring(27,37);
                 //System.out.println(filename);
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
@@ -37,12 +34,13 @@ public class CompressedData1
                     while (m.find()){
                         patternMatch = m.group();
                         System.out.println(patternMatch);
-                        writer.write(patternMatch);
+                        pwrite.println(patternMatch);
                         System.out.println("--------------------------------");
                     }
                 }
             }
-            writer.close();
+            fwrite.close();
+            pwrite.close();
         }
         catch (Exception e){
             e.printStackTrace();

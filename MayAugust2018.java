@@ -19,27 +19,25 @@ public class MayAugust2018
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
             System.out.println(URL);
-            String parse1 = URL.substring(27,37);
-            String parse2 = URL.substring(38);
-            String parse3 = "-";
-            String parse4 = parse1 + parse3 + parse2;
-            String filename = parse4 + ".txt";
+            String filename = URL.substring(27,37);
             System.out.println(filename);
 
             try{
-                FileWriter fwrite =  new FileWriter(filename);
-                BufferedWriter writer = new BufferedWriter(fwrite);
+                File myfile = new File(filename);
+                FileWriter fwrite = new FileWriter(myfile);
+                PrintWriter pwrite =  new PrintWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
 
                 for(Element e : hQdates ){
                     for (DataNode node : e.dataNodes()){
-                            writer.write(node.getWholeData());
+                        pwrite.println(node.getWholeData());
                     }
-                    
+
                 }
                 System.out.println("------------");
-                writer.close();
+                fwrite.close();
+                pwrite.close();
                 Thread.sleep(1000);
             }
             catch (Exception e){
