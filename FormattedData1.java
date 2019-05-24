@@ -22,46 +22,47 @@ public class FormattedData1
             PrintWriter pwrite =  new PrintWriter(fwrite);
 
             while (scan.hasNextLine()){
-                Pattern p1 = Pattern.compile("\"category\":(\\w++)");
-                Matcher m1 = p1.matcher(scan.nextLine());
-                Pattern p2 = Pattern.compile("\"savage\":(\\w++)");
-                Matcher m2 = p1.matcher(scan.nextLine());
+                //Pattern p1 = Pattern.compile("\"((\\w+\\s){1,})\\?");
+                //Matcher m1 = p1.matcher(scan.nextLine());
+                Pattern p2 = Pattern.compile("\"answers\":(\\w{1})\"");
+                Matcher m2 = p2.matcher(scan.nextLine());
                 //Pattern p3 = Pattern.compile("\"answers\":[{\"(\\w++)\"}]");
-                //Matcher m3 = p1.matcher(scan.nextLine());
+                //Matcher m3 = p3.matcher(scan.nextLine());
                 //Pattern p4 = Pattern.compile("\"savage\":(\\w++)");
-                //Matcher m4 = p1.matcher(scan.nextLine());
+                //Matcher m4 = p4.matcher(scan.nextLine());
                 //Pattern p5 = Pattern.compile("\"savage\":(\\w++)");
-                //Matcher m5 = p1.matcher(scan.nextLine());
+                //Matcher m5 = p5.matcher(scan.nextLine());
                 String str;
                 //Matcher m = p.matcher(str = scan.nextLine());
                 //System.out.println("->" + str + "<-");
                 String patternMatch = "";
 
-                while (m1.find()){
+                /*while (m1.find()){
                     patternMatch = m1.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
-                }
+                //}*/
                 while (m2.find()){
-                    patternMatch = m1.group();
+                    patternMatch = m2.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
                 }
+                /*
                 while (m3.find()){
                     patternMatch = m3.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
                 }
-                /*while (m4.find()){
+                while (m4.find()){
                     patternMatch = m4.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
-                }*/
-                /*while (m5.find()){
+                }
+                while (m5.find()){
                     patternMatch = m5.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
