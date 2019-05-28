@@ -10,7 +10,7 @@ import java.util.regex.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class FormattedData1
+public class FormattedData2
 {
     public static void main (String[]args) throws FileNotFoundException {
         File file = new File("MayAugQuestions.txt");
@@ -18,19 +18,24 @@ public class FormattedData1
         System.out.println("START");
         int a = 1;
         int b = 1;
-        //((\\w+\\s){1,})\\?
         try{
-            File myfile = new File("MayAugList.txt");
+            File myfile = new File("SepDecList.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
-            String firstQues = "Which of these is a common kind";
+            //String firstQues = "Which of these is a common kind";
             String patternMatch = "";
-            String ques = scan.nextLine();   
-            while ((ques.equals(firstQues)) == false){
-
-                //System.out.println("***QUESTIONS***");    
+            //String ques = scan.nextLine();
+            while (scan.hasNextLine()){
+                //Pattern p1 = Pattern.compile("\"((\\w+\\s){1,})\\?");
+                //Matcher m1 = p1.matcher(scan.nextLine());
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
+                //Pattern p3 = Pattern.compile("\"answers\":[{\"(\\w++)\"}]");
+                //Matcher m3 = p3.matcher(scan.nextLine());
+                //Pattern p4 = Pattern.compile("\"savage\":(\\w++)");
+                //Matcher m4 = p4.matcher(scan.nextLine());
+                //Pattern p5 = Pattern.compile("\"savage\":(\\w++)");
+                //Matcher m5 = p5.matcher(scan.nextLine());
                 while (m1.find()){
                     System.out.print("Question " +(a++)+":");
                     patternMatch = m1.group();
@@ -40,9 +45,8 @@ public class FormattedData1
 
                     System.out.println("--------------------------------");
                 }
+                
             }
-            
-
             fwrite.close();
             pwrite.close();
         }
@@ -53,4 +57,3 @@ public class FormattedData1
         }
     }
 }
-

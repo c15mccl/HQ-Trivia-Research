@@ -13,10 +13,10 @@ import java.util.regex.*;
 public class CompressedData2
 {
     public static void main (String[]args) throws FileNotFoundException {
-        File file = new File("SepDec2018.txt");
+        File file = new File("SEPDEC_URLS.txt");
         Scanner scan = new Scanner(file);
         try{
-            FileWriter fwrite =  new FileWriter("MayAugQuestions");
+            FileWriter fwrite =  new FileWriter("SepDecQuestions");
             BufferedWriter writer = new BufferedWriter(fwrite);
             while(scan.hasNextLine()){
                 String URL = scan.nextLine();
