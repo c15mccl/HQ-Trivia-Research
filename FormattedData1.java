@@ -22,22 +22,24 @@ public class FormattedData1
             File myfile = new File("MayAugList.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
+            String firstQues = "What
             String patternMatch = "";
-            while (scan.hasNext()){
+            while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
-                Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
+                Pattern p1 = Pattern.compile("\"((\\w+\\s){1,})\\?(\\s+)");
                 Matcher m1 = p1.matcher(scan.nextLine());
                 while (m1.find()){
                     System.out.print("Question " +(a++)+":");
                     patternMatch = m1.group();
+                    pwrite.println("Question " +(a++)+":");
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
 
                     System.out.println("--------------------------------");
                 }
             }
-            while (scan.hasNext()){           
+            /*while (scan.hasNextLine()){           
                 Pattern p2 = Pattern.compile("\"category\"(.{1,10})\"\\,{9}");
                 Matcher m2 = p2.matcher(scan.nextLine());
 
@@ -49,7 +51,7 @@ public class FormattedData1
                     System.out.println("--------------------------------");
                 }
             }
-            while (scan.hasNext()){  
+            while (scan.hasNextLine()){  
                 Pattern p3 = Pattern.compile("\"answers\"(.{200})\"");
                 Matcher m3 = p3.matcher(scan.nextLine());
                 while (m3.find()){
@@ -63,7 +65,7 @@ public class FormattedData1
                 }
 
             }
-            while (scan.hasNext()){
+            while (scan.hasNextLine()){
                 Pattern p4 = Pattern.compile("\"savage\":(\\w++)");
                 Matcher m4 = p4.matcher(scan.nextLine());
                 while (m4.find()){
@@ -72,7 +74,8 @@ public class FormattedData1
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
                 }
-            }
+            }*/
+            
 
             fwrite.close();
             pwrite.close();
