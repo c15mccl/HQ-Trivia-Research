@@ -18,7 +18,6 @@ public class FormattedData1
         System.out.println("START");
         int a = 1;
         int b = 1;
-        //((\\w+\\s){1,})\\?
         try{
             File myfile = new File("MayAugList.txt");
             FileWriter fwrite = new FileWriter(myfile);
@@ -26,7 +25,7 @@ public class FormattedData1
             String firstQues = "Which of these is a common kind";
             String patternMatch = "";
             String ques = scan.nextLine();   
-            while ((ques.equals(firstQues)) == false){
+            while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
@@ -41,7 +40,6 @@ public class FormattedData1
                     System.out.println("--------------------------------");
                 }
             }
-            
 
             fwrite.close();
             pwrite.close();
@@ -51,6 +49,7 @@ public class FormattedData1
             e.printStackTrace();
             System.exit(1);
         }
+
     }
 }
 
