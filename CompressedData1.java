@@ -15,7 +15,7 @@ public class CompressedData1
     public static void main (String[]args) throws FileNotFoundException {
         File file = new File("MAYAUG.txt");
         Scanner scan = new Scanner(file);
-        int var = 1;
+        //int var = 1;
         try{
             File myfile = new File("MayAugQuestions.txt");
             FileWriter fwrite = new FileWriter(myfile);
@@ -34,8 +34,8 @@ public class CompressedData1
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
-                        System.out.println((var++)+": "+patternMatch);
-                        pwrite.println((var++)+": "+patternMatch);
+                        System.out.println(patternMatch);
+                        pwrite.println(patternMatch);
                         System.out.println();
                         pwrite.println();
                         System.out.println("--------------------------------");

@@ -26,7 +26,7 @@ public class FormattedData1
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             String patternMatch = "";
-            while (scan.hasNextLine()){
+            /*while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
@@ -51,16 +51,17 @@ public class FormattedData1
                     b++;
                 }
             }
+            */
             while(in2.hasNextLine()){
-                Pattern p3 = Pattern.compile("\"category\":\"(\\w{1,})\"");
+                Pattern p3 = Pattern.compile("\"answers\":(.{200}),");
                 Matcher m3 = p3.matcher(in2.nextLine());
                 while (m3.find()){
-                    System.out.println(patternMatch);
                     patternMatch = m3.group();
                     System.out.println(m3.groupCount());
-                    pwrite.println(patternMatch);
-                    System.out.println(patternMatch);
+                    pwrite.println(b+": "+patternMatch);
+                    System.out.println(b+": "+patternMatch);
                     System.out.println("--------------------------------");
+                    b++;
                 }
 
                 fwrite.close();
