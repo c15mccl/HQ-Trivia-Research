@@ -15,6 +15,9 @@ public class FormattedData1
     public static void main (String[]args) throws FileNotFoundException {
         File file = new File("MayAugQuestions.txt");
         Scanner scan = new Scanner(file);
+        Scanner in1 = new Scanner(file);
+        Scanner in2 = new Scanner(file);
+        Scanner in3 = new Scanner(file);
         System.out.println("START");
         int a = 1;
         int b = 1;
@@ -22,29 +25,48 @@ public class FormattedData1
             File myfile = new File("MayAugList.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
-            String firstQues = "Which of these is a common kind";
             String patternMatch = "";
-            String ques = scan.nextLine();   
             while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
                 while (m1.find()){
-                    System.out.print("Question " +(a++)+":");
+                    System.out.println("Question " +(a)+": "+patternMatch);
                     patternMatch = m1.group();
-                    //pwrite.println("Question " +(a++)+":");
-                    System.out.println(patternMatch);
-                    pwrite.println(patternMatch);
-
+                    pwrite.println("Question " +(a)+": "+patternMatch);
                     System.out.println("--------------------------------");
+                    a++;
                 }
             }
+            while(in1.hasNextLine()){
+                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Matcher m2 = p2.matcher(in1.nextLine());
+                while (m2.find()){
+                    patternMatch = m2.group();
+                    System.out.println(m2.groupCount());
+                    pwrite.println(b+": "+patternMatch);
+                    System.out.println(b+": "+patternMatch);
+                    System.out.println("--------------------------------");
+                    b++;
+                }
+            }
+            while(in2.hasNextLine()){
+                Pattern p3 = Pattern.compile("\"category\":\"(\\w{1,})\"");
+                Matcher m3 = p3.matcher(in2.nextLine());
+                while (m3.find()){
+                    System.out.println(patternMatch);
+                    patternMatch = m3.group();
+                    System.out.println(m3.groupCount());
+                    pwrite.println(patternMatch);
+                    System.out.println(patternMatch);
+                    System.out.println("--------------------------------");
+                }
 
-            fwrite.close();
-            pwrite.close();
+                fwrite.close();
+                pwrite.close();
+            }
         }
-
         catch (Exception e){
             e.printStackTrace();
             System.exit(1);
