@@ -51,7 +51,7 @@ public class FormattedData1
                     b++;
                 }
             }
-            */
+            
             while(in2.hasNextLine()){
                 Pattern p3 = Pattern.compile("\"answers\":(.{200}),");
                 Matcher m3 = p3.matcher(in2.nextLine());
@@ -64,9 +64,25 @@ public class FormattedData1
                     b++;
                 }
 
-                fwrite.close();
-                pwrite.close();
+                
             }
+            */
+            while(in3.hasNextLine()){
+                Pattern p4 = Pattern.compile("\"direct_link\":(.{1,})");
+                Matcher m4 = p4.matcher(in3.nextLine());
+                while (m4.find()){
+                    patternMatch = m4.group();
+                    System.out.println(m4.groupCount());
+                    pwrite.println(b+": "+patternMatch);
+                    System.out.println(b+": "+patternMatch);
+                    System.out.println("--------------------------------");
+                    b++;
+                }
+
+                
+            }
+            fwrite.close();
+            pwrite.close();
         }
         catch (Exception e){
             e.printStackTrace();
