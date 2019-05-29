@@ -62,7 +62,8 @@ public class FormattedData1
                     patternMatch = m3.group();
                     pwrite.println(c+"-"+(c+2)+": "+patternMatch);
                     System.out.println(c+"-"+(c+2)+": "+patternMatch);
-                    System.out.println("--------------------------------");
+                    System.out.println("---------------------------------------------");
+                    pwrite.println("--------------------------------");
                     c++;
                 }
 
