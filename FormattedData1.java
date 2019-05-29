@@ -56,7 +56,7 @@ public class FormattedData1
             }
             
             while(in2.hasNextLine()){
-                Pattern p3 = Pattern.compile("\"answers\":(.{200}),");
+                Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
                 Matcher m3 = p3.matcher(in2.nextLine());
                 while (m3.find()){
                     patternMatch = m3.group();
@@ -66,8 +66,6 @@ public class FormattedData1
                     pwrite.println("--------------------------------");
                     c++;
                 }
-
-                
             }
             
             while(in3.hasNextLine()){
