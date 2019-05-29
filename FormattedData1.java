@@ -35,14 +35,14 @@ public class FormattedData1
                 Matcher m1 = p1.matcher(scan.nextLine());
                 while (m1.find()){
                     patternMatch = m1.group();
-                    //String question = patternMatch.replaceAll("text","Question");                   
-                    System.out.println(a+": "+patternMatch);
-                    pwrite.println(a+": "+patternMatch);
+                    String question = patternMatch.replaceAll("text","Question");                   
+                    System.out.println(a+": "+question);
+                    pwrite.println(a+": "+question);
                     System.out.println("--------------------------------");
                     a++;
                 }
             }
-            /*
+            
             while(in1.hasNextLine()){
                 Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
                 Matcher m2 = p2.matcher(in1.nextLine());
@@ -83,7 +83,7 @@ public class FormattedData1
 
                 
             }
-            */
+            
             fwrite.close();
             pwrite.close();
         }
