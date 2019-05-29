@@ -21,30 +21,33 @@ public class FormattedData1
         System.out.println("START");
         int a = 1;
         int b = 1;
+        int c = 1;
+        int d = 1;
         try{
             File myfile = new File("MayAugList.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             String patternMatch = "";
-            /*while (scan.hasNextLine()){
+            while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
                 while (m1.find()){
-                    System.out.println("Question " +(a)+": "+patternMatch);
                     patternMatch = m1.group();
-                    pwrite.println("Question " +(a)+": "+patternMatch);
+                    //String question = patternMatch.replaceAll("text","Question");                   
+                    System.out.println(a+": "+patternMatch);
+                    pwrite.println(a+": "+patternMatch);
                     System.out.println("--------------------------------");
                     a++;
                 }
             }
+            /*
             while(in1.hasNextLine()){
                 Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
                 Matcher m2 = p2.matcher(in1.nextLine());
                 while (m2.find()){
                     patternMatch = m2.group();
-                    System.out.println(m2.groupCount());
                     pwrite.println(b+": "+patternMatch);
                     System.out.println(b+": "+patternMatch);
                     System.out.println("--------------------------------");
@@ -57,30 +60,30 @@ public class FormattedData1
                 Matcher m3 = p3.matcher(in2.nextLine());
                 while (m3.find()){
                     patternMatch = m3.group();
-                    System.out.println(m3.groupCount());
-                    pwrite.println(b+": "+patternMatch);
-                    System.out.println(b+": "+patternMatch);
+                    pwrite.println(c+"-"+(c+2)+": "+patternMatch);
+                    System.out.println(c+"-"+(c+2)+": "+patternMatch);
                     System.out.println("--------------------------------");
-                    b++;
+                    c++;
+                }
+
+                
+            }
+            
+            while(in3.hasNextLine()){
+                Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
+                Matcher m4 = p4.matcher(in3.nextLine());
+                while (m4.find()){
+                    patternMatch = m4.group();
+                    String date = patternMatch.replaceAll("direct_link","Date");
+                    pwrite.println(d+": "+date);
+                    System.out.println(d+": "+date);
+                    System.out.println("--------------------------------");
+                    d++;
                 }
 
                 
             }
             */
-            while(in3.hasNextLine()){
-                Pattern p4 = Pattern.compile("\"direct_link\":(.{1,})");
-                Matcher m4 = p4.matcher(in3.nextLine());
-                while (m4.find()){
-                    patternMatch = m4.group();
-                    System.out.println(m4.groupCount());
-                    pwrite.println(b+": "+patternMatch);
-                    System.out.println(b+": "+patternMatch);
-                    System.out.println("--------------------------------");
-                    b++;
-                }
-
-                
-            }
             fwrite.close();
             pwrite.close();
         }
