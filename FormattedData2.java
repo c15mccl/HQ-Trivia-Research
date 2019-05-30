@@ -13,47 +13,85 @@ import java.util.regex.*;
 public class FormattedData2
 {
     public static void main (String[]args) throws FileNotFoundException {
-        File file = new File("MayAugQuestions.txt");
+        File file = new File("SepDecQuestions.txt");
         Scanner scan = new Scanner(file);
+        Scanner in1 = new Scanner(file);
+        Scanner in2 = new Scanner(file);
+        Scanner in3 = new Scanner(file);
         System.out.println("START");
         int a = 1;
         int b = 1;
+        int c = 1;
+        int d = 1;
         try{
             File myfile = new File("SepDecList.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
-            //String firstQues = "Which of these is a common kind";
             String patternMatch = "";
-            //String ques = scan.nextLine();
             while (scan.hasNextLine()){
-                //Pattern p1 = Pattern.compile("\"((\\w+\\s){1,})\\?");
-                //Matcher m1 = p1.matcher(scan.nextLine());
+
+                //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
-                //Pattern p3 = Pattern.compile("\"answers\":[{\"(\\w++)\"}]");
-                //Matcher m3 = p3.matcher(scan.nextLine());
-                //Pattern p4 = Pattern.compile("\"savage\":(\\w++)");
-                //Matcher m4 = p4.matcher(scan.nextLine());
-                //Pattern p5 = Pattern.compile("\"savage\":(\\w++)");
-                //Matcher m5 = p5.matcher(scan.nextLine());
                 while (m1.find()){
-                    System.out.print("Question " +(a++)+":");
                     patternMatch = m1.group();
-                    //pwrite.println("Question " +(a++)+":");
-                    System.out.println(patternMatch);
-                    pwrite.println(patternMatch);
-
+                    String question = patternMatch.replaceAll("text","Question");                   
+                    System.out.println(a+": "+question);
+                    pwrite.println(a+": "+question);
                     System.out.println("--------------------------------");
+                    a++;
                 }
+            }
+            
+            while(in1.hasNextLine()){
+                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Matcher m2 = p2.matcher(in1.nextLine());
+                while (m2.find()){
+                    patternMatch = m2.group();
+                    pwrite.println(b+": "+patternMatch);
+                    System.out.println(b+": "+patternMatch);
+                    System.out.println("--------------------------------");
+                    b++;
+                }
+            }
+            
+            while(in2.hasNextLine()){
+                Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
+                Matcher m3 = p3.matcher(in2.nextLine());
+                while (m3.find()){
+                    patternMatch = m3.group();
+                    pwrite.println(c+"-"+(c+2)+": "+patternMatch);
+                    System.out.println(c+"-"+(c+2)+": "+patternMatch);
+                    System.out.println("---------------------------------------------");
+                    pwrite.println("--------------------------------");
+                    c++;
+                }
+
                 
             }
+            
+            while(in3.hasNextLine()){
+                Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
+                Matcher m4 = p4.matcher(in3.nextLine());
+                while (m4.find()){
+                    patternMatch = m4.group();
+                    String date = patternMatch.replaceAll("direct_link","Date");
+                    pwrite.println(d+": "+date);
+                    System.out.println(d+": "+date);
+                    System.out.println("--------------------------------");
+                    d++;
+                }
+
+                
+            }
+            
             fwrite.close();
             pwrite.close();
         }
-
         catch (Exception e){
             e.printStackTrace();
             System.exit(1);
         }
+
     }
 }
