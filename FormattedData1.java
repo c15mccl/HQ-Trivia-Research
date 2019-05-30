@@ -31,7 +31,7 @@ public class FormattedData1
             while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
-                Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
+                Pattern p1 = Pattern.compile(("\"text\":\"((\\w+\\s){1,})\\?")+("\"category\":\"(.{1,15})\"")+("\"answers\":\\[[^]]*\\]"));
                 Matcher m1 = p1.matcher(scan.nextLine());
                 while (m1.find()){
                     patternMatch = m1.group();
@@ -42,9 +42,9 @@ public class FormattedData1
                     a++;
                 }
             }
-            
+            /*
             while(in1.hasNextLine()){
-                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Pattern p2 = Pattern.compile(("\"category\":\"(.{1,15})\""));
                 Matcher m2 = p2.matcher(in1.nextLine());
                 while (m2.find()){
                     patternMatch = m2.group();
@@ -82,6 +82,7 @@ public class FormattedData1
 
                 
             }
+            */
             
             fwrite.close();
             pwrite.close();
