@@ -19,10 +19,6 @@ public class FormattedData2
         Scanner in2 = new Scanner(file);
         Scanner in3 = new Scanner(file);
         System.out.println("START");
-        int a = 1;
-        int b = 1;
-        int c = 1;
-        int d = 1;
         try{
             File myfile = new File("SepDecList.txt");
             FileWriter fwrite = new FileWriter(myfile);
@@ -36,10 +32,10 @@ public class FormattedData2
                 while (m1.find()){
                     patternMatch = m1.group();
                     String question = patternMatch.replaceAll("text","Question");                   
-                    System.out.println(a+": "+question);
-                    pwrite.println(a+": "+question);
+                    System.out.println(question);
+                    pwrite.println(question);
                     System.out.println("--------------------------------");
-                    a++;
+                    
                 }
             }
             
@@ -48,10 +44,9 @@ public class FormattedData2
                 Matcher m2 = p2.matcher(in1.nextLine());
                 while (m2.find()){
                     patternMatch = m2.group();
-                    pwrite.println(b+": "+patternMatch);
-                    System.out.println(b+": "+patternMatch);
+                    pwrite.println(patternMatch);
+                    System.out.println(patternMatch);
                     System.out.println("--------------------------------");
-                    b++;
                 }
             }
             
@@ -60,11 +55,10 @@ public class FormattedData2
                 Matcher m3 = p3.matcher(in2.nextLine());
                 while (m3.find()){
                     patternMatch = m3.group();
-                    pwrite.println(c+"-"+(c+2)+": "+patternMatch);
-                    System.out.println(c+"-"+(c+2)+": "+patternMatch);
+                    pwrite.println(patternMatch);
+                    System.out.println(patternMatch);
                     System.out.println("---------------------------------------------");
                     pwrite.println("--------------------------------");
-                    c++;
                 }
 
                 
@@ -76,10 +70,9 @@ public class FormattedData2
                 while (m4.find()){
                     patternMatch = m4.group();
                     String date = patternMatch.replaceAll("direct_link","Date");
-                    pwrite.println(d+": "+date);
-                    System.out.println(d+": "+date);
+                    pwrite.println(date);
+                    System.out.println(date);
                     System.out.println("--------------------------------");
-                    d++;
                 }
 
                 

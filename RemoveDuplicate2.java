@@ -15,23 +15,29 @@ public class RemoveDuplicate2
     public static void main(String[]args) throws IOException{
         File file = new File("SepDecList.txt");
         Scanner in = new Scanner(file);
+        ArrayList <String> questions = new ArrayList <String>();
+        int a = 1;
         try{
-            File myFile2 = new File("SepDecFinal.txt");
-            FileWriter fwrite2 = new FileWriter(myFile2);
+            File myfile2 = new File("SepDecFinal.txt");
+            FileWriter fwrite2 = new FileWriter(myfile2);
             PrintWriter pwrite2 =  new PrintWriter(fwrite2);
-
-            ArrayList <String> questions = new ArrayList <String>();
+            
             while (in.hasNextLine()){
                 String finder = in.nextLine();
+                //System.out.println(finder);
                 questions.add(finder);
             }
             for(int i = 0; i < questions.size() -1; i++){
-                for(int j = 0; j < i; j++){
-                    if(questions.get(i).equals(questions.get(j))){
-                        questions.remove(questions.get(i));                    
+                for(int j = i+1; j < questions.size(); j++){
+
+                    if((questions.get(i)).equals(questions.get(j))){
+                        questions.remove(j);
+                        //System.out.println("Found one");
+                        j--;
                     }
                 }
-                System.out.println(questions.get(i));
+                System.out.println("Count: "+a+questions.get(i));
+                a++;
                 pwrite2.println(questions.get(i));
             }
 
