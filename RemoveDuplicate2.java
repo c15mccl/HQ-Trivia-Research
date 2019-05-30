@@ -27,13 +27,12 @@ public class RemoveDuplicate2
             }
             for(int i = 0; i < questions.size() -1; i++){
                 for(int j = 0; j < i; j++){
-                    System.out.println(questions.get(i));
                     if(questions.get(i).equals(questions.get(j))){
-                        questions.remove(questions.get(i));
+                        questions.remove(questions.get(i));                    
                     }
                 }
-                System.out.println(questions);
-                pwrite2.println(questions);
+                System.out.println(questions.get(i));
+                pwrite2.println(questions.get(i));
             }
 
             fwrite2.close();

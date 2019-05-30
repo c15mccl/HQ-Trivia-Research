@@ -16,17 +16,13 @@ public class CompressedData2
         File file = new File("SEPDEC_URLS.txt");
         Scanner scan = new Scanner(file);
         try{
-            FileWriter fwrite =  new FileWriter("SepDecQuestions");
-            BufferedWriter writer = new BufferedWriter(fwrite);
+            FileWriter fwrite =  new FileWriter("SepDecQuestions.txt");
+            PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
                 String URL = scan.nextLine();
-                System.out.println(URL);
-                String parse1 = URL.substring(27,37);
-                String parse2 = URL.substring(38);
-                String parse3 = "-";
-                String parse4 = parse1 + parse3 + parse2;
-                String filename = parse4 + ".txt";
-                System.out.println(filename);
+                //System.out.println(URL);
+                String filename = URL.substring(27,37);
+                //System.out.println(filename);
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
                 while (in.hasNextLine()){
@@ -35,12 +31,17 @@ public class CompressedData2
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
-                        System.out.println(patternMatch);
+                        String question = patternMatch.replaceAll("\\?"," ?");
+                        System.out.println(question);
+                        pwrite.println(question);
+                        System.out.println();
+                        pwrite.println();
                         System.out.println("--------------------------------");
                     }
                 }
             }
-            writer.close();
+            fwrite.close();
+            pwrite.close();
         }
         catch (Exception e){
             e.printStackTrace();
