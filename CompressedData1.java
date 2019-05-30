@@ -34,7 +34,7 @@ public class CompressedData1
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
-                        String question = patternMatch.replaceAll("
+                        String question = patternMatch.replaceAll("\\?"," ?");
                         System.out.println(patternMatch);
                         pwrite.println(patternMatch);
                         System.out.println();
