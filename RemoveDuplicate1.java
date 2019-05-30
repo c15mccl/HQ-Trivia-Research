@@ -32,10 +32,12 @@ public class RemoveDuplicate1
                     if((questions.get(i)).equals(questions.get(j))){
                         questions.remove(questions.get(j));
                         //System.out.println("Found one");
+                        j--;
                     }
                 }
                 System.out.println("Count: "+a+questions.get(i));
                 a++;
+                pwrite2.println(questions.get(i));
             }
 
             fwrite2.close();
