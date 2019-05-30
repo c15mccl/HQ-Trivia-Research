@@ -16,6 +16,7 @@ public class RemoveDuplicate1
         File file = new File("MayAugList.txt");
         Scanner in = new Scanner(file);
         ArrayList <String> questions = new ArrayList <String>();
+        int a = 1;
         try{
             File myfile2 = new File("MayAugFinal.txt");
             FileWriter fwrite2 = new FileWriter(myfile2);
@@ -26,20 +27,19 @@ public class RemoveDuplicate1
                 questions.add(finder);
             }
             for(int i = 0; i < questions.size() -1; i++){
-                for(int j = 0; j < i; j++){
+                for(int j = i+1; j < questions.size() -1; j++){
 
-                    if(questions.get(i).equals(questions.get(j))){
-                        questions.remove(questions.get(i));
+                    if((questions.get(i)).equals(questions.get(j))){
+                        questions.remove(questions.get(j));
+                        //System.out.println("Found one");
                     }
                 }
-                System.out.println(questions);
-                pwrite2.println(questions);
+                System.out.println("Count: "+a+questions.get(i));
+                a++;
             }
 
             fwrite2.close();
             pwrite2.close();
-
-            System.out.println(questions);
         }
         catch (Exception e){
             e.printStackTrace();
