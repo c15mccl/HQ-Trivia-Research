@@ -27,10 +27,10 @@ public class RemoveDuplicate1
                 questions.add(finder);
             }
             for(int i = 0; i < questions.size() -1; i++){
-                for(int j = i+1; j < questions.size() -1; j++){
+                for(int j = i+1; j < questions.size(); j++){
 
                     if((questions.get(i)).equals(questions.get(j))){
-                        questions.remove(questions.get(j));
+                        questions.remove(j);
                         //System.out.println("Found one");
                         j--;
                     }
