@@ -20,9 +20,6 @@ public class FormattedData1
         Scanner in3 = new Scanner(file);
         System.out.println("START");
         int a = 1;
-        int b = 1;
-        int c = 1;
-        int d = 1;
         try{
             File myfile = new File("MayAugList.txt");
             FileWriter fwrite = new FileWriter(myfile);
@@ -31,16 +28,22 @@ public class FormattedData1
             while (scan.hasNextLine()){
 
                 //System.out.println("***QUESTIONS***");    
-                Pattern p1 = Pattern.compile(("\"text\":\"((\\w+\\s){1,})\\?")+("\"category\":\"(.{1,15})\"")+("\"answers\":\\[[^]]*\\]"));
+                Pattern p1 = Pattern.compile("\"text\":\"((([^? ])+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
-                while (m1.find()){
-                    patternMatch = m1.group();
-                    String question = patternMatch.replaceAll("text","Question");                   
-                    System.out.println(question);
-                    pwrite.println(question);
+                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Matcher m2 = p2.matcher(in1.nextLine());
+                Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
+                Matcher m3 = p3.matcher(in2.nextLine());
+                Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
+                Matcher m4 = p4.matcher(in3.nextLine());
+                while (m1.find() && m2.find() && m3.find() && m4.find()){
+                    patternMatch = m1.group() + m2.group() + m3.group() + m4.group();
+                    //String question = patternMatch.replaceAll("text","Question");                   
+                    System.out.println(patternMatch);
+                    pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
-                    a++;
                 }
+
             }
             /*
             while(in1.hasNextLine()){
