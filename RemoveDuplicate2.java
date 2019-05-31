@@ -36,7 +36,7 @@ public class RemoveDuplicate2
                         j--;
                     }
                 }
-                System.out.println("Count: "+a+questions.get(i));
+                System.out.println("Count: "+ a + questions.get(i));
                 a++;
                 pwrite2.println(questions.get(i));
             }

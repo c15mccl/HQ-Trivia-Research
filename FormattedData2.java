@@ -29,55 +29,22 @@ public class FormattedData2
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"((\\w+\\s){1,})\\?");
                 Matcher m1 = p1.matcher(scan.nextLine());
-                while (m1.find()){
-                    patternMatch = m1.group();
+                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Matcher m2 = p2.matcher(in1.nextLine());
+                Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
+                Matcher m3 = p3.matcher(in2.nextLine());
+                Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
+                Matcher m4 = p4.matcher(in3.nextLine());
+                while (m1.find() && m2.find() && m3.find() && m4.find()){
+                    patternMatch = m1.group() + m2.group() + m3.group() + m4.group();
                     String question = patternMatch.replaceAll("text","Question");                   
                     System.out.println(question);
                     pwrite.println(question);
                     System.out.println("--------------------------------");
-                    
-                }
-            }
-            
-            while(in1.hasNextLine()){
-                Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
-                Matcher m2 = p2.matcher(in1.nextLine());
-                while (m2.find()){
-                    patternMatch = m2.group();
-                    pwrite.println(patternMatch);
-                    System.out.println(patternMatch);
-                    System.out.println("--------------------------------");
-                }
-            }
-            
-            while(in2.hasNextLine()){
-                Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
-                Matcher m3 = p3.matcher(in2.nextLine());
-                while (m3.find()){
-                    patternMatch = m3.group();
-                    pwrite.println(patternMatch);
-                    System.out.println(patternMatch);
-                    System.out.println("---------------------------------------------");
-                    pwrite.println("--------------------------------");
+
                 }
 
-                
             }
-            
-            while(in3.hasNextLine()){
-                Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
-                Matcher m4 = p4.matcher(in3.nextLine());
-                while (m4.find()){
-                    patternMatch = m4.group();
-                    String date = patternMatch.replaceAll("direct_link","Date");
-                    pwrite.println(date);
-                    System.out.println(date);
-                    System.out.println("--------------------------------");
-                }
-
-                
-            }
-            
             fwrite.close();
             pwrite.close();
         }
