@@ -14,7 +14,7 @@ public class RemoveDuplicate1
 {
     public static void main(String[]args) throws IOException{
         File file1 = new File("MayAugQuestions.txt");
-        File file2 = new File("MayAugAnsCat1.txt");
+        File file2 = new File("MayAugAnswers.txt");
         Scanner in1 = new Scanner(file1);
         Scanner in2 = new Scanner(file2);
         ArrayList <String> allData = new ArrayList <String>();
@@ -25,13 +25,13 @@ public class RemoveDuplicate1
             PrintWriter pwrite2 =  new PrintWriter(fwrite2);
             while (in1.hasNextLine()){
                 String finder1 = in1.nextLine();
-                System.out.println("->"+finder1);
+                //System.out.println("->"+finder1);
                 
                 allData.add(finder1);
             }
             while(in2.hasNextLine()){
                 String finder2 = in2.nextLine();
-                System.out.println("->"+finder2);
+                //System.out.println("->"+finder2);
                 
                 allData.add(finder2);
             }
