@@ -18,7 +18,7 @@ public class FormattedData1
         Scanner in1 = new Scanner(file);
         Scanner in2 = new Scanner(file);
         Scanner in3 = new Scanner(file);
-        System.out.println("START");
+
         int a = 1;
         try{
             File myfile = new File("MayAugAnsCat1.txt");
@@ -36,8 +36,8 @@ public class FormattedData1
                 //Matcher m3 = p3.matcher(in2.nextLine());
                 //Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
                 //Matcher m4 = p4.matcher(in3.nextLine());
-                while (m1.find()){//&& m2.find() && m3.find() && m4.find()
-                    patternMatch = m1.group();// + m2.group() + m3.group() + m4.group()
+                while (m1.find()){//&& m2.find() && + m2.group()
+                    patternMatch = m1.group();
                     //String question = patternMatch.replaceAll("text","Question");                   
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
