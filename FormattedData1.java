@@ -30,8 +30,7 @@ public class FormattedData1
                 //System.out.println("***QUESTIONS***");    
                 Pattern p1 = Pattern.compile("\"text\":\"(((([^? ])+\\s){1,})\\?)");
                 Matcher m1 = p1.matcher(scan.nextLine());
-                //Pattern p2 = Pattern.compile("\"category\":\"(.{1,15})\"");
-                //Matcher m2 = p2.matcher(in1.nextLine());
+                
                 //Pattern p3 = Pattern.compile("\"answers\":\\[[^]]*\\]");
                 //Matcher m3 = p3.matcher(in2.nextLine());
                 //Pattern p4 = Pattern.compile("\"direct_link\":(.{22})");
@@ -43,7 +42,6 @@ public class FormattedData1
                     pwrite.println(patternMatch);
                     System.out.println("--------------------------------");
                 }
-
             }
             /*
             while(in1.hasNextLine()){

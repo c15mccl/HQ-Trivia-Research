@@ -15,10 +15,12 @@ public class RemoveDuplicate1
     public static void main(String[]args) throws IOException{
         File file1 = new File("MayAugQuestions.txt");
         File file2 = new File("MayAugAnswers.txt");
+        File file3 = new File("MayAugCat.txt");
         Scanner in1 = new Scanner(file1);
         Scanner in2 = new Scanner(file2);
+        Scanner in3 = new Scanner(file3);
         ArrayList <String> allData = new ArrayList <String>();
-        int a = 1;
+        ArrayList <String> cat = new ArrayList <String>();
         try{
             File myfile2 = new File("MayAugFinal.txt");
             FileWriter fwrite2 = new FileWriter(myfile2);
@@ -26,14 +28,19 @@ public class RemoveDuplicate1
             while (in1.hasNextLine()){
                 String finder1 = in1.nextLine();
                 //System.out.println("->"+finder1);
-                
+                finder1 = finder1.substring(0,(finder1.length()-2));
+                finder1 = finder1 + "?";
                 allData.add(finder1);
             }
             while(in2.hasNextLine()){
                 String finder2 = in2.nextLine();
                 //System.out.println("->"+finder2);
-                
                 allData.add(finder2);
+            }
+            while(in3.hasNextLine()){
+                String finder3 = in3.nextLine();
+                //System.out.println("->"+finder2);
+                allData.add(finder3);
             }
             for(int i = 0; i <allData.size() -1; i++){
                 for(int j = i+1; j < allData.size(); j++){
@@ -45,10 +52,9 @@ public class RemoveDuplicate1
                     }
                 }
                 System.out.println(allData.get(i));
-                a++;
                 pwrite2.println(allData.get(i));
             }
-
+            
             fwrite2.close();
             pwrite2.close();
         }
