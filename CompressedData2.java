@@ -26,10 +26,11 @@ public class CompressedData2
                 //String URL = scan.nextLine();
                 //System.out.println(URL);
                 String filename = game + day;
-                day++;
-                //System.out.println(filename);
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
+                day++;
+                
+                
                 while (in.hasNextLine()){
                     Pattern p = Pattern.compile("\"text\":\"(.+)\"");
                     String input;

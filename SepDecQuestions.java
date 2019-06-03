@@ -30,6 +30,7 @@ public class SepDecQuestions
                         String delete = line.substring(0,index);
                         String newLine = line.replace(delete,"");
                         System.out.println(newLine);
+                        pwrite2.println(newLine);
                         line = in.nextLine();
                     }
                 }
