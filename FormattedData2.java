@@ -18,6 +18,7 @@ public class FormattedData2
         Scanner in1 = new Scanner(file);
         Scanner in2 = new Scanner(file);
         Scanner in3 = new Scanner(file);
+        int count = 1;
         System.out.println("START");
         try{
             File myfile = new File("SepDecList.txt");
@@ -37,13 +38,16 @@ public class FormattedData2
                 Matcher m4 = p4.matcher(in3.nextLine());
                 while (m1.find() && m2.find() && m3.find() && m4.find()){
                     patternMatch = m1.group() + m2.group() + m3.group() + m4.group();
-                    String question = patternMatch.replaceAll("text","Question");                   
-                    System.out.println(question);
-                    pwrite.println(question);
+                    //String question = patternMatch.replaceAll("text","Question");  
+
+                    //System.out.print(count + " ");
+                    System.out.println(patternMatch);
+                    pwrite.println(patternMatch);
+                    
                     System.out.println("--------------------------------");
-
+                    //count++;
                 }
-
+                
             }
             fwrite.close();
             pwrite.close();
