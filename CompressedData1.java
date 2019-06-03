@@ -15,19 +15,17 @@ public class CompressedData1
     public static void main (String[]args) throws FileNotFoundException {
         File file = new File("MAYAUG.txt");
         Scanner scan = new Scanner(file);
-        //int var = 1;
+        int dayNum = 1;
+        String day = "Day: ";
         try{
-            File myfile = new File("MayAugQuestions.txt");
+            File myfile = new File("MayAugScript.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
-                String URL = scan.nextLine();
-                //System.out.println(URL);
-                String filename = URL.substring(27,37);
-                //System.out.println(filename);
+                String filename = day + dayNum;
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
-
+                dayNum++;
                 while (in.hasNextLine()){
                     Pattern p = Pattern.compile("\"text\":\"(.+)\"");
                     String input;

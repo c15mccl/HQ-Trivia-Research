@@ -13,12 +13,12 @@ import java.util.regex.*;
 public class RemoveDuplicate1
 {
     public static void main(String[]args) throws IOException{
-        File file = new File("MayAugList.txt");
+        File file = new File("MayAugAnsCat1.txt");
         Scanner in = new Scanner(file);
         ArrayList <String> questions = new ArrayList <String>();
         int a = 1;
         try{
-            File myfile2 = new File("MayAugFinal.txt");
+            File myfile2 = new File("MayAugAnsCat2.txt");
             FileWriter fwrite2 = new FileWriter(myfile2);
             PrintWriter pwrite2 =  new PrintWriter(fwrite2);
             while (in.hasNextLine()){
