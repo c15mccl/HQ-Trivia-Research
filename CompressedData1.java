@@ -30,18 +30,22 @@ public class CompressedData1
 
                 while (in.hasNextLine()){
                     Pattern p = Pattern.compile("\"text\":\"(.+)\"");
-                    Matcher m = p.matcher(in.nextLine());
+                    String input;
+                    Matcher m = p.matcher(input = in.nextLine());
+                    System.out.println("-->" + input);
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
                         String question = patternMatch.replaceAll("\\?"," ?");
-                        System.out.println(patternMatch);
-                        pwrite.println(patternMatch);
+                        System.out.println(question);
+                        pwrite.print(question);
                         System.out.println();
-                        pwrite.println();
+                        //pwrite.print();
                         System.out.println("--------------------------------");
                     }
+
                 }
+                //pwrite.println(); 
             }
             fwrite.close();
             pwrite.close();
@@ -50,6 +54,6 @@ public class CompressedData1
             e.printStackTrace();
             System.exit(1);
         }
-        
+
     }
 }

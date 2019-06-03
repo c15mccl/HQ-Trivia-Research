@@ -23,7 +23,8 @@ public class RemoveDuplicate1
             PrintWriter pwrite2 =  new PrintWriter(fwrite2);
             while (in.hasNextLine()){
                 String finder = in.nextLine();
-                //System.out.println(finder);
+                System.out.println("->"+finder);
+                
                 questions.add(finder);
             }
             for(int i = 0; i < questions.size() -1; i++){
@@ -35,9 +36,9 @@ public class RemoveDuplicate1
                         j--;
                     }
                 }
-                System.out.println("Count: "+a+questions.get(i));
+                System.out.println("Count: "+a+" "+questions.get(i));
                 a++;
-                pwrite2.println(questions.get(i));
+                pwrite2.println("Count: "+a+" "+questions.get(i));
             }
 
             fwrite2.close();
