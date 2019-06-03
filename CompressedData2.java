@@ -15,19 +15,26 @@ public class CompressedData2
     public static void main (String[]args) throws FileNotFoundException {
         File file = new File("SEPDEC_URLS.txt");
         Scanner scan = new Scanner(file);
+        int day = 1;
+        String game = "Game: ";
         try{
-            FileWriter fwrite =  new FileWriter("SepDecQuestions.txt");
+            File myfile = new File("SepDecScript.txt");
+            FileWriter fwrite =  new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
-                String URL = scan.nextLine();
+                
+                //String URL = scan.nextLine();
                 //System.out.println(URL);
-                String filename = URL.substring(27,37);
+                String filename = game + day;
+                day++;
                 //System.out.println(filename);
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
                 while (in.hasNextLine()){
                     Pattern p = Pattern.compile("\"text\":\"(.+)\"");
-                    Matcher m = p.matcher(in.nextLine());
+                    String input;
+                    Matcher m = p.matcher(input = in.nextLine());
+                    System.out.println("-->" + input);
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
@@ -35,7 +42,7 @@ public class CompressedData2
                         System.out.println(question);
                         pwrite.println(question);
                         System.out.println();
-                        pwrite.println();
+                        //pwrite.println();
                         System.out.println("--------------------------------");
                     }
                 }

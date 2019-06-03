@@ -18,39 +18,31 @@ public class SepDec2018
         File file = new File("SEPDEC_URLS.txt");
 
         Scanner scan = new Scanner(file);
-
+        int dayNum = 1;
+        String day = "Day: ";
         while(scan.hasNextLine()){
             String URL = scan.nextLine();
-            System.out.println(URL);
-            String filename = URL.substring(27,37);
+            //System.out.println(URL);
+            String filename = day + dayNum;
             System.out.println(filename);
             try{
-                FileWriter fwrite =  new FileWriter(filename);
-                BufferedWriter writer = new BufferedWriter(fwrite);
+                File myFile = new File(filename);
+                FileWriter fwrite =  new FileWriter(myFile);
+                PrintWriter pwrite = new PrintWriter(fwrite);
                 Document hQdata = Jsoup.connect(URL).get();
                 Elements hQdates = hQdata.select("script");
-                Pattern p = Pattern.compile("\"text\":\"");
+                //Pattern p = Pattern.compile("\"text\":\"");
 
                 for (Element e : hQdates)
                     for(DataNode node: e.dataNodes())
                     {
                         //System.out.println(node.getWholeData());
-                        writer.write(node.getWholeData());
+                        pwrite.println(node.getWholeData());
                     }
 
                 System.out.println("------------");
-                //writer.close();
-                Thread.sleep(1000);
-
-
-                for(Element e : hQdates ){
-                    for (DataNode node : e.dataNodes()){
-                        //System.out.println(node.getWholeData());
-                        writer.write(node.getWholeData());
-                    }
-                }
-                System.out.println("------------");
-                writer.close();
+                fwrite.close();
+                pwrite.close();
                 Thread.sleep(1000);
 
             }
@@ -59,6 +51,7 @@ public class SepDec2018
                 //System.err.println(x);
                 System.exit(1);
             }
+            dayNum++;
         }
 
     }

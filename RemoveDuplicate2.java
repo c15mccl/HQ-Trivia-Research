@@ -13,7 +13,7 @@ import java.util.regex.*;
 public class RemoveDuplicate2
 {
     public static void main(String[]args) throws IOException{
-        File file = new File("SepDecList.txt");
+        File file = new File("SepDecQuestions.txt");
         Scanner in = new Scanner(file);
         ArrayList <String> questions = new ArrayList <String>();
         int a = 1;
