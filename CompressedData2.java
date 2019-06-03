@@ -18,7 +18,7 @@ public class CompressedData2
         int day = 1;
         String game = "Game: ";
         try{
-            File myfile = new File("SepDecQuestions.txt");
+            File myfile = new File("SepDecScript.txt");
             FileWriter fwrite =  new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
@@ -26,6 +26,7 @@ public class CompressedData2
                 //String URL = scan.nextLine();
                 //System.out.println(URL);
                 String filename = game + day;
+                day++;
                 //System.out.println(filename);
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
