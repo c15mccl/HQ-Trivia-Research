@@ -19,7 +19,7 @@ public class RemoveDuplicate1
         Scanner in1 = new Scanner(file1);
         Scanner in2 = new Scanner(file2);
         Scanner in3 = new Scanner(file3);
-        ArrayList <String> quesAns = new ArrayList <String>();
+        ArrayList <String> allData = new ArrayList <String>();
         ArrayList <String> cat = new ArrayList <String>();
         try{
             File myfile2 = new File("MayAugFinal.txt");
@@ -30,33 +30,29 @@ public class RemoveDuplicate1
                 //System.out.println("->"+finder1);
                 finder1 = finder1.substring(0,(finder1.length()-2));
                 finder1 = finder1 + "?";
-                quesAns.add(finder1);
+                allData.add(finder1);
             }
             while(in2.hasNextLine()){
                 String finder2 = in2.nextLine();
                 //System.out.println("->"+finder2);
-                quesAns.add(finder2);
+                allData.add(finder2);
             }
             while(in3.hasNextLine()){
                 String finder3 = in3.nextLine();
                 //System.out.println("->"+finder2);
-                cat.add(finder3);
+                allData.add(finder3);
             }
-            for(int i = 0; i <quesAns.size() -1; i++){
-                for(int j = i+1; j < quesAns.size(); j++){
+            for(int i = 0; i <allData.size() -1; i++){
+                for(int j = i+1; j < allData.size(); j++){
 
-                    if((quesAns.get(i)).equals(quesAns.get(j))){
-                        quesAns.remove(j);
+                    if((allData.get(i)).equals(allData.get(j))){
+                        allData.remove(j);
                         //System.out.println("Found one");
                         j--;
                     }
                 }
-                System.out.println(quesAns.get(i));
-                pwrite2.println(quesAns.get(i));
-            }
-            for(int i = 0; i < cat.size(); i++){
-                System.out.println(cat.get(i));
-                pwrite2.println(cat.get(i));
+                System.out.println(allData.get(i));
+                pwrite2.println(allData.get(i));
             }
             
             fwrite2.close();
