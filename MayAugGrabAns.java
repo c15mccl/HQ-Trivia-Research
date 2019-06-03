@@ -28,11 +28,8 @@ public class MayAugGrabAns
                 sb.toString();
                 int removeLine = line.indexOf(element);
                 sb.delete(removeLine+1, line.length());
-                String divider = "---------------------------------------------------------------------------------------------------";
                 System.out.println(sb.toString());
                 pwrite.println(sb.toString());
-                System.out.println(divider);
-                pwrite.println(divider);
             }
             pwrite.close();
             fwrite.close();
