@@ -13,41 +13,46 @@ import java.util.regex.*;
 public class CompressedData3
 {
     public static void main (String[]args) throws FileNotFoundException {
-         File file = new File("JanMay2019.txt");
+        File file = new File("JanMay2019.txt");
         Scanner scan = new Scanner(file);
+        int dayNum = 1;
+        String day = "Day: ";
         try{
-            FileWriter fwrite =  new FileWriter("JanMay2019Questions");
-            BufferedWriter writer = new BufferedWriter(fwrite);
+            File myfile = new File("JanMayScript.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
-                String URL = scan.nextLine();
-                //System.out.println(URL);
-                String parse1 = URL.substring(27,37);
-                String parse2 = URL.substring(38);
-                String parse3 = "-";
-                String parse4 = parse1 + parse3 + parse2;
-                String filename = parse4 + ".txt";
-                //System.out.println(filename);
+                String filename = day + dayNum;
                 File file2 = new File(filename);
                 Scanner in = new Scanner(file2);
-
+                dayNum++;
                 while (in.hasNextLine()){
                     Pattern p = Pattern.compile("\"text\":\"(.+)\"");
-                    Matcher m = p.matcher(in.nextLine());
+                    String input;
+                    Matcher m = p.matcher(input = in.nextLine());
+                    System.out.println("-->" + input);
                     String patternMatch = "";
                     while (m.find()){
                         patternMatch = m.group();
-                        System.out.println(patternMatch);
-                        writer.write(patternMatch);
+                        String question = patternMatch.replaceAll("\\?"," ?");
+                        System.out.println(question);
+                        pwrite.print(question);
+                        System.out.println();
+                        //pwrite.print();
                         System.out.println("--------------------------------");
                     }
+
                 }
+                //pwrite.println(); 
             }
-            writer.close();
+            fwrite.close();
+            pwrite.close();
         }
         catch (Exception e){
             e.printStackTrace();
             System.exit(1);
         }
+
         
     }
 }
