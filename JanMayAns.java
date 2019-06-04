@@ -1,4 +1,9 @@
-
+import org.jsoup.nodes.*;
+import org.jsoup.*;
+import org.jsoup.select.*;
+import java.io.*;
+import java.util.*;
+import java.util.regex.*;
 /**
  * Write a description of class JanMayAns here.
  *
@@ -7,27 +12,31 @@
  */
 public class JanMayAns
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public static void main(String[]args)throws FileNotFoundException{
+        File file = new File("JanMayAnsCat1.txt");
+        Scanner scan = new Scanner(file);
+        try{
+            File myfile = new File("JanMayAnswers.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
+            //System.out.println(line);
+            while (scan.hasNextLine()){
+                String element = "]";
+                String line = scan.nextLine();
+                StringBuilder sb = new StringBuilder(line);
 
-    /**
-     * Constructor for objects of class JanMayAns
-     */
-    public JanMayAns()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+                sb.toString();
+                int removeLine = line.indexOf(element);
+                sb.delete(removeLine+1, line.length());
+                System.out.println(sb.toString());
+                pwrite.println(sb.toString());
+            }
+            pwrite.close();
+            fwrite.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            System.exit(1);
+        }
     }
 }

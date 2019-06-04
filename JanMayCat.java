@@ -1,4 +1,9 @@
-
+import org.jsoup.nodes.*;
+import org.jsoup.*;
+import org.jsoup.select.*;
+import java.io.*;
+import java.util.*;
+import java.util.regex.*;
 /**
  * Write a description of class JanMayCat here.
  *
@@ -7,27 +12,31 @@
  */
 public class JanMayCat
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class JanMayCat
-     */
-    public JanMayCat()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[]args) throws FileNotFoundException{
+        File file = new File("JanMayScript.txt");
+        Scanner scan = new Scanner(file);
+        try{
+            File myfile = new File("JanMayCat.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
+            String patternMatch = " ";
+            //System.out.println(line);
+            while (scan.hasNextLine()){
+                Pattern p = Pattern.compile("\"category\":\"(.{1,15})\"");
+                Matcher m = p.matcher(scan.nextLine());
+                while (m.find()){
+                    patternMatch = m.group();
+                    System.out.println(patternMatch);
+                    pwrite.println(patternMatch);
+                    System.out.println("--------------------------------");
+                }
+            }
+            pwrite.close();
+            fwrite.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            System.exit(1);
+        }
     }
 }
