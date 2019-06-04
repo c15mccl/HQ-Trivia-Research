@@ -16,7 +16,7 @@ public class JanMayAns
         File file = new File("JanMayAnsCat1.txt");
         Scanner scan = new Scanner(file);
         try{
-            File myfile = new File("MayAugAnswers.txt");
+            File myfile = new File("JanMayAnswers.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             //System.out.println(line);
