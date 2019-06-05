@@ -6,7 +6,7 @@
     </Date>
     <Question category = ""> <q> content </q>
         <answerA> content </answerA>
-        <answseB> content </answerB>
+        <answerB> content </answerB>
         <answerC> content </answerC>
     <savage s = "content"></savage>
     </Question>
