@@ -1,0 +1,13 @@
+<Game number = "...">
+    <Date>
+        <month>...</month>
+        <day>...</day>
+        <year>...</year>
+    </Date>
+    <Question category = "..."><q>content</q>
+        <answerA>...</answerA>
+        <answerB>...</answerB>
+        <answerC>...</answerC>
+    <Savage s = 'true/false'></Savage>
+    </Question>
+</Game>
