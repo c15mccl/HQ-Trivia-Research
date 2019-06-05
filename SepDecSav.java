@@ -5,12 +5,12 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 /**
- * Write a description of class SepDecCat here.
+ * Write a description of class SepDecSav here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SepDecCat
+public class SepDecSav
 {
     public static void main(String [] args) throws FileNotFoundException
     {
@@ -44,8 +44,3 @@ public class SepDecCat
         }
     }
 }
-       
-        
-        
-        
-     
