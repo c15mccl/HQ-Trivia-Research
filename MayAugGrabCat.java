@@ -22,15 +22,18 @@ public class MayAugGrabCat
             String patternMatch = " ";
             //System.out.println(line);
             while (scan.hasNextLine()){
+                String line = scan.nextLine();
                 Pattern p = Pattern.compile("\"category\":\"(.{1,15})\"");
-                Matcher m = p.matcher(scan.nextLine());
+                Matcher m = p.matcher(line);
                 while (m.find()){
                     patternMatch = m.group();
                     System.out.println(patternMatch);
                     pwrite.println(patternMatch);
-                    System.out.println("--------------------------------");
                 }
+                // 
+                    
             }
+            
             pwrite.close();
             fwrite.close();
         }

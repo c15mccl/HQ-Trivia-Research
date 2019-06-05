@@ -40,7 +40,7 @@ public class RemoveDuplicate1
             while(in3.hasNextLine()){
                 String finder3 = in3.nextLine();
                 //System.out.println("->"+finder2);
-                allData.add(finder3);
+                cat.add(finder3);
             }
             for(int i = 0; i <allData.size() -1; i++){
                 for(int j = i+1; j < allData.size(); j++){
@@ -53,6 +53,10 @@ public class RemoveDuplicate1
                 }
                 System.out.println(allData.get(i));
                 pwrite2.println(allData.get(i));
+            }
+            for(int i = 0; i < cat.size(); i++){
+                System.out.println(cat.get(i));
+                pwrite2.println(cat.get(i));
             }
             
             fwrite2.close();
