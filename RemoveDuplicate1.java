@@ -81,7 +81,7 @@ public class RemoveDuplicate1
                 System.out.println("Category: "+cat.get(i));
                 pwrite2.println("Category: "+cat.get(i));
             }
-            for(int i = 0; i < cat.size(); i++){
+            for(int i = 0; i < savage.size(); i++){
                 System.out.println("Savage "+savage.get(i));
                 pwrite2.println("Savage "+savage.get(i));
             }
