@@ -5,8 +5,8 @@
         <year> content </year>
     </Date>
     <Question category = ""> <q> content </q>
-        <answserA> content </answerA>
-        <answserB> content </answerB>
+        <answerA> content </answerA>
+        <answseB> content </answerB>
         <answerC> content </answerC>
     <savage s = "content"></savage>
     </Question>
