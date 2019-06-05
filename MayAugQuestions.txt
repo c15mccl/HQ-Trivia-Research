@@ -3965,4 +3965,24 @@
 "text":"What kind of plant can grow nearly three feet per day ?
 "text":"The pronunciation of what state’s capital sounds just like a synonym of “defeated” ?
 "text":"Which of these “Sesame Street” characters is still mostly played by the original performer ?
-"text
+"text":"How does Eggs Florentine typically differ from Eggs Benedict ?
+"text":"Which of these is an element on the periodic table ?
+"text":"Which of these classic arcade games is a sequel ?
+"text":"Which of these is NOT a recording speed on blank VHS tapes ?
+"text":"Which actor has won Razzie awards in both the Worst Actor and Worst Actress categories ?
+"text":"After first reading the manuscript of “Moby-Dick,” what suggestion did the publisher make ?
+"text":"The longest type of shot on a golf course is typically called what ?
+"text":"Michael Jordan famously said “I’ve never lost a game, I just ran out of” what ?
+"text":"What NFL star’s crowdsourced fundraiser has just become the largest in history ?
+"text":"Hall of Fame QB Steve Young is a descendant of the founder of what college ?
+"text":"What team benefited from Chris Webber’s call for a timeout he didn’t have in an NCAA title game ?
+"text":"What was the first tennis tournament to offer men and women equal pay ?
+"text":"What MLB team plays in the same city as the Babe Ruth Museum ?
+"text":"Who was the last non-QB to win the Associated Press NFL MVP ?
+"text":"What pitch used to be known as a “nickel curve” ?
+"text":"According to Forbes, the highest-earning female athlete outside of tennis plays what sport ?
+"text":"Which current NHL goalie has made the most career saves ?
+"text":"Which of these players is NOT tied for having played the most NBA seasons ?
+"text":"Which of these is a string instrument ?
+"text":"In the 1800s, what painter’s last name became the source of a word meaning “full-figured” ?
+"text":"What famous speech took place in front of the Lincoln Memorial ?

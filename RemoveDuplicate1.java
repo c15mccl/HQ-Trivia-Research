@@ -38,16 +38,7 @@ public class RemoveDuplicate1
             }
             while(in2.hasNextLine()){
                 String finder2 = in2.nextLine();
-                String element = "},";
-                int fIndex = finder2.indexOf(element);
-                int lIndex = finder2.lastIndexOf(element);
-                String answerA = finder2.substring(0,fIndex);
-                String answerB = finder2.substring((fIndex+1),(lIndex));
-                String answerC = finder2.substring((lIndex+1),(finder2.length()));
-
-                answers.add(answerA);
-                answers.add(answerB);
-                answers.add(answerC);
+                answers.add(finder2);
             }
             while(in3.hasNextLine()){
                 String finder3 = in3.nextLine();
