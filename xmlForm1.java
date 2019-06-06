@@ -19,8 +19,11 @@ public class xmlForm1
             File myfile = new File("xmlForm1.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
+            int ansCount = 0;                
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
+
+                if(ansCount >= 3) ansCount = 0;
                 String day = "";
                 String month = "";
                 String year = "";
@@ -50,22 +53,60 @@ public class xmlForm1
                     pwrite.println(line);
                 }
                 if(line.contains("Answers:")){
-                    line = line.replace("Answers:","<Answer>");
-                    line = line + " </Answer>";
+                    ansCount++;
+                    if(ansCount == 1){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerA correct = true");
+                            line = line + "> </answerA>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerA correct = false");
+                            line = line + "> </answerA>";
+                        }
+                    }
+                    else if(ansCount == 2){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerB correct = true");
+                            line = line + "> </answerB>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerB correct = false");
+                            line = line + "> </answerB>";
+                        }
+                    } 
+                    else if(ansCount == 3){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerC correct = true");
+                            line = line + "> </answerC>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerC correct = false");
+                            line = line + "> </answerC>";
+                        }
+                    }
+                    System.out.println(line);
+                    pwrite.println(line);
+
                 }
+
                 if(line.contains("Category: \"category\":")){
                     line = line.replace("Category: \"category\":","<Category cat = ");
                     line = line + "> </Category>";
+                    System.out.println(line);
+                    pwrite.println(line);
                 }
                 if(line.contains("Savage \"savage\":")){
                     line = line.replace("Savage \"savage\":","<Savage level = ");
                     line = line + "> </Savage>";
+                    System.out.println(line);
+                    pwrite.println(line);
                 }
-                
             }
+
             pwrite.close();
             fwrite.close();
         }
+
         catch (Exception e){
             e.printStackTrace();
             System.exit(1);
