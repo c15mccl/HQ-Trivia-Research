@@ -18,7 +18,7 @@ public class MayAugDates
         try{
             File myfile = new File("MayAugDates.txt");
             FileWriter fwrite = new FileWriter(myfile);
-            PrintWriter pwrite = new PrintWriter(fwrite);
+            PrintWriter pwrite = new PrintWriter(fwrite, true);
             String patternMatch = "";
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
@@ -28,9 +28,13 @@ public class MayAugDates
                     patternMatch = m.group();
                     Scanner in = new Scanner(patternMatch);
                     String line2 = in.nextLine();
-                    line2 = line2.replace("/game/","");
+                    if(patternMatch.contains("/game/")){
+                        line2 = line2.replace("/game/","");
+                    }
+                    
                     System.out.println(line2);
                     pwrite.println(line2);
+                    
                 }
             }
         }
