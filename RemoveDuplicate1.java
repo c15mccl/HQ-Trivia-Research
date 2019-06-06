@@ -17,14 +17,17 @@ public class RemoveDuplicate1
         File file2 = new File("MayAugAnswers.txt");
         File file3 = new File("MayAugCat.txt");
         File file4 = new File("MayAugSav.txt");
+        File file5 = new File("MayAugDates.txt");
         Scanner in1 = new Scanner(file1);
         Scanner in2 = new Scanner(file2);
         Scanner in3 = new Scanner(file3);
         Scanner in4 = new Scanner(file4);
+        Scanner in5 = new Scanner(file5);
         ArrayList <String> questions = new ArrayList <String>();
         ArrayList <String> answers = new ArrayList <String>();
         ArrayList <String> cat = new ArrayList <String>();
         ArrayList <String> savage = new ArrayList <String>();
+        ArrayList <String> dates = new ArrayList <String>();
         try{
             File myfile2 = new File("MayAugFinal.txt");
             FileWriter fwrite2 = new FileWriter(myfile2);
@@ -53,6 +56,11 @@ public class RemoveDuplicate1
                 String finder4 = in4.nextLine();
                 //System.out.println("->"+finder4);
                 savage.add(finder4);
+            }
+            while(in5.hasNextLine()){
+                String finder5 = in5.nextLine();
+                //System.out.println("->"+finder4);
+                savage.add(finder5);
             }
             for(int i = 0; i <questions.size() -1; i++){
                 for(int j = i+1; j < questions.size(); j++){
@@ -85,7 +93,17 @@ public class RemoveDuplicate1
                 System.out.println("Savage "+savage.get(i));
                 pwrite2.println("Savage "+savage.get(i));
             }
-
+            for(int i = 0; i < dates.size() -1; i++){
+                for(int j = i+1; j < dates.size(); j++){
+                    if((dates.get(i)).equals(dates.get(j))){
+                        dates.remove(j);
+                        //System.out.println("Found one");
+                        j--;
+                    }
+                }
+                System.out.println("Dates: "+dates.get(i));
+                pwrite2.println("Dates: "+dates.get(i));   
+            }
             fwrite2.close();
             pwrite2.close();
         }
