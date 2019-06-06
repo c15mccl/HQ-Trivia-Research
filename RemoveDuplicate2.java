@@ -16,12 +16,15 @@ public class RemoveDuplicate2
         File file = new File("SepDecQuestions.txt");
         File file2 = new File("SepDecAnswers.txt");
         File file3 = new File("SepDecCat.txt");
+        File file4 = new File("SepDecSav.txt");
         Scanner in1 = new Scanner(file);
         Scanner in2 = new Scanner(file2);
         Scanner in3 = new Scanner(file3);
+        Scanner in4 = new Scanner(file4);
         ArrayList <String> category = new ArrayList <String>();
         ArrayList <String> questions = new ArrayList <String>();
         ArrayList <String> answers = new ArrayList <String>();
+        ArrayList <String> savage = new ArrayList <String>();
         int a = 1;
         try{
             File myfile2 = new File("SepDecFinal.txt");
@@ -38,14 +41,16 @@ public class RemoveDuplicate2
                 //System.out.println(finder);
                 answers.add(finder2);
                 String element = "},";
-                if(finder2.contains(element)){
-                    System.out.println();
-                }
                 
             }
             while(in3.hasNextLine()){
                 String finder3 = in3.nextLine();
                 category.add(finder3);
+            }
+            while(in4.hasNextLine()){
+                String finder4 = in4.nextLine();
+                //System.out.println("->"+finder4);
+                savage.add(finder4);
             }
             for(int i = 0; i < questions.size() -1; i++){
                 for(int j = i+1; j < questions.size(); j++){
@@ -56,9 +61,8 @@ public class RemoveDuplicate2
                         j--;
                     }
                 }
-                System.out.println(questions.get(i));
-                a++;
-                pwrite2.println(questions.get(i));
+                System.out.println("Questions" + questions.get(i));
+                pwrite2.println("Questions: " + questions.get(i));
             }
             for(int i = 0; i < answers.size() -1; i++){
                 for(int j = i+1; j < answers.size(); j++){
@@ -69,15 +73,17 @@ public class RemoveDuplicate2
                         j--;
                     }
                 }
-                System.out.println(answers.get(i));
-                a++;
-                pwrite2.println(answers.get(i));
+                System.out.println("Answers: "+answers.get(i));
+                pwrite2.println("Answers: "+answers.get(i)); 
             }
             for(int i = 0; i < category.size() - 1; i++){
-                System.out.println(category.get(i));
-                pwrite2.println(category.get(i));
+                System.out.println("Category: " + category.get(i));
+                pwrite2.println("Category: " + category.get(i));
             }
-            
+            for(int i = 0; i < savage.size(); i++){
+                System.out.println("Savage "+savage.get(i));
+                pwrite2.println("Savage "+savage.get(i));
+            }
 
             fwrite2.close();
             pwrite2.close();

@@ -17,28 +17,52 @@ public class SepDecAnswers
         File file = new File("SepDecAnsCat.txt");
         Scanner in = new Scanner(file);
         //Scanner in = new Scanner(file);
-        try{
-            File file2 = new File("SepDecAnswers.txt");
-            FileWriter fwrite2 = new FileWriter(file2);
-            PrintWriter pwrite2 =  new PrintWriter(fwrite2);
-            while(in.hasNextLine()){
-               String line = in.nextLine();
-                for(int i = line.length(); i > 0; i--){
-                    if(line.contains("]")){
-                        
-                        int index = line.indexOf("]");
-                        String delete = line.substring(index+1,line.length());
-                        String newLine = line.replace(delete,"");
-                        System.out.println(newLine);
-                        pwrite2.println(newLine);
-                        line = in.nextLine();
+         try{
+            File myfile = new File("SepDecAnswers.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
+            //System.out.println(line);
+            while (in.hasNextLine()){
+                String element1 = "]";
+                String line = in.nextLine();
+                StringBuilder sb = new StringBuilder(line);
+
+                sb.toString();
+                int removeLine = line.indexOf(element1);
+                sb.delete(removeLine+1, line.length());
+                Scanner scnr = new Scanner(sb.toString());
+                while(scnr.hasNextLine()){
+                    String finder =scnr.nextLine();
+                    String element2 = "},";
+                    String answerA = "";
+                    String answerB = "";
+                    String answerC = "";
+                    if(finder.contains(element2)){
+                        int fIndex = finder.indexOf(element2);
+                        int lIndex = finder.lastIndexOf(element2);
+                        answerA = finder.substring(0,fIndex);
+                        answerB = finder.substring((fIndex),(lIndex));
+                        answerC = finder.substring((lIndex),(finder.length()));
+                        answerA = answerA.replace("\"text\":","");
+                        if(answerB.contains("},")){
+                            answerB = answerB.replace("},{\"text\":","");
+                        }
+                        if(answerC.contains("},")){
+                            answerC = answerC.replace("},{\"text\":","");
+                        }
                     }
+                    System.out.println(answerA);
+                    pwrite.println(answerA);
+                    System.out.println(answerB);
+                    pwrite.println(answerB);
+                    System.out.println(answerC);
+                    pwrite.println(answerC);
                 }
             }
-            fwrite2.close();
-            pwrite2.close();
+            pwrite.close();
+            fwrite.close();
         }
-        catch (Exception e){
+        catch(Exception e){
             e.printStackTrace();
             System.exit(1);
         }
