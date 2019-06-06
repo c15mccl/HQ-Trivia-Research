@@ -28,13 +28,10 @@ public class MayAugDates
                     patternMatch = m.group();
                     Scanner in = new Scanner(patternMatch);
                     String line2 = in.nextLine();
-                    if(patternMatch.contains("/game/")){
-                        line2 = line2.replace("/game/","");
-                    }
+                    line2 = line2.replace("/game/","");
                     System.out.println(line2);
                     pwrite.println(line2);
                 }
-                
             }
         }
         catch(Exception e){
