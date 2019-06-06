@@ -39,6 +39,10 @@ public class xmlForm1
                     line = line.replace("Savage \"savage\":","<Savage level = ");
                     line = line + "> </Savage>";
                 }
+                if(line.contains("Dates: ")){
+                    line = line.replace("Dates:","<Dates>");
+                    line = line + " </Dates>";
+                }
                 System.out.println(line);
                 pwrite.println(line);
             }
