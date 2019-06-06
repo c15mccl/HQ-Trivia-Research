@@ -21,6 +21,28 @@ public class xmlForm1
             PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
+                String day = "";
+                String month = "";
+                String year = "";
+                if(line.contains("Dates: ")){
+                    day = line.substring(15,17);
+                    month = line.substring(12,14);
+                    year = line.substring(7,11);
+                    line = line.replace("Dates:","<Dates>");
+                    line = line + " </Dates>";
+                    System.out.println("<Game>");
+                    System.out.println("\t<Dates>");
+                    System.out.println("\t\t<month> "+month+" </month>");
+                    System.out.println("\t\t<day> "+day+" </day>");
+                    System.out.println("\t\t<year> "+year+" </year>");
+                    System.out.println("\t</Dates>");
+                    pwrite.println("<Game>");
+                    pwrite.println("\t<Dates>");
+                    pwrite.println("\t\t<month> "+month+" </month>");
+                    pwrite.println("\t\t<day> "+day+" </day>");
+                    pwrite.println("\t\t<year> "+year+" </year>");
+                    pwrite.println("\t</Dates>");
+                }
                 if(line.contains("\"text\":")){
                     line = line.replace("\"text\":","<Question> ");
                 }
@@ -39,26 +61,7 @@ public class xmlForm1
                     line = line.replace("Savage \"savage\":","<Savage level = ");
                     line = line + "> </Savage>";
                 }
-                String day = "";
-                String month = "";
-                String year = "";
-                if(line.contains("Dates: ")){
-                    day = line.substring(15,17);
-                    month = line.substring(12,14);
-                    year = line.substring(7,11);
-                    line = line.replace("Dates:","<Dates>");
-                    line = line + " </Dates>";
-                    System.out.println("<Dates>");
-                    System.out.println("\t<month> "+month+" </month>");
-                    System.out.println("\t<day> "+day+" </day>");
-                    System.out.println("\t<year> "+year+" </year>");
-                    System.out.println("</Dates>");
-                    pwrite.println("<Dates>");
-                    pwrite.println("\t<month> "+month+" </month>");
-                    pwrite.println("\t<day> "+day+" </day>");
-                    pwrite.println("\t<year> "+year+" </year>");
-                    pwrite.println("</Dates>");
-                }
+                
             }
             pwrite.close();
             fwrite.close();
