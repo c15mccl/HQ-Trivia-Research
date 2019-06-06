@@ -45,9 +45,9 @@ public class xmlForm1
                 }
                 if(line.contains("\"text\":")){
                     line = line.replace("\"text\":","<Question> ");
-                }
-                if(line.contains("?")){
                     line = line + " </Question>";
+                    System.out.println(line);
+                    pwrite.println(line);
                 }
                 if(line.contains("Answers:")){
                     line = line.replace("Answers:","<Answer>");
