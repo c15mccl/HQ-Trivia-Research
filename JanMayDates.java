@@ -5,18 +5,18 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 /**
- * Write a description of class MayAugGDates here.
+ * Write a description of class JanMayDates here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class MayAugDates
+public class JanMayDates
 {
-    public static void main (String[]args) throws FileNotFoundException{
-        File file = new File("MayAugScript.txt");
+    public static void main(String[] args) throws FileNotFoundException{
+        File file = new File("JanMayScript.txt");
         Scanner scan = new Scanner(file);
         try{
-            File myfile = new File("MayAugDates.txt");
+            File myfile = new File("JanMayDates.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite = new PrintWriter(fwrite);
             String patternMatch = "";
@@ -28,15 +28,21 @@ public class MayAugDates
                     patternMatch = m.group();
                     Scanner in = new Scanner(patternMatch);
                     String line2 = in.nextLine();
-                    line2 = line2.replace("/game/","");
+                    if(patternMatch.contains("/game/")){
+                        line2 = line2.replace("/game/","");
+                    }
                     System.out.println(line2);
                     pwrite.println(line2);
                 }
+                
             }
         }
         catch(Exception e){
             e.printStackTrace();
             System.exit(1);
         }
+        
+        
+        
     }
 }

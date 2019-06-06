@@ -5,18 +5,18 @@ import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 /**
- * Write a description of class xmlForm1 here.
+ * Write a description of class XMLForm3 here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class xmlForm1
+public class XMLForm3
 {
     public static void main (String[]args) throws FileNotFoundException{
-        File file = new File("MayAugFinal.txt");
+        File file = new File("JanMayFinal.txt");
         Scanner scan = new Scanner(file);
         try{
-            File myfile = new File("xmlForm1.txt");
+            File myfile = new File("XMLForm3.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             while(scan.hasNextLine()){
@@ -39,28 +39,12 @@ public class xmlForm1
                     line = line.replace("Savage \"savage\":","<Savage level = ");
                     line = line + "> </Savage>";
                 }
-                String day = "";
-                String month = "";
-                String year = "";
                 if(line.contains("Dates: ")){
-                    day = line.substring(15,17);
-                    month = line.substring(12,14);
-                    year = line.substring(7,11);
                     line = line.replace("Dates:","<Dates>");
                     line = line + " </Dates>";
-                    System.out.println("<Dates>");
-                    System.out.println("\t<month> "+month+" </month>");
-                    System.out.println("\t<day> "+day+" </day>");
-                    System.out.println("\t<year> "+year+" </year>");
-                    System.out.println("</Dates>");
-                    pwrite.println("<Dates>");
-                    pwrite.println("\t<month> "+month+" </month>");
-                    pwrite.println("\t<day> "+day+" </day>");
-                    pwrite.println("\t<year> "+year+" </year>");
-                    pwrite.println("</Dates>");
                 }
-
-                
+                System.out.println(line);
+                pwrite.println(line);
             }
 
             pwrite.close();
@@ -71,5 +55,4 @@ public class xmlForm1
             System.exit(1);
         }
     }
-
 }
