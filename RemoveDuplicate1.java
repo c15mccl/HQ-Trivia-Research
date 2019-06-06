@@ -93,7 +93,7 @@ public class RemoveDuplicate1
                 System.out.println("Savage "+savage.get(i));
                 pwrite2.println("Savage "+savage.get(i));
             }
-            for(int i = 0; i < dates.size() -1; i++){
+            for(int i = 0; i < dates.size() - 1; i++){
                 for(int j = i+1; j < dates.size(); j++){
                     if((dates.get(i)).equals(dates.get(j))){
                         dates.remove(j);

@@ -33,20 +33,38 @@ public class XMLForm3
                 if(line.contains("Answers:")){
                     ansCount++;
                     if(ansCount == 1){
-                        line = line.replace("Answers:", "<answerA>");
-                        line = line + " </answerA>";
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerA correct = true");
+                            line = line + "> </answerA>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerA correct = false");
+                            line = line + "> </answerA>";
+                        }
                     }
                     else if(ansCount == 2){
-                        line = line.replace("Answers:", "<answerB>");
-                        line = line + " </answerB>";
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerB correct = true");
+                            line = line + "> </answerB>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerB correct = false");
+                            line = line + "> </answerB>";
+                        }
                     } 
                     else if(ansCount == 3){
-                        line = line.replace("Answers:", "<answerC>");
-                        line = line + " </answerC>";
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerC correct = true");
+                            line = line + "> </answerC>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerC correct = false");
+                            line = line + "> </answerC>";
+                        }
                     }
 
                     pwrite.println(line);
-                    
+
                 }
                 if(line.contains("Category: \"category\":")){
                     line = line.replace("Category: \"category\":","<Category cat = ");
