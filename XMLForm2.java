@@ -1,4 +1,9 @@
-
+import org.jsoup.nodes.*;
+import org.jsoup.*;
+import org.jsoup.select.*;
+import java.io.*;
+import java.util.*;
+import java.util.regex.*;
 /**
  * Write a description of class XMLForm2 here.
  *
@@ -7,27 +12,48 @@
  */
 public class XMLForm2
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class XMLForm2
-     */
-    public XMLForm2()
+    public static void main(String [] args) throws FileNotFoundException
     {
-        // initialise instance variables
-        x = 0;
-    }
+        File file = new File("SepDecFinal.txt");
+        Scanner scan = new Scanner(file);
+        try{
+            File myfile = new File("xmlForm2.txt");
+            FileWriter fwrite = new FileWriter(myfile);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
+            while(scan.hasNextLine()){
+                String line = scan.nextLine();
+                if(line.contains("\"text\":")){
+                    line = line.replace("Questions: \"text\":","<Question> ");
+                }
+                if(line.contains("?")){
+                    line = line + " </Question>";
+                }
+                if(line.contains("Answers:")){
+                    line = line.replace("Answers:","<Answer>");
+                    line = line + " </Answer>";
+                }
+                if(line.contains("Category: \"category\":")){
+                    line = line.replace("Category: \"category\":","<Category cat = ");
+                    line = line + "> </Category>";
+                }
+                if(line.contains("Savage \"savage\":")){
+                    line = line.replace("Savage \"savage\":","<Savage level = ");
+                    line = line + "> </Savage>";
+                }
+                if(line.contains("Dates: ")){
+                    line = line.replace("Dates:","<Dates>");
+                    line = line + " </Dates>";
+                }
+                System.out.println(line);
+                pwrite.println(line);
+            }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+            pwrite.close();
+            fwrite.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            System.exit(1);
+        }
     }
 }
