@@ -59,10 +59,7 @@ public class xmlForm1
                     pwrite.println("\t<year> "+year+" </year>");
                     pwrite.println("</Dates>");
                 }
-
-                
             }
-
             pwrite.close();
             fwrite.close();
         }
