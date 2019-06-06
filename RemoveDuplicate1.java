@@ -60,7 +60,7 @@ public class RemoveDuplicate1
             while(in5.hasNextLine()){
                 String finder5 = in5.nextLine();
                 //System.out.println("->"+finder4);
-                savage.add(finder5);
+                dates.add(finder5);
             }
             for(int i = 0; i <questions.size() -1; i++){
                 for(int j = i+1; j < questions.size(); j++){
