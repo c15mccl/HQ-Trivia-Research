@@ -40,9 +40,25 @@ public class XMLForm2
                     line = line.replace("Savage \"savage\":","<Savage level = ");
                     line = line + "> </Savage>";
                 }
+                String day = "";
+                String month = "";
+                String year = "";
                 if(line.contains("Dates: ")){
+                    day = line.substring(15,17);
+                    month = line.substring(12,14);
+                    year = line.substring(7,11);
                     line = line.replace("Dates:","<Dates>");
                     line = line + " </Dates>";
+                    System.out.println("<Dates>");
+                    System.out.println("\t<month> "+month+" </month>");
+                    System.out.println("\t<day> "+day+" </day>");
+                    System.out.println("\t<year> "+year+" </year>");
+                    System.out.println("</Dates>");
+                    pwrite.println("<Dates>");
+                    pwrite.println("\t<month> "+month+" </month>");
+                    pwrite.println("\t<day> "+day+" </day>");
+                    pwrite.println("\t<year> "+year+" </year>");
+                    pwrite.println("</Dates>");
                 }
                 System.out.println(line);
                 pwrite.println(line);
