@@ -12,99 +12,129 @@ import java.util.regex.*;
  */
 public class XMLForm2
 {
-    public static void main(String [] args) throws FileNotFoundException
-    {
+    public static void main (String[]args) throws FileNotFoundException{
         File file = new File("SepDecFinal.txt");
-        Scanner scan = new Scanner(file);
-        ArrayList <String> answers = new ArrayList <String> ();
-        ArrayList <String> questions = new ArrayList <String> ();
+        Scanner scan1 = new Scanner(file);
+        Scanner scan2 = new Scanner(file);
+        Scanner scan3 = new Scanner(file);
+        Scanner scan4 = new Scanner(file);
+        ArrayList <String> questions = new ArrayList <String>();
+        ArrayList <String> answers = new ArrayList <String>();
+        ArrayList <String> dates = new ArrayList <String>();
+        String day = "";
+        String month = "";
+        String year = "";
+        String gameNumber = "";
         try{
-            File myfile = new File("xmlForm2.txt");
+            File myfile = new File("xmlForm1.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
-            while(scan.hasNextLine()){
-                String line = scan.nextLine();
-                // String day = "";
-                // String month = "";
-                // String year = "";
-                // if(line.contains("Dates: ")){
-                    // day = line.substring(15,17);
-                    // month = line.substring(12,14);
-                    // year = line.substring(7,11);
-                    // line = line.replace("Dates:","<Dates>");
-                    // line = line + " </Dates>";
-                    // System.out.println("<Game>");
-                    // System.out.println("\t<Dates>");
-                    // System.out.println("\t\t<month> "+month+" </month>");
-                    // System.out.println("\t\t<day> "+day+" </day>");
-                    // System.out.println("\t\t<year> "+year+" </year>");
-                    // System.out.println("\t</Dates>");
-                    // pwrite.println("<Game>");
-                    // pwrite.println("\t<Dates>");
-                    // pwrite.println("\t\t<month> "+month+" </month>");
-                    // pwrite.println("\t\t<day> "+day+" </day>");
-                    // pwrite.println("\t\t<year> "+year+" </year>");
-                    // pwrite.println("\t</Dates>");
-                // }
-                if(line.contains("\"text\":")){
-                    line = line.replace("\"text\":","<Question> ");
+            int ansCount = 0;    
+            while(scan1.hasNextLine()){
+                String line1 = scan1.nextLine();
+                if(line1.contains("Dates: ")){
+                    day = line1.substring(15,17);
+                    month = line1.substring(12,14);
+                    year = line1.substring(7,11);
+                    gameNumber = line1.substring(18,19);
+                    line1 = line1.replace("Dates:","<Dates>");
+                    line1 = line1 + " </Dates>";
+                    String lineA = "<Game>\n";
+                    String lineB = "\t<Dates>\n";
+                    String lineC = "\t\t<month> "+month+" </month>\n";
+                    String lineD = "\t\t<day> "+day+" </day>\n";
+                    String lineE = "\t\t<year> "+year+" </year>\n";
+                    String lineF = "\t</Dates>\n";
+                    line1 = lineA + lineB + lineC + lineD + lineE + lineF;
+                    //System.out.println(line1);
+                    //pwrite.println(line1);
+                    dates.add(line1);
                 }
-                if(line.contains("?")){
-                    line = line + " </Question>";
-                    questions.add(line);
+            }
+            while(scan2.hasNextLine()){
+                String line2 = scan2.nextLine();
+                if(line2.contains("\"text\":")){
+                    line2 = line2.replace("\"text\":","\t<Question> ");
+                    line2 = line2 + " </Question>";
+                    //System.out.println(line2);
+                    //pwrite.println(line2);
+                    questions.add(line2);
                 }
-                int ansCount = 0;
-                if(line.contains("Answers:")){
+            }
+            while(scan3.hasNextLine()){
+                String line3 = scan3.nextLine();
+                if(line3.contains("Answers:")){
+                    if(ansCount >= 3) ansCount = 0;
                     ansCount++;
                     if(ansCount == 1){
-                        if(line.contains("true")){ 
-                            line = line.replace("Answers:", "<answerA correct = true");
-                            line = line + "> </answerA>";
+                        if(line3.contains("true")){ 
+                            line3 = line3.replace("Answers:", "\t\t<answerA correct = true");
+                            line3 = line3 + "> </answerA>";
                         }
-                        if(line.contains("false")){
-                            line = line.replace("Answers:", "<answerA correct = false");
-                            line = line + "> </answerA>";
+                        if(line3.contains("false")){
+                            line3 = line3.replace("Answers:", "\t\t<answerA correct = false");
+                            line3 = line3 + "> </answerA>";
                         }
                     }
                     else if(ansCount == 2){
-                        if(line.contains("true")){ 
-                            line = line.replace("Answers:", "<answerB correct = true");
-                            line = line + "> </answerB>";
+                        if(line3.contains("true")){ 
+                            line3 = line3.replace("Answers:", "\t\t<answerB correct = true");
+                            line3 = line3 + "> </answerB>";
                         }
-                        if(line.contains("false")){
-                            line= line.replace("Answers:", "<answerB correct = false");
-                            line = line + "> </answerB>";
+                        if(line3.contains("false")){
+                            line3 = line3.replace("Answers:", "\t\t<answerB correct = false");
+                            line3 = line3 + "> </answerB>";
                         }
                     } 
                     else if(ansCount == 3){
-                        if(line.contains("true")){ 
-                            line = line.replace("Answers:", "<answerC correct = true");
-                            line = line + "> </answerC>";
+                        if(line3.contains("true")){ 
+                            line3 = line3.replace("Answers:", "\t\t<answerC correct = true");
+                            line3 = line3 + "> </answerC>";
                         }
-                        if(line.contains("false")){
-                            line = line.replace("Answers:", "<answerC correct = false");
-                            line = line + "> </answerC>";
+                        if(line3.contains("false")){
+                            line3 = line3.replace("Answers:", "\t\t<answerC correct = false");
+                            line3 = line3 + "> </answerC>";
                         }
                     }
-
+                    answers.add(line3);
                 }
-                // if(line.contains("Category: \"category\":")){
-                    // line = line.replace("Category: \"category\":","<Category cat = ");
-                    // line = line + "> </Category>";
-                // }
-                // if(line.contains("Savage \"savage\":")){
-                    // line = line.replace("Savage \"savage\":","<Savage level = ");
-                    // line = line + "> </Savage>";
-                // }
-                
             }
+            int var = 0;
             int i = 0;
-            while(i < answers.size())
-            {
-                System.out.println(questions.get(i));
+            while(var<dates.size()){
+                System.out.println(dates.get(var));
+                System.out.println(questions.get(var));
                 System.out.println(answers.get(i));
-                i++;
+                System.out.println(answers.get(i+1));
+                System.out.println(answers.get(i+2));
+                pwrite.println(dates.get(var));
+                pwrite.println(questions.get(var));
+                pwrite.println(answers.get(i));
+                pwrite.println(answers.get(i+1));
+                pwrite.println(answers.get(i+2));
+                System.out.println("\t</Question>");
+                pwrite.println("\t</Question>");
+                System.out.println("</Game>\n");
+                pwrite.println("</Game>");
+                var++;
+                i+=3;
             }
+            /*while(scan4.hasNextLine()){
+            String line4 = scan4.nextLine();
+            if(line4.contains("Category: \"category\":")){
+            line4 = line4.replace("Category: \"category\":","<Category cat = ");
+            line4 = line4 + "> </Category>";
+
+            }
+            if(line4.contains("Savage \"savage\":")){
+            line4 = line4.replace("Savage \"savage\":","<Savage level = ");
+            line4 = line4 + "> </Savage>";
+
+            }
+            System.out.println(line4);
+            pwrite.println(line4);
+            }*/
+
             pwrite.close();
             fwrite.close();
         }

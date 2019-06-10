@@ -1,9 +1,8 @@
 #BlueJ package file
-<<<<<<< HEAD
-editor.fx.0.height=900
+editor.fx.0.height=826
 editor.fx.0.width=1440
 editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.y=23
 objectbench.height=66
 objectbench.width=1416
 package.divider.horizontal=0.6
@@ -14,22 +13,6 @@ package.editor.x=0
 package.editor.y=0
 package.frame.height=900
 package.frame.width=1440
-=======
-editor.fx.0.height=877
-editor.fx.0.width=765
-editor.fx.0.x=519
-editor.fx.0.y=23
-objectbench.height=162
-objectbench.width=944
-package.divider.horizontal=0.6
-package.divider.vertical=0.7868852459016393
-package.editor.height=617
-package.editor.width=826
-package.editor.x=242
-package.editor.y=49
-package.frame.height=851
-package.frame.width=968
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 package.numDependencies=0
 package.numTargets=30
 package.showExtends=true
@@ -45,7 +28,6 @@ target1.name=JanMayDates
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=110
-<<<<<<< HEAD
 target1.x=430
 target1.y=570
 target10.height=50
@@ -55,56 +37,27 @@ target10.type=ClassTarget
 target10.width=100
 target10.x=240
 target10.y=10
-=======
-target1.x=570
-target1.y=480
-target10.height=50
-target10.name=SepDecAnswers
-target10.showInterface=false
-target10.type=ClassTarget
-target10.width=130
-target10.x=260
-target10.y=280
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target11.height=50
-target11.name=CompressedData3
+target11.name=SepDecAnswers
 target11.showInterface=false
 target11.type=ClassTarget
-<<<<<<< HEAD
 target11.width=130
 target11.x=240
 target11.y=280
-=======
-target11.width=140
-target11.x=390
-target11.y=70
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target12.height=50
 target12.name=CompressedData3
 target12.showInterface=false
 target12.type=ClassTarget
-<<<<<<< HEAD
 target12.width=140
 target12.x=430
 target12.y=80
-=======
-target12.width=90
-target12.x=450
-target12.y=470
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target13.height=50
 target13.name=XMLForm3
 target13.showInterface=false
 target13.type=ClassTarget
-<<<<<<< HEAD
 target13.width=90
 target13.x=440
 target13.y=640
-=======
-target13.width=110
-target13.x=430
-target13.y=210
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target14.height=50
 target14.name=JanMayQues
 target14.showInterface=false
@@ -113,70 +66,40 @@ target14.width=110
 target14.x=430
 target14.y=220
 target15.height=50
-<<<<<<< HEAD
 target15.name=MayAugSav
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=100
 target15.x=80
 target15.y=350
-=======
-target15.name=MayAugGrabCat
-target15.showInterface=false
-target15.type=ClassTarget
-target15.width=130
-target15.x=60
-target15.y=330
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target16.height=50
-target16.name=JanMaySav
+target16.name=MayAugGrabCat
 target16.showInterface=false
 target16.type=ClassTarget
-<<<<<<< HEAD
 target16.width=130
 target16.x=80
 target16.y=420
-=======
-target16.width=100
-target16.x=440
-target16.y=410
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target17.height=50
 target17.name=JanMaySav
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=100
-<<<<<<< HEAD
 target17.x=430
 target17.y=360
-=======
-target17.x=450
-target17.y=280
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target18.height=50
 target18.name=JanMayAns
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=100
-<<<<<<< HEAD
 target18.x=430
 target18.y=290
-=======
-target18.x=270
-target18.y=420
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target19.height=50
 target19.name=SepDecSav
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=100
-<<<<<<< HEAD
 target19.x=240
 target19.y=350
-=======
-target19.x=390
-target19.y=10
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target2.height=50
 target2.name=MayAugGrabQues
 target2.showInterface=false
@@ -196,77 +119,43 @@ target21.name=RemoveDuplicate1
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=140
-<<<<<<< HEAD
 target21.x=70
 target21.y=490
-=======
-target21.x=260
-target21.y=550
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target22.height=50
 target22.name=RemoveDuplicate2
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=140
-<<<<<<< HEAD
-target22.x=240
-target22.y=500
-=======
-target22.x=440
-target22.y=540
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
+target22.x=210
+target22.y=560
 target23.height=50
 target23.name=RemoveDuplicate3
 target23.showInterface=false
 target23.type=ClassTarget
-<<<<<<< HEAD
 target23.width=140
 target23.x=420
 target23.y=500
-=======
-target23.width=90
-target23.x=450
-target23.y=340
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target24.height=50
 target24.name=JanMayCat
 target24.showInterface=false
 target24.type=ClassTarget
-<<<<<<< HEAD
 target24.width=90
 target24.x=430
 target24.y=430
-=======
-target24.width=140
-target24.x=230
-target24.y=210
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target25.height=50
 target25.name=SepDecQuestions
 target25.showInterface=false
 target25.type=ClassTarget
-<<<<<<< HEAD
 target25.width=140
 target25.x=240
 target25.y=220
-=======
-target25.width=130
-target25.x=380
-target25.y=140
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target26.height=50
 target26.name=FormattedData3
 target26.showInterface=false
 target26.type=ClassTarget
-<<<<<<< HEAD
 target26.width=130
 target26.x=430
 target26.y=150
-=======
-target26.width=80
-target26.x=100
-target26.y=600
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target27.height=50
 target27.name=xmlForm1
 target27.showInterface=false
@@ -285,15 +174,9 @@ target29.height=50
 target29.name=MayAugDates
 target29.showInterface=false
 target29.type=ClassTarget
-<<<<<<< HEAD
 target29.width=110
 target29.x=70
 target29.y=560
-=======
-target29.width=120
-target29.x=60
-target29.y=150
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target3.height=50
 target3.name=MayAugust2018
 target3.showInterface=false
@@ -314,20 +197,14 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.width=110
 target4.x=240
-target4.y=570
+target4.y=490
 target5.height=50
 target5.name=MayAugGrabAns
 target5.showInterface=false
 target5.type=ClassTarget
-<<<<<<< HEAD
 target5.width=130
 target5.x=70
 target5.y=290
-=======
-target5.width=90
-target5.x=270
-target5.y=620
->>>>>>> 90b97b220efddba93ec2e59efc321584780a64cf
 target6.height=50
 target6.name=XMLForm2
 target6.showInterface=false
