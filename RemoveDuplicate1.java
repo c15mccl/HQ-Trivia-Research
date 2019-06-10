@@ -66,12 +66,12 @@ public class RemoveDuplicate1
                 for(int j = i+1; j < questions.size(); j++){
 
                     if((questions.get(i)).equals(questions.get(j))){
-                        questions.remove(j);
+                        questions.set(i, " i");
                         //System.out.println("Found one");
                         j--;
                     }
                 }
-                System.out.println("Questions: "+questions.get(i));
+                System.out.println(i+" "+"Questions: "+questions.get(i));
                 pwrite2.println(questions.get(i));
             }
             for(int i = 0; i < answers.size() -1; i++){
@@ -96,12 +96,12 @@ public class RemoveDuplicate1
             for(int i = 0; i < dates.size() - 1; i++){
                 for(int j = i+1; j < dates.size(); j++){
                     if((dates.get(i)).equals(dates.get(j))){
-                        dates.remove(j);
+                        dates.set(i," i");
                         //System.out.println("Found one");
                         j--;
                     }
                 }
-                System.out.println("Dates: "+dates.get(i));
+                System.out.println(i+" "+"Dates: "+dates.get(i));
                 pwrite2.println("Dates: "+dates.get(i));   
             }
             fwrite2.close();
