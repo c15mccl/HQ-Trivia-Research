@@ -53,10 +53,40 @@ public class XMLForm2
                     line = line + " </Question>";
                     questions.add(line);
                 }
+                int ansCount = 0;
                 if(line.contains("Answers:")){
-                    line = line.replace("Answers:","<Answer>");
-                    line = line + " </Answer>";
-                    answers.add(line);
+                    ansCount++;
+                    if(ansCount == 1){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerA correct = true");
+                            line = line + "> </answerA>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerA correct = false");
+                            line = line + "> </answerA>";
+                        }
+                    }
+                    else if(ansCount == 2){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerB correct = true");
+                            line = line + "> </answerB>";
+                        }
+                        if(line.contains("false")){
+                            line= line.replace("Answers:", "<answerB correct = false");
+                            line = line + "> </answerB>";
+                        }
+                    } 
+                    else if(ansCount == 3){
+                        if(line.contains("true")){ 
+                            line = line.replace("Answers:", "<answerC correct = true");
+                            line = line + "> </answerC>";
+                        }
+                        if(line.contains("false")){
+                            line = line.replace("Answers:", "<answerC correct = false");
+                            line = line + "> </answerC>";
+                        }
+                    }
+
                 }
                 // if(line.contains("Category: \"category\":")){
                     // line = line.replace("Category: \"category\":","<Category cat = ");

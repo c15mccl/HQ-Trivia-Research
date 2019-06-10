@@ -8032,9 +8032,9 @@
 "Kingdom Hearts","correct":false,"count":"206"
 "Assassin’s Creed","correct":false,"count":"200"
 "Final Fantasy","correct":true,"count":"1,412"}]
-
-
-
+"Jack Shepherd","correct":false,"count":"305"
+"Don Draper","correct":false,"count":"261"
+"Walter White","correct":true,"count":"866"
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -8149,9 +8149,9 @@
 "Sirius","correct":false,"count":"1"
 "Betelgeuse","correct":true,"count":"2"
 "Vega","correct":false,"count":"1"}]
-
-
-
+"Barry Lyndon","correct":false,"count":"1"
+"Eyes Wide Shut","correct":true,"count":"1"
+"Dr. Strangelove","correct":false,"count":"0"}]
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -8182,9 +8182,9 @@
 "Brazilian jiu-jitsu","correct":false,"count":"474"
 "Sumo","correct":false,"count":"2,562"
 "Krav maga","correct":true,"count":"1,298"}]
-
-
-
+"NBA 30-point game streak","correct":true,"count":"200"
+"NHL points streak","correct":false,"count":"704"
+"MLB hitting streak","correct":false,"count":"969"}]
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -8299,9 +8299,9 @@
 "Sirius","correct":false,"count":"1"
 "Betelgeuse","correct":true,"count":"2"
 "Vega","correct":false,"count":"1"}]
-
-
-
+"Barry Lyndon","correct":false,"count":"1"
+"Eyes Wide Shut","correct":true,"count":"1"
+"Dr. Strangelove","correct":false,"count":"0"}]
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -8332,9 +8332,9 @@
 "Brazilian jiu-jitsu","correct":false,"count":"474"
 "Sumo","correct":false,"count":"2,562"
 "Krav maga","correct":true,"count":"1,298"}]
-
-
-
+"NBA 30-point game streak","correct":true,"count":"200"
+"NHL points streak","correct":false,"count":"704"
+"MLB hitting streak","correct":false,"count":"969"}]
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -8530,9 +8530,9 @@
 "Sirius","correct":false,"count":"1"
 "Betelgeuse","correct":true,"count":"2"
 "Vega","correct":false,"count":"1"}]
-
-
-
+"Barry Lyndon","correct":false,"count":"1"
+"Eyes Wide Shut","correct":true,"count":"1"
+"Dr. Strangelove","correct":false,"count":"0"}]
 "Hurdle","correct":true,"count":"100,850"
 "Hamper","correct":false,"count":"987"
 "Hindrance","correct":false,"count":"350"}]
@@ -20077,8 +20077,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -20179,8 +20179,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -20281,8 +20281,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -20314,8 +20314,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -20383,8 +20383,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -20416,8 +20416,8 @@
 "Silent Bob","correct":true,"count":"3,119"
 "Remy the Rat","correct":false,"count":"1,048"
 "Professor Trelawney","correct":false,"count":"1,329"}]
+"Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 "Matilda","correct":false,"count":"937"
-
 "Toy Story","correct":false,"count":"1,030"}]
 "Marley & Me","correct":true,"count":"514"
 "Air Bud","correct":false,"count":"626"
@@ -22591,9 +22591,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -22693,9 +22693,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -22795,9 +22795,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -22828,9 +22828,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -22897,9 +22897,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -22930,9 +22930,9 @@
 "Spamalot","correct":true,"count":"7,563"
 "Legally Blonde","correct":false,"count":"7,596"
 "Rock of Ages","correct":false,"count":"5,155"}]
-
-
-
+"Give me some more ?","correct":false,"count":"421"
+"May I have some more ?","correct":false,"count":"5,787"
+"I want some more!","correct":true,"count":"3,038"}]
 "Kinky Boots","correct":false,"count":"663"
 "The Full Monty","correct":true,"count":"1,208"
 "The Color Purple","correct":false,"count":"1,930"}]
@@ -25804,8 +25804,8 @@
 "Arithmetic","correct":false,"count":"2,420"
 "Algebraic","correct":true,"count":"4,819"
 "Geometric","correct":false,"count":"944"}]
+"What Do You Mean ?","correct":true,"count":"2,590
 "Thriller","correct":false,"count":"1,897"
-
 "Firework","correct":false,"count":"711"}]
 "Truck","correct":false,"count":"1,327"
 "Submarine","correct":true,"count":"282,637"
@@ -25837,8 +25837,8 @@
 "Arithmetic","correct":false,"count":"2,420"
 "Algebraic","correct":true,"count":"4,819"
 "Geometric","correct":false,"count":"944"}]
+"What Do You Mean ?","correct":true,"count":"2,590"
 "Thriller","correct":false,"count":"1,897"
-
 "Firework","correct":false,"count":"711"}]
 "Truck","correct":false,"count":"1,327"
 "Submarine","correct":true,"count":"282,637"
@@ -25870,8 +25870,8 @@
 "Arithmetic","correct":false,"count":"2,420"
 "Algebraic","correct":true,"count":"4,819"
 "Geometric","correct":false,"count":"944"}]
+"What Do You Mean ?","correct":true,"count":"2,590"
 "Thriller","correct":false,"count":"1,897"
-
 "Firework","correct":false,"count":"711"}]
 "Truck","correct":false,"count":"1,327"
 "Submarine","correct":true,"count":"282,637"
@@ -25903,8 +25903,8 @@
 "Arithmetic","correct":false,"count":"2,420"
 "Algebraic","correct":true,"count":"4,819"
 "Geometric","correct":false,"count":"944"}]
+"What Do You Mean ?","correct":true,"count":"2,590"
 "Thriller","correct":false,"count":"1,897"
-
 "Firework","correct":false,"count":"711"}]
 "A goat","correct":false,"count":"11,335"
 "An extra life","correct":false,"count":"9,642"
@@ -27262,9 +27262,6 @@
 "Gak","correct":false,"count":"207"
 "Silly Putty","correct":false,"count":"680"
 "Play-Doh","correct":true,"count":"2,337"}]
-
-
-
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27370,9 +27367,6 @@
 "Gak","correct":false,"count":"207"
 "Silly Putty","correct":false,"count":"680"
 "Play-Doh","correct":true,"count":"2,337"}]
-
-
-
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27478,9 +27472,6 @@
 "Gak","correct":false,"count":"207"
 "Silly Putty","correct":false,"count":"680"
 "Play-Doh","correct":true,"count":"2,337"}]
-
-
-
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27517,9 +27508,9 @@
 "White","correct":false,"count":"384"
 "Purple","correct":true,"count":"1,038"
 "Pink","correct":false,"count":"367"}]
-
-
-
+"Prickly Pete","correct":false,"count":"74"
+"Snoopy","correct":false,"count":"217"
+"Jerry","correct":true,"count":"815"}]
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27592,9 +27583,6 @@
 "Gak","correct":false,"count":"207"
 "Silly Putty","correct":false,"count":"680"
 "Play-Doh","correct":true,"count":"2,337"}]
-
-
-
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27631,9 +27619,9 @@
 "White","correct":false,"count":"384"
 "Purple","correct":true,"count":"1,038"
 "Pink","correct":false,"count":"367"}]
-
-
-
+"Prickly Pete","correct":false,"count":"74"
+"Snoopy","correct":false,"count":"217"
+"Jerry","correct":true,"count":"815"}]
 "Big salad","correct":false,"count":"8,143"
 "Snapple bottle","correct":false,"count":"10,291"
 "Marble rye","correct":true,"count":"342,741"}]
@@ -27670,9 +27658,9 @@
 "White","correct":false,"count":"384"
 "Purple","correct":true,"count":"1,038"
 "Pink","correct":false,"count":"367"}]
-
-
-
+"Prickly Pete","correct":false,"count":"74"
+"Snoopy","correct":false,"count":"217"
+"Jerry","correct":true,"count":"815"}]
 "Hot Wheels","correct":false,"count":"17,090"
 "Rolls-Royce","correct":true,"count":"261,382"
 "Little Tikes","correct":false,"count":"6,334"}]
@@ -27739,9 +27727,9 @@
 "The way it is headed","correct":false,"count":"189"
 "Toward the galactic disc","correct":false,"count":"309"
 "Away from the Sun","correct":true,"count":"3,193"}]
-
-
-
+"Pixar","correct":true,"count":"2,670"
+"George Lucas","correct":false,"count":"301"
+"Tim Burton","correct":false,"count":"278"}]
 "Hot Wheels","correct":false,"count":"17,090"
 "Rolls-Royce","correct":true,"count":"261,382"
 "Little Tikes","correct":false,"count":"6,334"}]
@@ -28156,9 +28144,9 @@
 "Take On Me","correct":false,"count":"6"
 "Come on Eileen","correct":true,"count":"16"
 "Thong Song","correct":false,"count":"5"}]
-
-
-
+"To a Skylark","correct":false,"count":"3"
+"She Walks in Beauty","correct":true,"count":"7"
+"Ode to a Nightingale","correct":false,"count":"5"}]
 "A very stubborn pony","correct":false,"count":"5,192"
 "A million-dollar idea","correct":false,"count":"10,093"
 "The fence","correct":true,"count":"159,390"}]
@@ -28252,9 +28240,9 @@
 "Mouse","correct":true,"count":"2,625"
 "Worm","correct":false,"count":"293"
 "Fruit fly","correct":false,"count":"2,429"}]
-
-
-
+"Bonnie & Clyde","correct":false,"count":"888"
+"West Side Story","correct":true,"count":"1,604"
+"Nashville","correct":false,"count":"649"}]
 "A very stubborn pony","correct":false,"count":"5,192"
 "A million-dollar idea","correct":false,"count":"10,093"
 "The fence","correct":true,"count":"159,390"}]
@@ -28348,9 +28336,9 @@
 "Mouse","correct":true,"count":"2,625"
 "Worm","correct":false,"count":"293"
 "Fruit fly","correct":false,"count":"2,429"}]
-
-
-
+"Bonnie & Clyde","correct":false,"count":"888"
+"West Side Story","correct":true,"count":"1,604"
+"Nashville","correct":false,"count":"649"}]
 "A very stubborn pony","correct":false,"count":"5,192"
 "A million-dollar idea","correct":false,"count":"10,093"
 "The fence","correct":true,"count":"159,390"}]
@@ -28435,9 +28423,9 @@
 "Afghanistan","correct":false,"count":"29,117"
 "Kazakhstan","correct":true,"count":"36,876"
 "Turkmenistan","correct":false,"count":"7,420"}]
-
-
-
+"Twist and Shout","correct":false,"count":"9,469"
+"She Loves You","correct":false,"count":"16,593"
+"Please Please Me","correct":true,"count":"15,709"}]
 "A very stubborn pony","correct":false,"count":"5,192"
 "A million-dollar idea","correct":false,"count":"10,093"
 "The fence","correct":true,"count":"159,390"}]
@@ -28522,9 +28510,9 @@
 "Afghanistan","correct":false,"count":"29,117"
 "Kazakhstan","correct":true,"count":"36,876"
 "Turkmenistan","correct":false,"count":"7,420"}]
-
-
-
+"Twist and Shout","correct":false,"count":"9,469"
+"She Loves You","correct":false,"count":"16,593"
+"Please Please Me","correct":true,"count":"15,709"}]
 "Loop de loop","correct":false,"count":"1,930"
 "Loogie","correct":false,"count":"3,169"
 "Luge","correct":true,"count":"77,875"}]
@@ -28627,9 +28615,9 @@
 "Curling","correct":false,"count":"38"
 "Handball","correct":true,"count":"517"
 "Crew","correct":false,"count":"152"}]
-
-
-
+"Washington Wizards","correct":false,"count":"150"
+"New Orleans Pelicans","correct":true,"count":"241"
+"Portland Trail Blazers","correct":false,"count":"155"}]
 "Loop de loop","correct":false,"count":"1,930"
 "Loogie","correct":false,"count":"3,169"
 "Luge","correct":true,"count":"77,875"}]
@@ -28732,9 +28720,9 @@
 "Curling","correct":false,"count":"38"
 "Handball","correct":true,"count":"517"
 "Crew","correct":false,"count":"152"}]
-
-
-
+"Washington Wizards","correct":false,"count":"150"
+"New Orleans Pelicans","correct":true,"count":"241"
+"Portland Trail Blazers","correct":false,"count":"155"}]
 "Loop de loop","correct":false,"count":"1,930"
 "Loogie","correct":false,"count":"3,169"
 "Luge","correct":true,"count":"77,875"}]
@@ -28837,9 +28825,9 @@
 "Evander Holyfield","correct":false,"count":"4,180"
 "Clifford Etienne","correct":true,"count":"5,914"
 "Andrew Golota","correct":false,"count":"5,283"}]
-
-
-
+"Cannibal! The Musical","correct":true,"count":"4,916"
+"Amazon Women on the Moon","correct":false,"count":"1,251"
+"Idiocracy","correct":false,"count":"1,958"}]
 "Loop de loop","correct":false,"count":"1,930"
 "Loogie","correct":false,"count":"3,169"
 "Luge","correct":true,"count":"77,875"}]
@@ -28942,9 +28930,9 @@
 "Evander Holyfield","correct":false,"count":"4,180"
 "Clifford Etienne","correct":true,"count":"5,914"
 "Andrew Golota","correct":false,"count":"5,283"}]
-
-
-
+"Cannibal! The Musical","correct":true,"count":"4,916"
+"Amazon Women on the Moon","correct":false,"count":"1,251"
+"Idiocracy","correct":false,"count":"1,958"}]
 "Atoms","correct":true,"count":"178,872"
 "Turkey sandwiches","correct":false,"count":"862"
 "Spotify playlists","correct":false,"count":"443"}]
@@ -29047,9 +29035,9 @@
 "Bildungsroman","correct":false,"count":"223"
 "Roman à clef","correct":true,"count":"1,287"
 "Picaresque","correct":false,"count":"787"}]
-
-
-
+"Hans Zimmer","correct":true,"count":"1,003"
+"Danny Elfman","correct":false,"count":"216"
+"Howard Shore","correct":false,"count":"159"}]
 "Atoms","correct":true,"count":"178,872"
 "Turkey sandwiches","correct":false,"count":"862"
 "Spotify playlists","correct":false,"count":"443"}]
@@ -29152,9 +29140,9 @@
 "Bildungsroman","correct":false,"count":"223"
 "Roman à clef","correct":true,"count":"1,287"
 "Picaresque","correct":false,"count":"787"}]
-
-
-
+"Hans Zimmer","correct":true,"count":"1,003"
+"Danny Elfman","correct":false,"count":"216"
+"Howard Shore","correct":false,"count":"159"}]
 "Atoms","correct":true,"count":"178,872"
 "Turkey sandwiches","correct":false,"count":"862"
 "Spotify playlists","correct":false,"count":"443"}]
@@ -29257,9 +29245,9 @@
 "Space Invaders","correct":false,"count":"2,553"
 "Pac-Man","correct":false,"count":"6,246"
 "Breakout","correct":true,"count":"8,688"}]
-
-
-
+"EarthBound","correct":false,"count":"1,122"
+"F-Zero","correct":false,"count":"970"
+"Fire Emblem","correct":true,"count":"8,871"}]
 "Atoms","correct":true,"count":"178,872"
 "Turkey sandwiches","correct":false,"count":"862"
 "Spotify playlists","correct":false,"count":"443"}]
@@ -29362,9 +29350,9 @@
 "Space Invaders","correct":false,"count":"2,553"
 "Pac-Man","correct":false,"count":"6,246"
 "Breakout","correct":true,"count":"8,688"}]
-
-
-
+"EarthBound","correct":false,"count":"1,122"
+"F-Zero","correct":false,"count":"970"
+"Fire Emblem","correct":true,"count":"8,871"}]
 "Lit","correct":false,"count":"2,252"
 "Lottery fever","correct":false,"count":"2,024"
 "The worm","correct":true,"count":"256,370"}]
@@ -29431,9 +29419,9 @@
 "Arthur Conan Doyle","correct":true,"count":"9,331"
 "Charles Dickens","correct":false,"count":"1,822"
 "Mark Twain","correct":false,"count":"1,626"}]
-
-
-
+"Sudan","correct":true,"count":"1,253"
+"Senegal","correct":false,"count":"2,159"
+"Malta","correct":false,"count":"5,921"}]
 "Lit","correct":false,"count":"2,252"
 "Lottery fever","correct":false,"count":"2,024"
 "The worm","correct":true,"count":"256,370"}]
@@ -29800,9 +29788,9 @@
 "Video Pinball","correct":false,"count":"214"
 "Colossal Cave Adventure","correct":false,"count":"583"
 "Computer Space","correct":true,"count":"4,634"}]
-
-
-
+"Edgar Allan Poe","correct":true,"count":"3,141"
+"Jules Verne","correct":false,"count":"745"
+"Franz Kafka","correct":false,"count":"738"}]
 "Flubber","correct":false,"count":"2,709"
 "Rubber","correct":true,"count":"92,127"
 "Blubber","correct":false,"count":"1,561"}]
@@ -29905,9 +29893,9 @@
 "Jake LaMotta","correct":true,"count":"485"
 "Rocky Graziano","correct":false,"count":"329"
 "Joe Louis","correct":false,"count":"176"}]
-
-
-
+"NFC West","correct":true,"count":"181"
+"AFC South","correct":false,"count":"202"
+"NFC South","correct":false,"count":"215"}]
 "Flubber","correct":false,"count":"2,709"
 "Rubber","correct":true,"count":"92,127"
 "Blubber","correct":false,"count":"1,561"}]
@@ -30010,9 +29998,9 @@
 "Jake LaMotta","correct":true,"count":"485"
 "Rocky Graziano","correct":false,"count":"329"
 "Joe Louis","correct":false,"count":"176"}]
-
-
-
+"NFC West","correct":true,"count":"181"
+"AFC South","correct":false,"count":"202"
+"NFC South","correct":false,"count":"215"}]
 "Flubber","correct":false,"count":"2,709"
 "Rubber","correct":true,"count":"92,127"
 "Blubber","correct":false,"count":"1,561"}]
@@ -30115,9 +30103,9 @@
 "Gas","correct":true,"count":"4,540"
 "Gunk","correct":false,"count":"231"
 "Garlic","correct":false,"count":"483"}]
-
-
-
+"Christmas trees","correct":true,"count":"2,364"
+"Baby reindeer","correct":false,"count":"1,372"
+"Live Santa Claus","correct":false,"count":"799"}]
 "Flubber","correct":false,"count":"2,709"
 "Rubber","correct":true,"count":"92,127"
 "Blubber","correct":false,"count":"1,561"}]
@@ -30220,9 +30208,9 @@
 "Gas","correct":true,"count":"4,540"
 "Gunk","correct":false,"count":"231"
 "Garlic","correct":false,"count":"483"}]
-
-
-
+"Christmas trees","correct":true,"count":"2,364"
+"Baby reindeer","correct":false,"count":"1,372"
+"Live Santa Claus","correct":false,"count":"799"}]
 "Disneyland","correct":false,"count":"5,055"
 "Plymouth Rock","correct":true,"count":"183,937"
 "Tokyo Disneyland","correct":false,"count":"1,094"}]
@@ -30325,9 +30313,9 @@
 "Wrigley Field","correct":false,"count":"730"
 "Target Field","correct":false,"count":"486"
 "Miller Park","correct":true,"count":"4,074"}]
-
-
-
+"Ozma of Oz","correct":false,"count":"2,134"
+"Glinda of Oz","correct":false,"count":"1,097"
+"Tik-Tok of Oz","correct":true,"count":"921"}]
 "Disneyland","correct":false,"count":"5,055"
 "Plymouth Rock","correct":true,"count":"183,937"
 "Tokyo Disneyland","correct":false,"count":"1,094"}]
@@ -30430,9 +30418,9 @@
 "Wrigley Field","correct":false,"count":"730"
 "Target Field","correct":false,"count":"486"
 "Miller Park","correct":true,"count":"4,074"}]
-
-
-
+"Ozma of Oz","correct":false,"count":"2,134"
+"Glinda of Oz","correct":false,"count":"1,097"
+"Tik-Tok of Oz","correct":true,"count":"921"}]
 "Disneyland","correct":false,"count":"5,055"
 "Plymouth Rock","correct":true,"count":"183,937"
 "Tokyo Disneyland","correct":false,"count":"1,094"}]
@@ -30535,9 +30523,9 @@
 "Wright Brothers’ plane","correct":true,"count":"3,185"
 "Lewis & Clark’s compass","correct":false,"count":"522"
 "Columbus’ sextant","correct":false,"count":"633"}]
-
-
-
+"Randy Newton","correct":false,"count":"373"
+"Dolly Parton","correct":true,"count":"907"
+"Paul Simon","correct":false,"count":"1,985"}]
 "Disneyland","correct":false,"count":"5,055"
 "Plymouth Rock","correct":true,"count":"183,937"
 "Tokyo Disneyland","correct":false,"count":"1,094"}]
@@ -30640,9 +30628,9 @@
 "Wright Brothers’ plane","correct":true,"count":"3,185"
 "Lewis & Clark’s compass","correct":false,"count":"522"
 "Columbus’ sextant","correct":false,"count":"633"}]
-
-
-
+"Randy Newton","correct":false,"count":"373"
+"Dolly Parton","correct":true,"count":"907"
+"Paul Simon","correct":false,"count":"1,985"}]
 "On fleek","correct":false,"count":"4,561"
 "Rope-a-dope","correct":true,"count":"88,551"
 "Dab on ’em","correct":false,"count":"7,655"}]
@@ -30745,9 +30733,9 @@
 "Australia","correct":false,"count":"106"
 "USA","correct":false,"count":"279"
 "Canada","correct":true,"count":"269"}]
-
-
-
+"Jon Gruden","correct":false,"count":"107"
+"Andy Reid","correct":false,"count":"48"
+"Bill Belichick","correct":true,"count":"151"}]
 "On fleek","correct":false,"count":"4,561"
 "Rope-a-dope","correct":true,"count":"88,551"
 "Dab on ’em","correct":false,"count":"7,655"}]
@@ -30850,9 +30838,9 @@
 "Australia","correct":false,"count":"106"
 "USA","correct":false,"count":"279"
 "Canada","correct":true,"count":"269"}]
-
-
-
+"Jon Gruden","correct":false,"count":"107"
+"Andy Reid","correct":false,"count":"48"
+"Bill Belichick","correct":true,"count":"151"}]
 "On fleek","correct":false,"count":"4,561"
 "Rope-a-dope","correct":true,"count":"88,551"
 "Dab on ’em","correct":false,"count":"7,655"}]
@@ -30955,9 +30943,9 @@
 "Karen","correct":false,"count":"3,078"
 "Cady","correct":true,"count":"3,165"
 "Regina","correct":false,"count":"6,065"}]
-
-
-
+"I’m a cool mom!","correct":false,"count":"666"
+"Say crack again","correct":true,"count":"2,701"
+"I can’t go out, I’m sick","correct":false,"count":"1,018"}]
 "On fleek","correct":false,"count":"4,561"
 "Rope-a-dope","correct":true,"count":"88,551"
 "Dab on ’em","correct":false,"count":"7,655"}]
@@ -31060,12 +31048,12 @@
 "Karen","correct":false,"count":"3,078"
 "Cady","correct":true,"count":"3,165"
 "Regina","correct":false,"count":"6,065"}]
-
-
-
-
-
-
+"I’m a cool mom!","correct":false,"count":"666"
+"Say crack again","correct":true,"count":"2,701"
+"I can’t go out, I’m sick","correct":false,"count":"1,018"}]
+"On fleek","correct":false,"count":"4,561"
+"Rope-a-dope","correct":true,"count":"88,551"
+"Dab on ’em","correct":false,"count":"7,655"}]
 "Giraffe","correct":true,"count":"192,754"
 "Malayan sun bear","correct":false,"count":"1,340"
 "Red panda","correct":false,"count":"1,123"}]
@@ -31168,12 +31156,12 @@
 "Triple minor","correct":false,"count":"211"
 "Misconduct","correct":true,"count":"7,983"
 "Major","correct":false,"count":"1,375"}]
-
-
-
-
-
-
+"Lovely Rita","correct":false,"count":"786"
+"Martha My Dear","correct":false,"count":"827"
+"Eleanor Rigby","correct":true,"count":"6,592"}]
+"Cash","correct":true,"count":"312,240"
+"Dank memes","correct":false,"count":"1,184"
+"Many tiny fairy teeth","correct":false,"count":"3,505"}]
 "Giraffe","correct":true,"count":"192,754"
 "Malayan sun bear","correct":false,"count":"1,340"
 "Red panda","correct":false,"count":"1,123"}]
@@ -31276,12 +31264,12 @@
 "Triple minor","correct":false,"count":"211"
 "Misconduct","correct":true,"count":"7,983"
 "Major","correct":false,"count":"1,375"}]
-
-
-
-
-
-
+"Lovely Rita","correct":false,"count":"786"
+"Martha My Dear","correct":false,"count":"827"
+"Eleanor Rigby","correct":true,"count":"6,592"}]
+"Cash","correct":true,"count":"312,240"
+"Dank memes","correct":false,"count":"1,184"
+"Many tiny fairy teeth","correct":false,"count":"3,505"}]
 "Giraffe","correct":true,"count":"192,754"
 "Malayan sun bear","correct":false,"count":"1,340"
 "Red panda","correct":false,"count":"1,123"}]
@@ -31384,12 +31372,9 @@
 "At the beginning","correct":true,"count":"4,999"
 "At the end","correct":false,"count":"439"
 "On the cover","correct":false,"count":"182"}]
-
-
-
-
-
-
+"Fleetwood Mac","correct":true,"count":"2,793"
+"Led Zeppelin","correct":false,"count":"867"
+"The Doors","correct":false,"count":"1,138"}]
 "Giraffe","correct":true,"count":"192,754"
 "Malayan sun bear","correct":false,"count":"1,340"
 "Red panda","correct":false,"count":"1,123"}]
@@ -31492,9 +31477,9 @@
 "At the beginning","correct":true,"count":"4,999"
 "At the end","correct":false,"count":"439"
 "On the cover","correct":false,"count":"182"}]
-
-
-
+"Fleetwood Mac","correct":true,"count":"2,793"
+"Led Zeppelin","correct":false,"count":"867"
+"The Doors","correct":false,"count":"1,138"}]
 "Dental school","correct":false,"count":"2,216"
 "Law school","correct":false,"count":"2,030"
 "Middle school","correct":true,"count":"266,500"}]
@@ -31579,9 +31564,9 @@
 "Canned pineapple","correct":true,"count":"6,059"
 "Frozen pineapple","correct":false,"count":"1,025"
 "Fresh pineapple","correct":false,"count":"5,886"}]
-
-
-
+"The Beast","correct":false,"count":"2,765"
+"Cogsworth","correct":true,"count":"10,957"
+"Maurice","correct":false,"count":"9,146"}]
 "Dental school","correct":false,"count":"2,216"
 "Law school","correct":false,"count":"2,030"
 "Middle school","correct":true,"count":"266,500"}]
@@ -31666,9 +31651,9 @@
 "Canned pineapple","correct":true,"count":"6,059"
 "Frozen pineapple","correct":false,"count":"1,025"
 "Fresh pineapple","correct":false,"count":"5,886"}]
-
-
-
+"The Beast","correct":false,"count":"2,765"
+"Cogsworth","correct":true,"count":"10,957"
+"Maurice","correct":false,"count":"9,146"}]
 "Dental school","correct":false,"count":"2,216"
 "Law school","correct":false,"count":"2,030"
 "Middle school","correct":true,"count":"266,500"}]
@@ -31762,9 +31747,9 @@
 "Uganda","correct":false,"count":"429"
 "Zimbabwe","correct":false,"count":"1,581"
 "Liberia","correct":true,"count":"2,865"}]
-
-
-
+"101 Dalmatians","correct":true,"count":"515"
+"Charlotte’s Web","correct":false,"count":"617"
+"Watership Down","correct":false,"count":"2,018"}]
 "Dental school","correct":false,"count":"2,216"
 "Law school","correct":false,"count":"2,030"
 "Middle school","correct":true,"count":"266,500"}]
@@ -34180,9 +34165,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34327,9 +34312,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34474,9 +34459,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34621,9 +34606,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34768,9 +34753,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34810,9 +34795,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34924,9 +34909,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -34966,9 +34951,9 @@
 "Flowers","correct":false,"count":"51,406"
 "Snowflakes","correct":false,"count":"37,857"
 "Nutcrackers","correct":true,"count":"93,326"}]
-
-
-
+"They are the magi","correct":true,"count":"31,241"
+"What could be better ?","correct":false,"count":"40,105"
+"That was all","correct":false,"count":"53,232"}]
 "Christmas Eve","correct":false,"count":"12,838"
 "Christmas Day","correct":false,"count":"10,467"
 "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -36040,9 +36025,9 @@
 "God's Plan","correct":false,"count":"14,659"
 "In My Feelings","correct":false,"count":"7,365"
 "I'm Upset","correct":true,"count":"14,263"}]
-
-
-
+"Earth is lame","correct":false,"count":"3,301"
+"What's Facebook ?","correct":true,"count":"12,805"
+"Bada bing!","correct":false,"count":"2,971"}]
 "Ariana Grande","correct":false,"count":"3,196"
 "Cardi B.","correct":false,"count":"3,121"
 "Camila Cabello","correct":true,"count":"7,736"}]
@@ -36151,9 +36136,9 @@
 "God's Plan","correct":false,"count":"14,659"
 "In My Feelings","correct":false,"count":"7,365"
 "I'm Upset","correct":true,"count":"14,263"}]
-
-
-
+"Earth is lame","correct":false,"count":"3,301"
+"What's Facebook ?","correct":true,"count":"12,805"
+"Bada bing!","correct":false,"count":"2,971"}]
 "Ariana Grande","correct":false,"count":"3,196"
 "Cardi B.","correct":false,"count":"3,121"
 "Camila Cabello","correct":true,"count":"7,736"}]
@@ -36262,9 +36247,9 @@
 "God's Plan","correct":false,"count":"14,659"
 "In My Feelings","correct":false,"count":"7,365"
 "I'm Upset","correct":true,"count":"14,263"}]
-
-
-
+"Earth is lame","correct":false,"count":"3,301"
+"What's Facebook ?","correct":true,"count":"12,805"
+"Bada bing!","correct":false,"count":"2,971"}]
 "Ariana Grande","correct":false,"count":"3,196"
 "Cardi B.","correct":false,"count":"3,121"
 "Camila Cabello","correct":true,"count":"7,736"}]
@@ -36304,9 +36289,9 @@
 "God's Plan","correct":false,"count":"14,659"
 "In My Feelings","correct":false,"count":"7,365"
 "I'm Upset","correct":true,"count":"14,263"}]
-
-
-
+"Earth is lame","correct":false,"count":"3,301"
+"What's Facebook ?","correct":true,"count":"12,805"
+"Bada bing!","correct":false,"count":"2,971"}]
 "Philly Cheesecake","correct":false,"count":"8,017"
 "Philly Silly","correct":false,"count":"5,316"
 "Philly Special","correct":true,"count":"108,255"}]
@@ -36379,9 +36364,9 @@
 "God's Plan","correct":false,"count":"14,659"
 "In My Feelings","correct":false,"count":"7,365"
 "I'm Upset","correct":true,"count":"14,263"}]
-
-
-
+"Earth is lame","correct":false,"count":"3,301"
+"What's Facebook ?","correct":true,"count":"12,805"
+"Bada bing!","correct":false,"count":"2,971"}]
 "Ariana Grande","correct":false,"count":"3,196"
 "Cardi B.","correct":false,"count":"3,121"
 "Camila Cabello","correct":true,"count":"7,736"}]

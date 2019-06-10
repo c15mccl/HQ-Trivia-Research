@@ -7129,7 +7129,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"What term refers to a player bouncing a basketball, holding it with both hands, then bouncing it again ?
@@ -7166,7 +7165,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"What term refers to a player bouncing a basketball, holding it with both hands, then bouncing it again ?
@@ -7203,7 +7201,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"Where does Dorothy long to go in “The Wizard of Oz” ?
@@ -7215,7 +7212,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"What term refers to a player bouncing a basketball, holding it with both hands, then bouncing it again ?
@@ -7240,7 +7236,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"Where does Dorothy long to go in “The Wizard of Oz” ?
@@ -7253,7 +7248,6 @@
 "text":"Which action film was directed by someone billed simply as “Kaos” ?
 "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-"text":"Who Framed Roger Rabbit ?
 "text":"Which film used the most dog actors to portray the lead canine ?
 "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 "text":"What is the name of one of the colors on the US flag ?

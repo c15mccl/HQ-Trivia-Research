@@ -1321,7 +1321,6 @@ Questions: "text":"Seth Rogen made his feature film debut in a movie that memora
 Questions: "text":"Which action film was directed by someone billed simply as “Kaos” ?
 Questions: "text":"Which beloved character was portrayed by an actor who did rewrites on “Coyote Ugly” ?
 Questions: "text":"Which movie’s villain is NOT seen blinking at any point during the film ?
-Questions: "text":"Who Framed Roger Rabbit ?
 Questions: "text":"Which film used the most dog actors to portray the lead canine ?
 Questions: "text":"In “Jaws,” what line comes directly after Martin first says “you’re gonna need a bigger boat” ?
 Questions: "text":"What is the name of one of the colors on the US flag ?
@@ -3826,7 +3825,9 @@ Answers: "South Korea","correct":false,"count":"208"}]
 Answers: "Kingdom Hearts","correct":false,"count":"206"
 Answers: "Assassin’s Creed","correct":false,"count":"200"
 Answers: "Final Fantasy","correct":true,"count":"1,412"}]
-Answers: 
+Answers: "Jack Shepherd","correct":false,"count":"305"
+Answers: "Don Draper","correct":false,"count":"261"
+Answers: "Walter White","correct":true,"count":"866"
 Answers: "Hurdle","correct":true,"count":"100,850"
 Answers: "Hamper","correct":false,"count":"987"
 Answers: "Hindrance","correct":false,"count":"350"}]
@@ -3941,6 +3942,9 @@ Answers: "Shampoo","correct":false,"count":"0"}]
 Answers: "Sirius","correct":false,"count":"1"
 Answers: "Betelgeuse","correct":true,"count":"2"
 Answers: "Vega","correct":false,"count":"1"}]
+Answers: "Barry Lyndon","correct":false,"count":"1"
+Answers: "Eyes Wide Shut","correct":true,"count":"1"
+Answers: "Dr. Strangelove","correct":false,"count":"0"}]
 Answers: "Dinosaurneck","correct":false,"count":"1,752"
 Answers: "Ostrichneck","correct":false,"count":"2,167"
 Answers: "Turtleneck","correct":true,"count":"229,752"}]
@@ -6122,6 +6126,7 @@ Answers: "John Wick: Chapter Two","correct":false,"count":"3,711"}]
 Answers: "Silent Bob","correct":true,"count":"3,119"
 Answers: "Remy the Rat","correct":false,"count":"1,048"
 Answers: "Professor Trelawney","correct":false,"count":"1,329"}]
+Answers: "Who Framed Roger Rabbit?","correct":true,"count":"1,454"
 Answers: "Matilda","correct":false,"count":"937"
 Answers: "Toy Story","correct":false,"count":"1,030"}]
 Answers: "Marley & Me","correct":true,"count":"514"
@@ -6586,6 +6591,9 @@ Answers: "Inches","correct":false,"count":"7,930"}]
 Answers: "Spamalot","correct":true,"count":"7,563"
 Answers: "Legally Blonde","correct":false,"count":"7,596"
 Answers: "Rock of Ages","correct":false,"count":"5,155"}]
+Answers: "Give me some more ?","correct":false,"count":"421"
+Answers: "May I have some more ?","correct":false,"count":"5,787"
+Answers: "I want some more!","correct":true,"count":"3,038"}]
 Answers: "Kinky Boots","correct":false,"count":"663"
 Answers: "The Full Monty","correct":true,"count":"1,208"
 Answers: "The Color Purple","correct":false,"count":"1,930"}]
@@ -7159,8 +7167,10 @@ Answers: "Port of Call","correct":false,"count":"2,232"}]
 Answers: "Arithmetic","correct":false,"count":"2,420"
 Answers: "Algebraic","correct":true,"count":"4,819"
 Answers: "Geometric","correct":false,"count":"944"}]
+Answers: "What Do You Mean ?","correct":true,"count":"2,590
 Answers: "Thriller","correct":false,"count":"1,897"
 Answers: "Firework","correct":false,"count":"711"}]
+Answers: "What Do You Mean ?","correct":true,"count":"2,590"
 Answers: "A goat","correct":false,"count":"11,335"
 Answers: "An extra life","correct":false,"count":"9,642"
 Answers: "The grease","correct":true,"count":"490,582"}]
@@ -7470,6 +7480,9 @@ Answers: "George","correct":false,"count":"1,268"}]
 Answers: "White","correct":false,"count":"384"
 Answers: "Purple","correct":true,"count":"1,038"
 Answers: "Pink","correct":false,"count":"367"}]
+Answers: "Prickly Pete","correct":false,"count":"74"
+Answers: "Snoopy","correct":false,"count":"217"
+Answers: "Jerry","correct":true,"count":"815"}]
 Answers: "Hot Wheels","correct":false,"count":"17,090"
 Answers: "Rolls-Royce","correct":true,"count":"261,382"
 Answers: "Little Tikes","correct":false,"count":"6,334"}]
@@ -7503,6 +7516,9 @@ Answers: "Singapore","correct":false,"count":"2,503"}]
 Answers: "The way it is headed","correct":false,"count":"189"
 Answers: "Toward the galactic disc","correct":false,"count":"309"
 Answers: "Away from the Sun","correct":true,"count":"3,193"}]
+Answers: "Pixar","correct":true,"count":"2,670"
+Answers: "George Lucas","correct":false,"count":"301"
+Answers: "Tim Burton","correct":false,"count":"278"}]
 Answers: "Ghana Make You Sweat","correct":false,"count":"12,652"
 Answers: "Sweden Tender Hooligan","correct":false,"count":"9,103"
 Answers: "America the Beautiful","correct":true,"count":"297,584"}]
@@ -7590,6 +7606,9 @@ Answers: "Big Mac Special Sauce","correct":false,"count":"8"}]
 Answers: "Take On Me","correct":false,"count":"6"
 Answers: "Come on Eileen","correct":true,"count":"16"
 Answers: "Thong Song","correct":false,"count":"5"}]
+Answers: "To a Skylark","correct":false,"count":"3"
+Answers: "She Walks in Beauty","correct":true,"count":"7"
+Answers: "Ode to a Nightingale","correct":false,"count":"5"}]
 Answers: "A very stubborn pony","correct":false,"count":"5,192"
 Answers: "A million-dollar idea","correct":false,"count":"10,093"
 Answers: "The fence","correct":true,"count":"159,390"}]
@@ -7650,6 +7669,9 @@ Answers: "American Horror Story","correct":false,"count":"38,815"}]
 Answers: "Afghanistan","correct":false,"count":"29,117"
 Answers: "Kazakhstan","correct":true,"count":"36,876"
 Answers: "Turkmenistan","correct":false,"count":"7,420"}]
+Answers: "Twist and Shout","correct":false,"count":"9,469"
+Answers: "She Loves You","correct":false,"count":"16,593"
+Answers: "Please Please Me","correct":true,"count":"15,709"}]
 Answers: "Loop de loop","correct":false,"count":"1,930"
 Answers: "Loogie","correct":false,"count":"3,169"
 Answers: "Luge","correct":true,"count":"77,875"}]
@@ -7719,6 +7741,9 @@ Answers: "Ready Player One","correct":true,"count":"13,415"}]
 Answers: "Evander Holyfield","correct":false,"count":"4,180"
 Answers: "Clifford Etienne","correct":true,"count":"5,914"
 Answers: "Andrew Golota","correct":false,"count":"5,283"}]
+Answers: "Cannibal! The Musical","correct":true,"count":"4,916"
+Answers: "Amazon Women on the Moon","correct":false,"count":"1,251"
+Answers: "Idiocracy","correct":false,"count":"1,958"}]
 Answers: "Atoms","correct":true,"count":"178,872"
 Answers: "Turkey sandwiches","correct":false,"count":"862"
 Answers: "Spotify playlists","correct":false,"count":"443"}]
@@ -7788,6 +7813,9 @@ Answers: "Game Cube","correct":false,"count":"1,128"}]
 Answers: "Space Invaders","correct":false,"count":"2,553"
 Answers: "Pac-Man","correct":false,"count":"6,246"
 Answers: "Breakout","correct":true,"count":"8,688"}]
+Answers: "EarthBound","correct":false,"count":"1,122"
+Answers: "F-Zero","correct":false,"count":"970"
+Answers: "Fire Emblem","correct":true,"count":"8,871"}]
 Answers: "Lit","correct":false,"count":"2,252"
 Answers: "Lottery fever","correct":false,"count":"2,024"
 Answers: "The worm","correct":true,"count":"256,370"}]
@@ -7821,6 +7849,9 @@ Answers: "Google","correct":false,"count":"501"}]
 Answers: "Arthur Conan Doyle","correct":true,"count":"9,331"
 Answers: "Charles Dickens","correct":false,"count":"1,822"
 Answers: "Mark Twain","correct":false,"count":"1,626"}]
+Answers: "Sudan","correct":true,"count":"1,253"
+Answers: "Senegal","correct":false,"count":"2,159"
+Answers: "Malta","correct":false,"count":"5,921"}]
 Answers: "Sass","correct":false,"count":"4,527"
 Answers: "Feathers","correct":true,"count":"274,520"
 Answers: "Friendly smile","correct":false,"count":"1,658"}]
@@ -7896,6 +7927,9 @@ Answers: "Bermuda","correct":true,"count":"5,494"}]
 Answers: "Video Pinball","correct":false,"count":"214"
 Answers: "Colossal Cave Adventure","correct":false,"count":"583"
 Answers: "Computer Space","correct":true,"count":"4,634"}]
+Answers: "Edgar Allan Poe","correct":true,"count":"3,141"
+Answers: "Jules Verne","correct":false,"count":"745"
+Answers: "Franz Kafka","correct":false,"count":"738"}]
 Answers: "Flubber","correct":false,"count":"2,709"
 Answers: "Rubber","correct":true,"count":"92,127"
 Answers: "Blubber","correct":false,"count":"1,561"}]
@@ -7965,6 +7999,9 @@ Answers: "Santa’s hungover","correct":false,"count":"4,710"}]
 Answers: "Gas","correct":true,"count":"4,540"
 Answers: "Gunk","correct":false,"count":"231"
 Answers: "Garlic","correct":false,"count":"483"}]
+Answers: "Christmas trees","correct":true,"count":"2,364"
+Answers: "Baby reindeer","correct":false,"count":"1,372"
+Answers: "Live Santa Claus","correct":false,"count":"799"}]
 Answers: "Disneyland","correct":false,"count":"5,055"
 Answers: "Plymouth Rock","correct":true,"count":"183,937"
 Answers: "Tokyo Disneyland","correct":false,"count":"1,094"}]
@@ -8034,6 +8071,9 @@ Answers: "Gerald Ford","correct":true,"count":"4,055"}]
 Answers: "Wright Brothers’ plane","correct":true,"count":"3,185"
 Answers: "Lewis & Clark’s compass","correct":false,"count":"522"
 Answers: "Columbus’ sextant","correct":false,"count":"633"}]
+Answers: "Randy Newton","correct":false,"count":"373"
+Answers: "Dolly Parton","correct":true,"count":"907"
+Answers: "Paul Simon","correct":false,"count":"1,985"}]
 Answers: "On fleek","correct":false,"count":"4,561"
 Answers: "Rope-a-dope","correct":true,"count":"88,551"
 Answers: "Dab on ’em","correct":false,"count":"7,655"}]
@@ -8103,6 +8143,9 @@ Answers: "I’m varsity mathletics","correct":false,"count":"3,285"}]
 Answers: "Karen","correct":false,"count":"3,078"
 Answers: "Cady","correct":true,"count":"3,165"
 Answers: "Regina","correct":false,"count":"6,065"}]
+Answers: "I’m a cool mom!","correct":false,"count":"666"
+Answers: "Say crack again","correct":true,"count":"2,701"
+Answers: "I can’t go out, I’m sick","correct":false,"count":"1,018"}]
 Answers: "Giraffe","correct":true,"count":"192,754"
 Answers: "Malayan sun bear","correct":false,"count":"1,340"
 Answers: "Red panda","correct":false,"count":"1,123"}]
@@ -8172,6 +8215,9 @@ Answers: "About half","correct":false,"count":"1,498"}]
 Answers: "At the beginning","correct":true,"count":"4,999"
 Answers: "At the end","correct":false,"count":"439"
 Answers: "On the cover","correct":false,"count":"182"}]
+Answers: "Fleetwood Mac","correct":true,"count":"2,793"
+Answers: "Led Zeppelin","correct":false,"count":"867"
+Answers: "The Doors","correct":false,"count":"1,138"}]
 Answers: "Dental school","correct":false,"count":"2,216"
 Answers: "Law school","correct":false,"count":"2,030"
 Answers: "Middle school","correct":true,"count":"266,500"}]
@@ -8232,6 +8278,9 @@ Answers: "Bitter Sweet Symphony","correct":false,"count":"1,386"}]
 Answers: "Uganda","correct":false,"count":"429"
 Answers: "Zimbabwe","correct":false,"count":"1,581"
 Answers: "Liberia","correct":true,"count":"2,865"}]
+Answers: "101 Dalmatians","correct":true,"count":"515"
+Answers: "Charlotte’s Web","correct":false,"count":"617"
+Answers: "Watership Down","correct":false,"count":"2,018"}]
 Answers: "Rough Duck","correct":false,"count":"2,298"
 Answers: "Angry Deer","correct":false,"count":"2,011"
 Answers: "Cowardly Lion","correct":true,"count":"271,751"}]
@@ -8763,6 +8812,9 @@ Answers: "Michael Caine","correct":false,"count":"57,814"}]
 Answers: "Flowers","correct":false,"count":"51,406"
 Answers: "Snowflakes","correct":false,"count":"37,857"
 Answers: "Nutcrackers","correct":true,"count":"93,326"}]
+Answers: "They are the magi","correct":true,"count":"31,241"
+Answers: "What could be better ?","correct":false,"count":"40,105"
+Answers: "That was all","correct":false,"count":"53,232"}]
 Answers: "Christmas Eve","correct":false,"count":"12,838"
 Answers: "Christmas Day","correct":false,"count":"10,467"
 Answers: "New Year’s Eve","correct":true,"count":"39,677"}]
@@ -9063,6 +9115,9 @@ Answers: "First Japanese winner","correct":false,"count":"15,384"}]
 Answers: "God's Plan","correct":false,"count":"14,659"
 Answers: "In My Feelings","correct":false,"count":"7,365"
 Answers: "I'm Upset","correct":true,"count":"14,263"}]
+Answers: "Earth is lame","correct":false,"count":"3,301"
+Answers: "What's Facebook ?","correct":true,"count":"12,805"
+Answers: "Bada bing!","correct":false,"count":"2,971"}]
 Answers: "Ariana Grande","correct":false,"count":"3,196"
 Answers: "Cardi B.","correct":false,"count":"3,121"
 Answers: "Camila Cabello","correct":true,"count":"7,736"}]
