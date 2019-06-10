@@ -760,8 +760,9 @@
 "Podgorica","correct":true,"count":"3,072"
 "Chișinău","correct":false,"count":"2,010"
 "Skopje","correct":false,"count":"3,957"}]
+"How Soon Is Now?","correct":false,"count":"246"
 "The Killing Moon","correct":false,"count":"595"
-
+"Hungry Like the Wolf","correct":true,"count":"2,442"}]
 "Hungry Like the Wolf","correct":true,"count":"2,442"}]
 "3 to 5 business days","correct":false,"count":"19,957"
 "6 seconds","correct":false,"count":"15,639"
@@ -1306,9 +1307,9 @@
 "Leia","correct":false,"count":"7,229"
 "Jasmine","correct":true,"count":"602,616"
 "Meghan Markle","correct":false,"count":"1,194"}]
-
-
-
+"You in danger, girl","correct":true,"count":"464,721"
+"Where we dropping, boys?","correct":false,"count":"51,285"
+"Eat my shorts","correct":false,"count":"64,516"}]
 "Pitfall!","correct":false,"count":"7,674"
 "Q*bert","correct":false,"count":"10,060"
 "Ms. Pac-Man","correct":true,"count":"445,112"}]
@@ -1378,9 +1379,9 @@
 "Leia","correct":false,"count":"7,229"
 "Jasmine","correct":true,"count":"602,616"
 "Meghan Markle","correct":false,"count":"1,194"}]
-
-
-
+"You in danger, girl","correct":true,"count":"464,721"
+"Where we dropping, boys?","correct":false,"count":"51,285"
+"Eat my shorts","correct":false,"count":"64,516"}]
 "Pitfall!","correct":false,"count":"7,674"
 "Q*bert","correct":false,"count":"10,060"
 "Ms. Pac-Man","correct":true,"count":"445,112"}]
@@ -2587,8 +2588,8 @@
 "Applause","correct":false,"count":"76,139"
 "Clarinets","correct":false,"count":"13,699"
 "Fudge","correct":true,"count":"185,773"}]
+"Is this real life?","correct":false,"count":"22,986"
 "Charlie bit my finger!","correct":false,"count":"67,168"
-
 "Leave Britney alone!","correct":true,"count":"96,116"}]
 "He was a different color","correct":true,"count":"55,701"
 "He was nice","correct":false,"count":"7,688"
@@ -2660,7 +2661,7 @@
 "Clarinets","correct":false,"count":"13,699"
 "Fudge","correct":true,"count":"185,773"}]
 "Charlie bit my finger!","correct":false,"count":"67,168"
-
+"Is this real life?","correct":false,"count":"22,986"
 "Leave Britney alone!","correct":true,"count":"96,116"}]
 "He was a different color","correct":true,"count":"55,701"
 "He was nice","correct":false,"count":"7,688"
@@ -3502,9 +3503,9 @@
 "More than 180","correct":false,"count":"57,875"
 "Exactly 135","correct":false,"count":"20,191"
 "Less than 90","correct":true,"count":"516,578"}]
-
-
-
+"Jeopardy.....","correct":false,"count":"16,535"
+"Jeopardy ? ?","correct":false,"count":"16,159"
+"Jeopardy!","correct":true,"count":"472,645"}]
 "Financial Times","correct":true,"count":"239,513"
 "Wall Street Journal","correct":false,"count":"109,636"
 "Advertising Age","correct":false,"count":"106,559"}]
@@ -5152,8 +5153,8 @@
 "Sex and the City","correct":false,"count":"10,987"
 "Baywatch","correct":false,"count":"6,644"
 "Star Trek","correct":true,"count":"600,357"}]
+"You Meant Milli Vanilli?","correct":false,"count":"42,350"
 "Your Mileage May Vary","correct":true,"count":"466,666"
-
 "Younger Men Make Veal","correct":false,"count":"40,246"}]
 "Violin","correct":true,"count":"293,721"
 "Oboe","correct":false,"count":"119,616"
@@ -7705,8 +7706,8 @@
 "Bookmark","correct":true,"count":"490,796"
 "Wordkevin","correct":false,"count":"1,438"
 "Pagesteve","correct":false,"count":"918"}]
+"’Sup ?","correct":false,"count":"5,726"
 "Answer Me!!","correct":false,"count":"92,493"
-
 "It’s Me, Margaret","correct":true,"count":"379,405"}]
 "Scotland","correct":false,"count":"48,175"
 "France","correct":true,"count":"292,826"
@@ -7742,7 +7743,7 @@
 "Wordkevin","correct":false,"count":"1,438"
 "Pagesteve","correct":false,"count":"918"}]
 "Answer Me!!","correct":false,"count":"92,493"
-
+"’Sup ?","correct":false,"count":"5,726"
 "It’s Me, Margaret","correct":true,"count":"379,405"}]
 "Scotland","correct":false,"count":"48,175"
 "France","correct":true,"count":"292,826"
@@ -9271,9 +9272,9 @@
 "Mystery Men","correct":false,"count":"3,977"
 "Clueless","correct":true,"count":"9,808"
 "Can't Hardly Wait","correct":false,"count":"5,832"}]
-
-
-
+"The letter “S”","correct":false,"count":"2,689"
+"What hath God wrought ?","correct":true,"count":"6,748"
+"Mr. Watson, come here.","correct":false,"count":"3,032"}]
 "Catholic sister","correct":true,"count":"917"
 "Accountant","correct":false,"count":"1,968"
 "Taxi driver","correct":false,"count":"4,350"}]
@@ -9316,9 +9317,9 @@
 "Mystery Men","correct":false,"count":"3,977"
 "Clueless","correct":true,"count":"9,808"
 "Can't Hardly Wait","correct":false,"count":"5,832"}]
-
-
-
+"The letter “S”","correct":false,"count":"2,689"
+"What hath God wrought ?","correct":true,"count":"6,748"
+"Mr. Watson, come here.","correct":false,"count":"3,032"}]
 "Catholic sister","correct":true,"count":"917"
 "Accountant","correct":false,"count":"1,968"
 "Taxi driver","correct":false,"count":"4,350"}]

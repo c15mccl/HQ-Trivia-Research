@@ -2190,8 +2190,8 @@
 	</Dates>
 
 	<Question> "The sci-fi film “Barbarella” inspired the name of the band behind which of these ’80s hits?" </Question>
-		<answerA correct = false "The Killing Moon","correct":false,"count":"595"> </answerA>
-Answers: 
+		<answerA correct = false "How Soon Is Now?","correct":false,"count":"246"> </answerA>
+		<answerB correct = false "The Killing Moon","correct":false,"count":"595"> </answerB>
 		<answerC correct = true "Hungry Like the Wolf","correct":true,"count":"2,442"}]> </answerC>
 	</Question>
 </Game>
@@ -2995,35 +2995,4 @@ Answers:
 		<year> 2018 </year>
 	</Dates>
 
-	<Question> "Which of these are often held up with suspenders?" </Question>
-		<answerA correct = true "Fittest","correct":true,"count":"690,959"> </answerA>
-		<answerB correct = false "Smoothest","correct":false,"count":"6,875"> </answerB>
-		<answerC correct = false "Funkiest","correct":false,"count":"3,443"}]> </answerC>
-	</Question>
-</Game>
-<Game>
-	<Dates>
-		<month> 08 </month>
-		<day> 31 </day>
-		<year> 2018 </year>
-	</Dates>
-
-	<Question> "Scientist Charles Darwin famously believed in the survival of the what?" </Question>
-		<answerA correct = false "Mortgage payments","correct":false,"count":"116,490"> </answerA>
-		<answerB correct = false "School alumni program","correct":false,"count":"22,377"> </answerB>
-		<answerC correct = true "Religious organization","correct":true,"count":"540,311"}]> </answerC>
-	</Question>
-</Game>
-<Game>
-	<Dates>
-		<month> 08 </month>
-		<day> 31 </day>
-		<year> 2018 </year>
-	</Dates>
-
-	<Question> "Paying tithes traditionally involves allocating 10 percent of your income to what?" </Question>
-		<answerA correct = false "Watermumpkin","correct":false,"count":"63,959"> </answerA>
-		<answerB correct = false "Avotato","correct":false,"count":"59,311"> </answerB>
-		<answerC correct = true "Limequat","correct":true,"count":"408,745"}]> </answerC>
-	</Question>
-</Game>
+	<Question> "Which of these are often held up with suspe

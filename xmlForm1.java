@@ -99,25 +99,27 @@ public class xmlForm1
                     answers.add(line3);
                 }
             }
-            int var = 0;
-            int i = 0;
-            while(var<dates.size()){
-                System.out.println(dates.get(var));
-                System.out.println(questions.get(var));
-                System.out.println(answers.get(i));
-                System.out.println(answers.get(i+1));
-                System.out.println(answers.get(i+2));
-                pwrite.println(dates.get(var));
-                pwrite.println(questions.get(var));
-                pwrite.println(answers.get(i));
-                pwrite.println(answers.get(i+1));
-                pwrite.println(answers.get(i+2));
+            int var1 = 0;
+            int var2 = 0;
+            int var3 = 0;
+            while(var1<1000){
+                System.out.println(dates.get(var1));
+                System.out.println(questions.get(var1));
+                System.out.println(answers.get(var2));
+                System.out.println(answers.get(var2+1));
+                System.out.println(answers.get(var2+2));
+                pwrite.println(dates.get(var1));
+                pwrite.println(questions.get(var1));
+                pwrite.println(answers.get(var2));
+                pwrite.println(answers.get(var2+1));
+                pwrite.println(answers.get(var2+2));
                 System.out.println("\t</Question>");
                 pwrite.println("\t</Question>");
                 System.out.println("</Game>\n");
                 pwrite.println("</Game>");
-                var++;
-                i+=3;
+                var1++;
+                var2+=3;
+                //var+=12;
             }
             /*while(scan4.hasNextLine()){
             String line4 = scan4.nextLine();
