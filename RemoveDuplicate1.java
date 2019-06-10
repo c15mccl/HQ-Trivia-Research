@@ -36,7 +36,7 @@ public class RemoveDuplicate1
                 String finder1 = in1.nextLine();
                 //System.out.println("->"+finder1);
                 finder1 = finder1.substring(0,(finder1.length()-2));
-                finder1 = finder1 + "?";
+                finder1 = finder1 + "?\"";
                 questions.add(finder1);
             }
             while(in2.hasNextLine()){
