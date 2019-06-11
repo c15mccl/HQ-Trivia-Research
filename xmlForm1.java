@@ -45,7 +45,8 @@ public class xmlForm1
                     String lineD = "\t\t<day> "+day+" </day>\n";
                     String lineE = "\t\t<year> "+year+" </year>\n";
                     String lineF = "\t</Dates>\n";
-                    line1 = lineA + lineB + lineC + lineD + lineE + lineF;
+                    String lineG = "\t<GameNumber num = "+gameNumber+" </GameNumber>";
+                    line1 = lineA + lineB + lineC + lineD + lineE + lineF + lineG;
                     //System.out.println(line1);
                     //pwrite.println(line1);
                     dates.add(line1);
@@ -102,7 +103,7 @@ public class xmlForm1
             int var1 = 0;
             int var2 = 0;
             int var3 = 0;
-            while(var1<1000){
+            while(var1<dates.size()){
                 System.out.println(dates.get(var1));
                 System.out.println(questions.get(var1));
                 System.out.println(answers.get(var2));
