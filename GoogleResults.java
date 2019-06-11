@@ -21,9 +21,7 @@ public class GoogleResults
                 PrintWriter pwrite =  new PrintWriter(fwrite);
                 Document doc = Jsoup.connect(URL).get();
                 Elements elem = doc.select("div#resultStats");
-                System.out.println(elem);
-
-                
+                System.out.println(elem);                
             }
             catch (Exception e){
                 e.printStackTrace();
