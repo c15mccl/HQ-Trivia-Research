@@ -2189,17 +2189,10 @@ Questions: 	<Question> "Which of these players has the highest catch total in a 
 		<year> 2018 </year>
 	</Dates>
 
-<<<<<<< HEAD
 Questions: 	<Question> "Which NFL team currently plays home games in the same city the team was founded in ? </Question>
 		<answerA correct = false "England","correct":false,"count":"16,762"> </answerA>
 		<answerB correct = false "Scotland","correct":false,"count":"97,349"> </answerB>
 		<answerC correct = true "Republic of Ireland","correct":true,"count":"347,725"}]> </answerC>
-=======
-	<Question> "The sci-fi film “Barbarella” inspired the name of the band behind which of these ’80s hits?" </Question>
-		<answerA correct = false "How Soon Is Now?","correct":false,"count":"246"> </answerA>
-		<answerB correct = false "The Killing Moon","correct":false,"count":"595"> </answerB>
-		<answerC correct = true "Hungry Like the Wolf","correct":true,"count":"2,442"}]> </answerC>
->>>>>>> bd8e021e58be38c83d8304ce34f72223971e823d
 	</Question>
 </Game>
 <Game>
@@ -29054,7 +29047,6 @@ Questions: 	<Question> "What is the last thing Mike Wazowski says to Boo in “M
 		<year> 2018 </year>
 	</Dates>
 
-<<<<<<< HEAD
 Questions: 	<Question> "How long is an offensive NBA player allowed to fully stay in the paint before a violation is called ? </Question>
 		<answerA correct = false "Passing yards","correct":false,"count":"1,212"}]> </answerA>
 		<answerB correct = false "Beynaroo","correct":false,"count":"26,459"> </answerB>
@@ -29097,6 +29089,3 @@ Questions: 	<Question> "What NFL team likely just played its last-ever home game
 Questions: 	<Question> "A popular minor-league hockey promotion encourages fans to throw what onto the ice at Christmastime ? </Question>
 		<answerA correct = false "Greenland","correct":false,"count":"5,304"}]> </answerA>
 		<an
-=======
-	<Question> "Which of these are often held up with suspe
->>>>>>> bd8e021e58be38c83d8304ce34f72223971e823d
