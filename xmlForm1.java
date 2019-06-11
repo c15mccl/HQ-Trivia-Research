@@ -103,7 +103,7 @@ public class xmlForm1
             int var1 = 0;
             int var2 = 0;
             int var3 = 0;
-            while(var1<dates.size()){
+            while(var1<answers.size()){
                 System.out.println(dates.get(var1));
                 System.out.println(questions.get(var1));
                 System.out.println(answers.get(var2));
@@ -120,24 +120,7 @@ public class xmlForm1
                 pwrite.println("</Game>");
                 var1++;
                 var2+=3;
-                //var+=12;
             }
-            /*while(scan4.hasNextLine()){
-            String line4 = scan4.nextLine();
-            if(line4.contains("Category: \"category\":")){
-            line4 = line4.replace("Category: \"category\":","<Category cat = ");
-            line4 = line4 + "> </Category>";
-
-            }
-            if(line4.contains("Savage \"savage\":")){
-            line4 = line4.replace("Savage \"savage\":","<Savage level = ");
-            line4 = line4 + "> </Savage>";
-
-            }
-            System.out.println(line4);
-            pwrite.println(line4);
-            }*/
-
             pwrite.close();
             fwrite.close();
         }
