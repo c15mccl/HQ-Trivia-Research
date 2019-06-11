@@ -13,10 +13,10 @@ import java.util.regex.*;
 public class JanMayQues
 {
       public static void main(String[]args)throws FileNotFoundException{
-        File file = new File("JanMayCat.txt");
+        File file = new File("JanMayAnsCat.txt");
         Scanner scan = new Scanner(file);
         try{
-            File myfile = new File("JanMayCat.txt");
+            File myfile = new File("JanMayQuestions.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             String patternMatch = "";
