@@ -2486,6 +2486,9 @@ Answers: "Police Academy","correct":false,"count":"1,936"}]
 Answers: "Hedgehog","correct":true,"count":"2,603"
 Answers: "Kangaroo","correct":false,"count":"562"
 Answers: "Wildebeest","correct":false,"count":"539"}]
+Answers: "American Chopper","correct":false,"count":"684"
+Answers: "Dog the Bounty Hunter","correct":true,"count":"1,461"
+Answers: "Pawn Stars","correct":false,"count":"590"}]
 Answers: "Toes","correct":true,"count":"543,589"
 Answers: "Tracheas","correct":false,"count":"1,700"
 Answers: "Thunder thighs","correct":false,"count":"1,744"}]
