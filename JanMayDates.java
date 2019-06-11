@@ -18,7 +18,7 @@ public class JanMayDates
         try{
             File myfile = new File("JanMayDates.txt");
             FileWriter fwrite = new FileWriter(myfile);
-            PrintWriter pwrite = new PrintWriter(fwrite);
+            PrintWriter pwrite = new PrintWriter(fwrite, true);
             String patternMatch = "";
             while(scan.hasNextLine()){
                 String line = scan.nextLine();
