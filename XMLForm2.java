@@ -26,7 +26,7 @@ public class XMLForm2
         String year = "";
         String gameNumber = "";
         try{
-            File myfile = new File("xmlForm1.txt");
+            File myfile = new File("xmlForm2.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             int ansCount = 0;    
@@ -45,7 +45,8 @@ public class XMLForm2
                     String lineD = "\t\t<day> "+day+" </day>\n";
                     String lineE = "\t\t<year> "+year+" </year>\n";
                     String lineF = "\t</Dates>\n";
-                    line1 = lineA + lineB + lineC + lineD + lineE + lineF;
+                    String lineG = "\t<GameNumber num = "+gameNumber+" </GameNumber>";
+                    line1 = lineA + lineB + lineC + lineD + lineE + lineF + lineG;
                     //System.out.println(line1);
                     //pwrite.println(line1);
                     dates.add(line1);
