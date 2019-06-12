@@ -646,6 +646,9 @@
 "Gears of War","correct":true,"count":"245,127"
 "Call of Duty","correct":false,"count":"68,703"
 "Battlefield","correct":false,"count":"58,282"}]
+"Kenya","correct":false,"count":"123,453"
+"Uganda","correct":false,"count":"44,947"
+"Tanzania","correct":true,"count":"80,106"}]
 "Alicia Keys","correct":false,"count":"14,700"
 "Kelly Clarkson","correct":false,"count":"29,801"
 "Blake Shelton","correct":true,"count":"42,469"}]
@@ -2936,9 +2939,6 @@
 "SSPU","correct":false,"count":"9,167"
 "CLRS","correct":false,"count":"5,868"
 "CCCP","correct":true,"count":"55,502"}]
-"SSPU","correct":false,"count":"9,157"
-"CLRS","correct":false,"count":"5,868"
-"CCCP","correct":true,"count":"55,502"}]
 "OutKast","correct":true,"count":"29,858"
 "Ludacris","correct":false,"count":"17,439"
 "DMX","correct":false,"count":"7,183"}]
@@ -4577,6 +4577,9 @@
 "Bitcoin","correct":false,"count":"3,359"
 "Breakfast","correct":true,"count":"485,081"
 "Badminton","correct":false,"count":"1,729"}]
+"Who’s there ?","correct":true,"count":"475,936"
+"We don’t want any.","correct":false,"count":"646"
+"What are those ? ? ?","correct":false,"count":"841"}]
 "In an Uber","correct":false,"count":"5,029"
 "In a hammock","correct":false,"count":"43,878"
 "In a corner","correct":true,"count":"417,595"}]

@@ -140,6 +140,7 @@
 "text":"“Midnight in the Garden of Good and Evil” tells the true crime story of what city?"
 "text":"What best-selling video game franchise has NOT been set during a real historic conflict?"
 "text":"The vast majority of the Serengeti National Park is located in which country?"
+"text":"During my appearance on "The Voice" tonight, which coach did the camera cut away to?"
 "text":"Which of these websites is NOT currently officially blocked in China?"
 "text":"Which of these physics terms gets its name from an Indian scientist?"
 "text":"Michael Keaton has played the same character in films directed by Quentin Tarantino and who else?"
@@ -167,7 +168,6 @@
 "text":"Starting in the 1850s, most US military horsemen used a saddle named for who?"
 "text":"What city is the capital of a country whose name means “black mountain”?"
 "text":"The sci-fi film “Barbarella” inspired the name of the band behind which of these ’80s hits?"
-"text":"How Soon Is Now?"
 "text":"In a classic children’s joke, why is 6 afraid of 7?"
 "text":"The initialism FYI usually stands for “For your” what?"
 "text":"What legendary underdog defeated Goliath in an ancient Biblical fight?"
@@ -279,7 +279,6 @@
 "text":"A tabletop game that involves collecting lots of marbles is called “Hungry Hungry” what?"
 "text":"What Disney princess did Aladdin famously take on a magic carpet ride?"
 "text":"A famous scene in “Ghost” shows Whoopi Goldberg’s character saying what?"
-"text":"Where we dropping, boys?"
 "text":"Which of these classic arcade games features ghosts?"
 "text":"The laces of a shoe go through a part called the what?"
 "text":"Which of these mathematical operations is considered an inverse of exponents?"
@@ -567,7 +566,6 @@
 "text":"In which of these video games was it notably possible to lose from dysentery?"
 "text":"A popular musical mnemonic device states that “every good boy deserves” what?"
 "text":"What phrase made a viral video star out of Chris Crocker in 2007?"
-"text":"Is this real life?"
 "text":"What was different about Oscar the Grouch in his 1969 television debut?"
 "text":"What country’s longest mountain range is named for a color?"
 "text":"Which of these things helps to determine whether a number is a multiple of three?"
@@ -776,7 +774,6 @@
 "text":"What is standard equipment in the sport of croquet?"
 "text":"How many degrees are in an acute angle?"
 "text":"Which of these is the correct title of a long-running US game show?"
-"text":"Jeopardy?"
 "text":"What business newspaper is printed on distinctive salmon-pink colored paper?"
 "text":"Which of these nations can you walk to from Mozambique?"
 "text":"The word “sushi” specifically refers to what?"
@@ -1152,7 +1149,6 @@
 "text":"The author of the novel “Jurassic Park” was responsible for the TV show featuring which character?"
 "text":"Which of these is a popular science fiction franchise?"
 "text":"What does the internet acronym YMMV mean?"
-"text":"You Meant Milli Vanilli?"
 "text":"Which instrument can be played pizzicato?"
 "text":"What color is chartreuse?"
 "text":"What principle is the first of Isaac Asimov’s three robotics laws concerned with?"
@@ -1764,7 +1760,6 @@
 "text":"The athlete with the most NBA MVP awards was born with what first name?"
 "text":"Which of these helps keep your place in a book?"
 "text":"What is the second part of the title of the classic Judy Blume novel “Are You There God?"
-"text":"’Sup?"
 "text":"Where was Joan of Arc from?"
 "text":"What are the key flavors in a caffè mocha?"
 "text":"In what species do males notably gestate the young?"
@@ -2114,7 +2109,6 @@
 "text":"Which of these is illegal to do in the United Kingdom without a license?"
 "text":"Which of these ’90s films did NOT have a Smash Mouth song on their soundtrack?"
 "text":"What is the first message sent by telegraph?"
-"text":"What hath God wrought?"
 "text":"One of the inventors of the BASIC programming language also worked as a what?"
 "text":"The company Gibson Guitars began with a patent on what musical instrument?"
 "text":"Which of these rivers does NOT run through a nation’s largest city?"
@@ -3132,6 +3126,9 @@ Answers: "Atlanta","correct":false,"count":"195,918"}]
 Answers: "Gears of War","correct":true,"count":"245,127"
 Answers: "Call of Duty","correct":false,"count":"68,703"
 Answers: "Battlefield","correct":false,"count":"58,282"}]
+Answers: "Kenya","correct":false,"count":"123,453"
+Answers: "Uganda","correct":false,"count":"44,947"
+Answers: "Tanzania","correct":true,"count":"80,106"}]
 Answers: "Alicia Keys","correct":false,"count":"14,700"
 Answers: "Kelly Clarkson","correct":false,"count":"29,801"
 Answers: "Blake Shelton","correct":true,"count":"42,469"}]
@@ -4647,7 +4644,6 @@ Answers: "Gilding the lily","correct":true,"count":"229,667"}]
 Answers: "SSPU","correct":false,"count":"9,167"
 Answers: "CLRS","correct":false,"count":"5,868"
 Answers: "CCCP","correct":true,"count":"55,502"}]
-Answers: "SSPU","correct":false,"count":"9,157"
 Answers: "OutKast","correct":true,"count":"29,858"
 Answers: "Ludacris","correct":false,"count":"17,439"
 Answers: "DMX","correct":false,"count":"7,183"}]
@@ -5746,6 +5742,9 @@ Answers: "Formula 1","correct":false,"count":"234"}]
 Answers: "Bitcoin","correct":false,"count":"3,359"
 Answers: "Breakfast","correct":true,"count":"485,081"
 Answers: "Badminton","correct":false,"count":"1,729"}]
+Answers: "Who’s there ?","correct":true,"count":"475,936"
+Answers: "We don’t want any.","correct":false,"count":"646"
+Answers: "What are those ? ? ?","correct":false,"count":"841"}]
 Answers: "In an Uber","correct":false,"count":"5,029"
 Answers: "In a hammock","correct":false,"count":"43,878"
 Answers: "In a corner","correct":true,"count":"417,595"}]
