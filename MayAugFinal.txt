@@ -1012,8 +1012,6 @@
 "text":"Which racing series was the first to have a female driver compete at the top level?"
 "text":"In the travel industry, B&B stands for “bed and” what?"
 "text":"What is the typical response to a joke starting with “Knock, knock”?"
-"text":"Who’s there?"
-"text":"What are those?"
 "text":"According to the famous movie quote, where does nobody put Baby?"
 "text":"How would you wish a French speaker “good luck”?"
 "text":"Which of these fashion terms comes from an English town?"
@@ -2312,7 +2310,6 @@
 "text":"Which of these is not intended to be swallowed?"
 "text":"The act of a baseball player taking a base to which he is not entitled is known as what?"
 "text":"On a typical QWERTY keyboard, which of these characters can be typed without the Shift key?"
-"text":"?"
 "text":"What Oscar-winning singer claimed that she had two lumberjack imaginary friends as a kid?"
 "text":"Stagecoach Mary was the nickname of the first black woman to do what in the Wild West?"
 "text":"The Ramones took their band name as a reference to what other band?"
@@ -7008,12 +7005,6 @@ Answers: "Snow White","correct":true,"count":"2,597"}]
 Answers: "Danish","correct":false,"count":"936"
 Answers: "Italian","correct":false,"count":"1,223"
 Answers: "Scottish","correct":true,"count":"1,501"}]
-Answers: "Willy Wonka Whirlypops","correct":false,"count":"1,718"
-Answers: "Well-Wasted Workday","correct":false,"count":"1,477"
-Answers: "World Wide Web","correct":true,"count":"413,101"}]
-Answers: "Willy Wonka Whirlypops","correct":false,"count":"2,415"
-Answers: "Well-Wasted Workday","correct":false,"count":"2,024"
-Answers: "World Wide Web","correct":true,"count":"711,597"}]
 Answers: "Millions of tiny candles","correct":false,"count":"1,208"
 Answers: "Radioactivity","correct":false,"count":"16,585"
 Answers: "Reflected sunlight","correct":true,"count":"686,284"}]
@@ -7047,6 +7038,9 @@ Answers: "Troilus and Cressida","correct":true,"count":"6,769"}]
 Answers: "Crum","correct":true,"count":"5,606"
 Answers: "Salt","correct":false,"count":"848"
 Answers: "Root","correct":false,"count":"1,405"}]
+Answers: "Willy Wonka Whirlypops","correct":false,"count":"1,718"
+Answers: "Well-Wasted Workday","correct":false,"count":"1,477"
+Answers: "World Wide Web","correct":true,"count":"413,101"}]
 Answers: "Canine","correct":false,"count":"6,702"
 Answers: "Online","correct":false,"count":"411"
 Answers: "Feline","correct":true,"count":"130,886"}]
@@ -7674,15 +7668,6 @@ Answers: "Gummy tricycle","correct":false,"count":"4,437"}]
 Answers: "Tom Cruise","correct":false,"count":"46,728"
 Answers: "Dwayne Johnson","correct":true,"count":"258,432"
 Answers: "Chris Pratt","correct":false,"count":"72,865"}]
-Answers: "Jeff Bezos","correct":false,"count":"9,593"
-Answers: "Dogs","correct":true,"count":"142,729"
-Answers: "Clouds","correct":false,"count":"70,452"}]
-Answers: "Anti-gravity moonboots","correct":false,"count":"9,124"
-Answers: "Electric scooters","correct":true,"count":"382,018"
-Answers: "Gummy tricycle","correct":false,"count":"3,308"}]
-Answers: "Tom Cruise","correct":false,"count":"31,147"
-Answers: "Dwayne Johnson","correct":true,"count":"307,780"
-Answers: "Chris Pratt","correct":false,"count":"37,543"}]
 Answers: "Jeff Bezos","correct":false,"count":"8,324"
 Answers: "Dogs","correct":true,"count":"249,224"
 Answers: "Clouds","correct":false,"count":"45,284"}]
@@ -9648,6 +9633,9 @@ Answers: "Chewing gum","correct":true,"count":"290,405"}]
 Answers: "Borrowed","correct":false,"count":"4,883"
 Answers: "Rented","correct":false,"count":"4,184"
 Answers: "Stolen","correct":true,"count":"277,656"}]
+Answers: "=","correct":true,"count":"149,356"
+Answers: "^","correct":false,"count":"33,160"
+Answers: "?","correct":false,"count":"73,028"}]
 Answers: "Cher","correct":true,"count":"56,895"
 Answers: "Gwen Stefani","correct":false,"count":"48,963"
 Answers: "Kelly Clarkson","correct":false,"count":"47,550"}]
@@ -10221,15 +10209,6 @@ Answers: "Elvis Presley","correct":false,"count":"7,036"}]
 Answers: "The Supremes","correct":false,"count":"13,757"
 Answers: "The Beatles","correct":false,"count":"6,168"
 Answers: "The Ramones","correct":true,"count":"185,628"}]
-Answers: "Swifties","correct":false,"count":"7,183"
-Answers: "Little Monsters","correct":false,"count":"12,924"
-Answers: "Beyhive","correct":true,"count":"567,479"}]
-Answers: "David Bowie","correct":true,"count":"541,898"
-Answers: "Frank Sinatra","correct":false,"count":"12,608"
-Answers: "Elvis Presley","correct":false,"count":"8,668"}]
-Answers: "The Supremes","correct":false,"count":"23,070"
-Answers: "The Beatles","correct":false,"count":"10,794"
-Answers: "The Ramones","correct":true,"count":"506,182"}]
 Answers: "Post Malone","correct":false,"count":"238,534"
 Answers: "Nicki Minaj","correct":true,"count":"142,050"
 Answers: "Cardi B","correct":false,"count":"118,302"}]

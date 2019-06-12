@@ -6401,12 +6401,6 @@
 "Danish","correct":false,"count":"936"
 "Italian","correct":false,"count":"1,223"
 "Scottish","correct":true,"count":"1,501"}]
-"Willy Wonka Whirlypops","correct":false,"count":"1,718"
-"Well-Wasted Workday","correct":false,"count":"1,477"
-"World Wide Web","correct":true,"count":"413,101"}]
-"Willy Wonka Whirlypops","correct":false,"count":"2,415"
-"Well-Wasted Workday","correct":false,"count":"2,024"
-"World Wide Web","correct":true,"count":"711,597"}]
 "Millions of tiny candles","correct":false,"count":"1,208"
 "Radioactivity","correct":false,"count":"16,585"
 "Reflected sunlight","correct":true,"count":"686,284"}]
@@ -7310,15 +7304,6 @@
 "Tom Cruise","correct":false,"count":"46,728"
 "Dwayne Johnson","correct":true,"count":"258,432"
 "Chris Pratt","correct":false,"count":"72,865"}]
-"Jeff Bezos","correct":false,"count":"9,593"
-"Dogs","correct":true,"count":"142,729"
-"Clouds","correct":false,"count":"70,452"}]
-"Anti-gravity moonboots","correct":false,"count":"9,124"
-"Electric scooters","correct":true,"count":"382,018"
-"Gummy tricycle","correct":false,"count":"3,308"}]
-"Tom Cruise","correct":false,"count":"31,147"
-"Dwayne Johnson","correct":true,"count":"307,780"
-"Chris Pratt","correct":false,"count":"37,543"}]
 "Jeff Bezos","correct":false,"count":"8,324"
 "Dogs","correct":true,"count":"249,224"
 "Clouds","correct":false,"count":"45,284"}]
@@ -7409,15 +7394,6 @@
 "Tour de France","correct":true,"count":"25"
 "Little League World Ser.","correct":false,"count":"9"
 "Wimbledon","correct":false,"count":"14"}]
-"Anti-gravity moonboots","correct":false,"count":"13,072"
-"Electric scooters","correct":true,"count":"390,240"
-"Gummy tricycle","correct":false,"count":"4,437"}]
-"Tom Cruise","correct":false,"count":"46,728"
-"Dwayne Johnson","correct":true,"count":"258,432"
-"Chris Pratt","correct":false,"count":"72,865"}]
-"Jeff Bezos","correct":false,"count":"9,593"
-"Dogs","correct":true,"count":"142,729"
-"Clouds","correct":false,"count":"70,452"}]
 "The most Xs","correct":false,"count":"6,278"
 "The most Os","correct":false,"count":"2,397"
 "Three in a row","correct":true,"count":"369,912"}]
@@ -10223,6 +10199,9 @@
 "Borrowed","correct":false,"count":"4,883"
 "Rented","correct":false,"count":"4,184"
 "Stolen","correct":true,"count":"277,656"}]
+"=","correct":true,"count":"149,356"
+"^","correct":false,"count":"33,160"
+"?","correct":false,"count":"73,028"}]
 "Cher","correct":true,"count":"56,895"
 "Gwen Stefani","correct":false,"count":"48,963"
 "Kelly Clarkson","correct":false,"count":"47,550"}]
@@ -11009,15 +10988,6 @@
 "The Supremes","correct":false,"count":"13,757"
 "The Beatles","correct":false,"count":"6,168"
 "The Ramones","correct":true,"count":"185,628"}]
-"Swifties","correct":false,"count":"7,183"
-"Little Monsters","correct":false,"count":"12,924"
-"Beyhive","correct":true,"count":"567,479"}]
-"David Bowie","correct":true,"count":"541,898"
-"Frank Sinatra","correct":false,"count":"12,608"
-"Elvis Presley","correct":false,"count":"8,668"}]
-"The Supremes","correct":false,"count":"23,070"
-"The Beatles","correct":false,"count":"10,794"
-"The Ramones","correct":true,"count":"506,182"}]
 "Post Malone","correct":false,"count":"238,534"
 "Nicki Minaj","correct":true,"count":"142,050"
 "Cardi B","correct":false,"count":"118,302"}]

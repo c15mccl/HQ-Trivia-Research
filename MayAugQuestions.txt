@@ -1526,8 +1526,6 @@
 "text":"Mia Farrow’s mother acted in multiple films based on whose books ?
 "text":"In the travel industry, B&B stands for “bed and” what ?
 "text":"What is the typical response to a joke starting with “Knock, knock” ?
-"text":"Who’s there ?
-"text":"What are those ?
 "text":"According to the famous movie quote, where does nobody put Baby ?
 "text":"How would you wish a French speaker “good luck” ?
 "text":"Which of these fashion terms comes from an English town ?
@@ -1540,8 +1538,6 @@
 "text":"A special episode of “Mister Rogers’ Neighborhood” went behind the scenes of what TV show ?
 "text":"In the travel industry, B&B stands for “bed and” what ?
 "text":"What is the typical response to a joke starting with “Knock, knock” ?
-"text":"Who’s there ?
-"text":"What are those ?
 "text":"According to the famous movie quote, where does nobody put Baby ?
 "text":"How would you wish a French speaker “good luck” ?
 "text":"Which of these fashion terms comes from an English town ?
@@ -3413,7 +3409,6 @@
 "text":"Which of these is not intended to be swallowed ?
 "text":"The act of a baseball player taking a base to which he is not entitled is known as what ?
 "text":"On a typical QWERTY keyboard, which of these characters can be typed without the Shift key ?
-"text":" ?
 "text":"What Oscar-winning singer claimed that she had two lumberjack imaginary friends as a kid ?
 "text":"Stagecoach Mary was the nickname of the first black woman to do what in the Wild West ?
 "text":"The Ramones took their band name as a reference to what other band ?
@@ -3450,7 +3445,6 @@
 "text":"Which of these is not intended to be swallowed ?
 "text":"The act of a baseball player taking a base to which he is not entitled is known as what ?
 "text":"On a typical QWERTY keyboard, which of these characters can be typed without the Shift key ?
-"text":" ?
 "text":"What Oscar-winning singer claimed that she had two lumberjack imaginary friends as a kid ?
 "text":"Stagecoach Mary was the nickname of the first black woman to do what in the Wild West ?
 "text":"The Ramones took their band name as a reference to what other band ?
