@@ -16,41 +16,70 @@ public class StatsLearning1
         File myfile = new File("xmlForm1.txt");
         Scanner in = new Scanner(myfile);
         ArrayList <String> alldata = new ArrayList <String>();
-        ArrayList <String> correct = new ArrayList <String>();
-        ArrayList <String> incorrect = new ArrayList <String>();
+        ArrayList <String> correctA = new ArrayList <String>();
+        ArrayList <String> correctB = new ArrayList <String>();
+        ArrayList <String> correctC = new ArrayList <String>();
         int aCount = 0;
+        int bCount = 0;
+        int cCount = 0;
         int prevAcount = 0;
-       while(in.hasNextLine()){
+        int prevBcount = 0;
+        int prevCcount = 0;
+        int total = 0;
+        while(in.hasNextLine()){
             String line = in.nextLine();
-            if(line.contains("<answerA")){
+            if(line.contains("correct = true")){
                 alldata.add(line);
             }
-            if(line.contains("correct = true")){
-                correct.add(line);
-            }
-            if(line.contains("correct = false")){
-                incorrect.add(line);
-            }
-            while(!correct.isEmpty()){
-                for(int i = 0; i < correct.size(); i++){
-                    System.out.println(correct.get(i));
-                    if((correct.get(i)).contains("<answerA")){
-                        aCount++;
-                    }
+            if(line.contains("<answerA")){
+                if(line.contains("correct = true")){
+                    correctA.add(line);
                 }
             }
-            while(!alldata.isEmpty()){
-                for(int i = 0; i < alldata.size(); i++){
-                    System.out.println(alldata.get(i));
-                    if((alldata.get(i)).contains("correct = true")){
-                        if((alldata.get(i+1)).contains("correct = true")){
-                            prevAcount++;
-                        }
-                    }
+            if(line.contains("<answerB")){
+                if(line.contains("correct = true")){
+                    correctB.add(line);
+                }
+            }
+            if(line.contains("<answerC")){
+                if(line.contains("correct = true")){
+                    correctC.add(line);
                 }
             }
         }
-        System.out.println("Correct answer was \"A\" "+ aCount +" times.");
-            System.out.println("The amount of time A was correct consecutively is "+prevAcount+" times.");
+        for(int i = 0; i < correctA.size(); i++){
+            aCount = correctA.size();
+        }
+        for(int i = 0; i < correctB.size(); i++){
+            bCount = correctB.size();
+        }
+        for(int i = 0; i < correctC.size(); i++){
+            cCount = correctC.size();
+        }
+        for(int i = 0; i < alldata.size()-1; i++){
+            if((alldata.get(i)).contains("<answerA")){
+                if((alldata.get(i+1)).contains("<answerA")){
+                    prevAcount+=1;
+                }
+            }
+            if((alldata.get(i)).contains("<answerB")){
+                if((alldata.get(i+1)).contains("<answerB")){
+                    prevBcount+=1;
+                }
+            }
+            if((alldata.get(i)).contains("<answerC")){
+                if((alldata.get(i+1)).contains("<answerC")){
+                    prevCcount+=1;
+                }
+            }
+        }
+        total = alldata.size();
+        System.out.println("Correct answer was \"A\" "+ aCount +" times out of "+total+".");
+        System.out.println("Correct answer was \"B\" "+ bCount +" times out of "+total+".");
+        System.out.println("Correct answer was \"C\" "+ cCount +" times out of "+total+".");
+        System.out.println("The amount of time A was correct consecutively is "+prevAcount+" times.");
+        System.out.println("The amount of time B was correct consecutively is "+prevBcount+" times.");
+        System.out.println("The amount of time C was correct consecutively is "+prevCcount+" times.");
     }
 }
+
