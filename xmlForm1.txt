@@ -34936,9 +34936,48 @@
 		<year> 2018 </year>
 	</Dates>
 	<GameNumber num = 1 </GameNumber>
-	<Question> "Which of these is an element on the periodic table?" </Question>
-		<answerA correct = false "Bromide","correct":false,"count":"2,554"> </answerA>
-		<answerB correct = true "Barium","correct":true,"count":"11,171"> </answerB>
-		<answerC correct = false "Freon","correct":false,"count":"982"}]> </answerC>
+	<Question> "Which of these classic arcade games is a sequel?" </Question>
+		<answerA correct = false "Joust","correct":false,"count":"3,429"> </answerA>
+		<answerB correct = true "Ghouls ’N Ghosts","correct":true,"count":"6,550"> </answerB>
+		<answerC correct = false "Track & Field","correct":false,"count":"1,611"}]> </answerC>
+	</Question>
+</Game>
+<Game>
+	<Dates>
+		<month> 08 </month>
+		<day> 31 </day>
+		<year> 2018 </year>
+	</Dates>
+	<GameNumber num = 1 </GameNumber>
+	<Question> "Which of these is NOT a recording speed on blank VHS tapes?" </Question>
+		<answerA correct = true "DP","correct":true,"count":"4,718"> </answerA>
+		<answerB correct = false "LP","correct":false,"count":"1,738"> </answerB>
+		<answerC correct = false "SP","correct":false,"count":"854"}]> </answerC>
+	</Question>
+</Game>
+<Game>
+	<Dates>
+		<month> 08 </month>
+		<day> 31 </day>
+		<year> 2018 </year>
+	</Dates>
+	<GameNumber num = 1 </GameNumber>
+	<Question> "Which actor has won Razzie awards in both the Worst Actor and Worst Actress categories?" </Question>
+		<answerA correct = false "John Travolta","correct":false,"count":"1,756"> </answerA>
+		<answerB correct = false "Rob Schneider","correct":false,"count":"1,022"> </answerB>
+		<answerC correct = true "Adam Sandler","correct":true,"count":"2,278"}]> </answerC>
+	</Question>
+</Game>
+<Game>
+	<Dates>
+		<month> 08 </month>
+		<day> 31 </day>
+		<year> 2018 </year>
+	</Dates>
+	<GameNumber num = 1 </GameNumber>
+	<Question> "After first reading the manuscript of “Moby-Dick,” what suggestion did the publisher make?" </Question>
+		<answerA correct = false "Make Ahab younger","correct":false,"count":"510"> </answerA>
+		<answerB correct = true "Lose the whale","correct":true,"count":"1,957"> </answerB>
+		<answerC correct = false "Have female narrator","correct":false,"count":"235"}]> </answerC>
 	</Question>
 </Game>
