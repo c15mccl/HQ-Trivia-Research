@@ -20,7 +20,7 @@ public class StatsLearning1
         ArrayList <String> incorrect = new ArrayList <String>();
         int aCount = 0;
         int prevAcount = 0;
-        while(in.hasNextLine()){
+       while(in.hasNextLine()){
             String line = in.nextLine();
             if(line.contains("<answerA")){
                 alldata.add(line);
