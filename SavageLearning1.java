@@ -1,3 +1,4 @@
+
 import org.jsoup.nodes.*;
 import org.jsoup.*;
 import org.jsoup.select.*;
@@ -39,35 +40,51 @@ public class SavageLearning1
                 alldata.add(line);
             }
             for(int i = 0; i < alldata.size(); i++){
-                Pattern p = Pattern.compile("count\":\"(^[0-9,0-9,0-9]+$)");
-                Matcher m = p.matcher(alldata.get(i));
-                
-                while(m.find()){
-                    patternMatch = m.group();
+                Pattern p = Pattern.compile("count\":\"([0-9,]+)");
+                Matcher match = p.matcher(alldata.get(i));
+
+                while(match.find()){
+                    patternMatch = match.group();
                     countString.add(patternMatch);
-                    
+
+                }
+                for(int j = 0; j < countString.size(); j++){
+                    helperString1 = countString.get(j);
+                    helperString2 = helperString1.substring(0,9);
+                    helperNum1 = Integer.valueOf(helperString1);
+                    countInt.add(helperNum1);
+                }
+                for(int k = 0; k < countInt.size(); k++){
+                    for(int l = 0; l < k; l+=3){
+                        for(int m = 1; m < l; m++){
+                            for(int n = 2; n < m; n++){
+                                count1 = countInt.get(l);
+                                count2 = countInt.get(m);
+                                count3 = countInt.get(n);
+                                total = count1 + count2 + count3;
+                                if(count1 < (total/3)){
+                                    if((alldata.get(i)).contains("correct = true")){
+                                        aCount++;
+                                    }
+
+                                    //||(count3 < (total/3))){
+
+                                }
+                                else if(count2 < (total/3)){
+                                    if((alldata.get(i)+1).contains("correct = true")){
+                                        bCount++;
+                                    }
+                                }
+                                else{
+                                    cCount++; 
+                                }
+                            }
+                        }
+                    }                
                 }
             }
-            for(int i = 0; i < countString.size(); i++){
-                helperString1 = countString.get(i);
-                helperString2 = helperString1.substring(0,9);
-                helperNum1 = Integer.valueOf(helperString1);
-                countInt.add(helperNum1);
-            }
-            for(int i = 0; i < countInt.size(); i++){
-                for(int j = 0; j < i; j+=3){
-                    for(int k = 1; k < j; k++){
-                        for(int l = 2; l < k; l++){
-                            count1 = countInt.get(j);
-                            count2 = countInt.get(k);
-                            count3 = countInt.get(l);
-                            total = count1 + count2 + count3;
-                        }
-                    }
-                }                
-            }
+
         }
     }
-    
-    
+
 }
