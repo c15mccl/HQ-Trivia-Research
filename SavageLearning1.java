@@ -64,11 +64,13 @@ public class SavageLearning1
                 helperNum1 = Integer.valueOf(helperString1);
                 countInt.add(helperNum1);
             }
+        }
+        for(int i = 0; i < alldata.size(); i+=3){
             for(int k = 0; k < countInt.size(); k+=3){
                 count1 = countInt.get(k);
-                for(int l = 1; l < (k+2); l+=3){
+                for(int l = k+1; l < countInt.size(); l+=3){
                     count2 = countInt.get(l);
-                    for(int m = 2; m < (l+2); m+=3){
+                    for(int m = k+2; m < countInt.size(); m+=3){
                         count3 = countInt.get(m);
                         total = count1 + count2 + count3;
                         if(count1 < (total/3)){
@@ -77,18 +79,22 @@ public class SavageLearning1
                             }
                         }
                         else if(count2 < (total/3)){
-                            if((alldata.get(i)+1).contains("correct = true")){
+                            if((alldata.get(i+1)).contains("correct = true")){
                                 bCount++;
                             }
                         }
                         else if (count3 < (total/3)){
                             cCount++; 
                         }
-                        System.out.println("DONE");
+                        System.out.println("DONE1");
                     }
-                }                
+                    System.out.println("DONE2");
+                }   
+                System.out.println("DONE3");
             }
+            System.out.println("DONE4");
         }
+        System.out.println("DONE5");
         System.out.println("A was the correct answer for a savage question "+aCount+" times.");
         System.out.println("B was the correct answer for a savage question "+bCount+" times.");
         System.out.println("C was the correct answer for a savage question "+cCount+" times.");
