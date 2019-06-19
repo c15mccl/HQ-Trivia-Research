@@ -1,4 +1,3 @@
-
 import org.jsoup.nodes.*;
 import org.jsoup.*;
 import org.jsoup.select.*;
@@ -36,12 +35,14 @@ public class SavageLearning1
         String helperString2  = "";
         String helperString3  = "";
         CharSequence comma = ",";
+        System.out.println("START");
         while(in.hasNextLine()){
             String line = in.nextLine();
             if(line.contains("<answer")){
                 alldata.add(line);
             }
         }
+        System.out.println("CONTINUE 1");
         for(int i = 0; i < alldata.size(); i++){
             Pattern p = Pattern.compile("count\":\"([0-9,]+)");
             Matcher match = p.matcher(alldata.get(i));
@@ -58,43 +59,44 @@ public class SavageLearning1
                 countString.add(tempString);
             }
         }
-        for(int i = 0; i < alldata.size(); i++){
-            for(int j = 0; j < countString.size(); j++){
-                helperString1 = countString.get(j);
-                helperNum1 = Integer.valueOf(helperString1);
-                countInt.add(helperNum1);
-            }
+        System.out.println("CONTINUE 2");
+        for(int j = 0; j < countString.size(); j++){
+            helperString1 = countString.get(j);
+            helperNum1 = Integer.valueOf(helperString1);
+            countInt.add(helperNum1);
         }
+        System.out.println("CONTINUE 3");
+        int count = 0;
         for(int i = 0; i < alldata.size(); i+=3){
-            for(int k = 0; k < countInt.size(); k+=3){
+            for(int k = 0; k < i; k+=3){
                 count1 = countInt.get(k);
-                for(int l = k+1; l < countInt.size(); l+=3){
-                    count2 = countInt.get(l);
-                    for(int m = k+2; m < countInt.size(); m+=3){
-                        count3 = countInt.get(m);
-                        total = count1 + count2 + count3;
-                        if(count1 < (total/3)){
-                            if((alldata.get(i)).contains("correct = true")){
-                                aCount++;
-                            }
-                        }
-                        else if(count2 < (total/3)){
-                            if((alldata.get(i+1)).contains("correct = true")){
-                                bCount++;
-                            }
-                        }
-                        else if (count3 < (total/3)){
-                            cCount++; 
-                        }
-                        System.out.println("DONE1");
+                count2 = countInt.get(k+1);
+                count3 = countInt.get(k+2);
+                total = count1 + count2 + count3;
+                System.out.println("GOT THE TOTAL");
+                if(count1 < (total/3)){
+                    if((alldata.get(i)).contains("correct = true")){
+                        aCount++;
                     }
-                    System.out.println("DONE2");
-                }   
-                System.out.println("DONE3");
+                    System.out.println("Checked for A");
+                }
+                else if(count2 < (total/3)){
+                    if((alldata.get(i+1)).contains("correct = true")){
+                        bCount++;
+                    }
+                    System.out.println("Checked for B");
+                }
+                else if (count3 < (total/3)){
+                    System.out.println("Checked for C");
+                    cCount++; 
+                }
+                count++;
+                System.out.println("Count: "+count);
+                System.out.println("DONE1");
             }
-            System.out.println("DONE4");
+            System.out.println("DONE2");
         }
-        System.out.println("DONE5");
+        System.out.println("DONE3");
         System.out.println("A was the correct answer for a savage question "+aCount+" times.");
         System.out.println("B was the correct answer for a savage question "+bCount+" times.");
         System.out.println("C was the correct answer for a savage question "+cCount+" times.");
