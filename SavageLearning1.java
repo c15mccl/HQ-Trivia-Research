@@ -42,7 +42,6 @@ public class SavageLearning1
                 alldata.add(line);
             }
         }
-        System.out.println("CONTINUE 1");
         for(int i = 0; i < alldata.size(); i++){
             Pattern p = Pattern.compile("count\":\"([0-9,]+)");
             Matcher match = p.matcher(alldata.get(i));
@@ -59,44 +58,38 @@ public class SavageLearning1
                 countString.add(tempString);
             }
         }
-        System.out.println("CONTINUE 2");
         for(int j = 0; j < countString.size(); j++){
             helperString1 = countString.get(j);
             helperNum1 = Integer.valueOf(helperString1);
             countInt.add(helperNum1);
         }
-        System.out.println("CONTINUE 3");
-        int count = 0;
         for(int i = 0; i < alldata.size(); i+=3){
-            for(int k = 0; k < i; k+=3){
-                count1 = countInt.get(k);
-                count2 = countInt.get(k+1);
-                count3 = countInt.get(k+2);
-                total = count1 + count2 + count3;
-                System.out.println("GOT THE TOTAL");
-                if(count1 < (total/3)){
-                    if((alldata.get(i)).contains("correct = true")){
-                        aCount++;
-                    }
-                    System.out.println("Checked for A");
+            count1 = countInt.get(i);
+            count2 = countInt.get(i+1);
+            count3 = countInt.get(i+2);
+            total = count1 + count2 + count3;
+            System.out.println("total: "+total);
+            if(count1 < (total/3)){
+                if((alldata.get(i)).contains("correct = true")){
+                    aCount++;
                 }
-                else if(count2 < (total/3)){
-                    if((alldata.get(i+1)).contains("correct = true")){
-                        bCount++;
-                    }
-                    System.out.println("Checked for B");
-                }
-                else if (count3 < (total/3)){
-                    System.out.println("Checked for C");
-                    cCount++; 
-                }
-                count++;
-                System.out.println("Count: "+count);
-                System.out.println("DONE1");
+                System.out.println("Checked for A");
             }
-            System.out.println("DONE2");
+            else if(count2 < (total/3)){
+                if((alldata.get(i+1)).contains("correct = true")){
+                    bCount++;
+                }
+                System.out.println("Checked for B");
+            }
+            else if (count3 < (total/3)){
+                System.out.println("Checked for C");
+                cCount++; 
+            }
+            System.out.println("aCount: "+aCount);
+            System.out.println("bCount: "+bCount);
+            System.out.println("cCount: "+cCount);
         }
-        System.out.println("DONE3");
+        System.out.println("DONE");
         System.out.println("A was the correct answer for a savage question "+aCount+" times.");
         System.out.println("B was the correct answer for a savage question "+bCount+" times.");
         System.out.println("C was the correct answer for a savage question "+cCount+" times.");

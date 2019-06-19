@@ -14,20 +14,23 @@ import java.util.regex.*;
 public class GoogleResults
 {
     public static void main(String[]args)throws FileNotFoundException, IOException, InterruptedException {
-            String URL = "https://www.google.com/search?q=when+was+siena+college+founded&oq=when+was+siena+college+founded&aqs=chrome..69i57.28499j1j4&sourceid=chrome&ie=UTF-8";
-            try{
-                File myfile = new File("Results.txt");
-                FileWriter fwrite = new FileWriter(myfile);
-                PrintWriter pwrite =  new PrintWriter(fwrite);
-                Document doc = Jsoup.connect(URL).get();
-                Elements elem = doc.select("div#resultStats");
-                System.out.println(elem);                
-            }
-            catch (Exception e){
-                e.printStackTrace();
-                //System.err.println(x);
-                System.exit(1);
-            }
+        File myfile = new File("FirstQuesURL.txt");
+        Scanner scan = new Scanner(myfile);
+        String URL = scan.nextLine();
+        try{
+            File myfile2 = new File("Results.txt");
+            FileWriter fwrite = new FileWriter(myfile2);
+            PrintWriter pwrite =  new PrintWriter(fwrite);
+            Document doc = Jsoup.connect(URL).get();
+            Elements elem = doc.select("div#resultStats");
+            System.out.println(elem);  
+            pwrite.println(elem);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            //System.err.println(x);
+            System.exit(1);
         }
     }
+}
 
