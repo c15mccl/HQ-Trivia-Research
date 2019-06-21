@@ -26,7 +26,7 @@ public class XMLForm3
         String year = "";
         String gameNumber = "";
         try{
-            File myfile = new File("xmlForm1.txt");
+            File myfile = new File("XMLForm3.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             int ansCount = 0;    
@@ -121,21 +121,21 @@ public class XMLForm3
                 var2+=3;
                 //var+=12;
             }
-            /*while(scan4.hasNextLine()){
+            while(scan4.hasNextLine()){
             String line4 = scan4.nextLine();
             if(line4.contains("Category: \"category\":")){
             line4 = line4.replace("Category: \"category\":","<Category cat = ");
             line4 = line4 + "> </Category>";
 
             }
-            if(line4.contains("Savage \"savage\":")){
-            line4 = line4.replace("Savage \"savage\":","<Savage level = ");
-            line4 = line4 + "> </Savage>";
+            //if(line4.contains("Savage \"savage\":")){
+            //line4 = line4.replace("Savage \"savage\":","<Savage level = ");
+            //line4 = line4 + "> </Savage>";
 
-            }
+            //}
             System.out.println(line4);
             pwrite.println(line4);
-            }*/
+            }
 
             pwrite.close();
             fwrite.close();
