@@ -12,15 +12,17 @@ import java.util.regex.*;
  */
 public class XMLForm3
 {
-        public static void main (String[]args) throws FileNotFoundException{
+    public static void main (String[]args) throws FileNotFoundException{
         File file = new File("JanMayFinal.txt");
+        File catfile = new File("JanMayCatCorrectList.txt");
         Scanner scan1 = new Scanner(file);
         Scanner scan2 = new Scanner(file);
         Scanner scan3 = new Scanner(file);
-        Scanner scan4 = new Scanner(file);
+        Scanner scan4 = new Scanner(catfile);
         ArrayList <String> questions = new ArrayList <String>();
         ArrayList <String> answers = new ArrayList <String>();
         ArrayList <String> dates = new ArrayList <String>();
+        ArrayList <String> cats = new ArrayList <String>();
         String day = "";
         String month = "";
         String year = "";
@@ -45,7 +47,8 @@ public class XMLForm3
                     String lineD = "\t\t<day> "+day+" </day>\n";
                     String lineE = "\t\t<year> "+year+" </year>\n";
                     String lineF = "\t</Dates>\n";
-                    line1 = lineA + lineB + lineC + lineD + lineE + lineF;
+                    String lineG = "\t<GameNumber num = " + gameNumber + " </GameNumber>";
+                    line1 = lineA + lineB + lineC + lineD + lineE + lineF + lineG;
                     //System.out.println(line1);
                     //pwrite.println(line1);
                     dates.add(line1);
@@ -99,16 +102,41 @@ public class XMLForm3
                     answers.add(line3);
                 }
             }
+                      
             int var1 = 0;
             int var2 = 0;
             int var3 = 0;
-            while(var1<1000){
+
+            while(scan4.hasNextLine()){
+                
+                String line4 = scan4.nextLine();
+                
+                if(line4.contains("Category: \"category\":\"")){
+                    line4 = line4.replace("Category: \"category\":\"","<Category cat = ");
+                    line4 = line4 + "> </Category>";
+
+                }
+                
+                //if(line4.contains("Savage \"savage\":")){
+                //line4 = line4.replace("Savage \"savage\":","<Savage level = ");
+                //line4 = line4 + "> </Savage>";
+
+                //}
+                //System.out.println(line4);
+                //pwrite.println(line4);
+                
+                cats.add(line4);
+            }
+            while(var1 < answers.size()){
                 System.out.println(dates.get(var1));
+
+                System.out.println("\t" + cats.get(var1));
                 System.out.println(questions.get(var1));
                 System.out.println(answers.get(var2));
                 System.out.println(answers.get(var2+1));
                 System.out.println(answers.get(var2+2));
                 pwrite.println(dates.get(var1));
+                pwrite.println(cats.get(var1));
                 pwrite.println(questions.get(var1));
                 pwrite.println(answers.get(var2));
                 pwrite.println(answers.get(var2+1));
@@ -119,22 +147,6 @@ public class XMLForm3
                 pwrite.println("</Game>");
                 var1++;
                 var2+=3;
-                //var+=12;
-            }
-            while(scan4.hasNextLine()){
-            String line4 = scan4.nextLine();
-            if(line4.contains("Category: \"category\":")){
-            line4 = line4.replace("Category: \"category\":","<Category cat = ");
-            line4 = line4 + "> </Category>";
-
-            }
-            //if(line4.contains("Savage \"savage\":")){
-            //line4 = line4.replace("Savage \"savage\":","<Savage level = ");
-            //line4 = line4 + "> </Savage>";
-
-            //}
-            System.out.println(line4);
-            pwrite.println(line4);
             }
 
             pwrite.close();
