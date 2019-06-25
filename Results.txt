@@ -1,8 +1,0 @@
-Count: 646
-<div id="resultStats">
- About 43,800,000 results
- <nobr>
-   (0.74 seconds)&nbsp;
- </nobr>
-</div>
----------------------
