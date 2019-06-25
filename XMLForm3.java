@@ -26,7 +26,7 @@ public class XMLForm3
         String year = "";
         String gameNumber = "";
         try{
-            File myfile = new File("xmlForm1.txt");
+            File myfile = new File("XMLForm3.txt");
             FileWriter fwrite = new FileWriter(myfile);
             PrintWriter pwrite =  new PrintWriter(fwrite);
             int ansCount = 0;    
