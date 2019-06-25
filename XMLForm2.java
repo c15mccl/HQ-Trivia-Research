@@ -14,15 +14,16 @@ public class XMLForm2
 {
     public static void main (String[]args) throws FileNotFoundException{
         File file = new File("SepDecFinalCopy.txt");
+        File catFile = new File("SepDecCatsOnly.txt");
         Scanner scan1 = new Scanner(file);
         Scanner scan2 = new Scanner(file);
         Scanner scan3 = new Scanner(file);
-        Scanner scan4 = new Scanner(file);
-        Scanner scan5 = new Scanner(file);
+        Scanner scan4 = new Scanner(catFile);
+        //Scanner scan5 = new Scanner(file);
         ArrayList <String> questions = new ArrayList <String>();
         ArrayList <String> answers = new ArrayList <String>();
         ArrayList <String> dates = new ArrayList <String>();
-        ArrayList <String> category = new ArrayList <String>(); //new
+        ArrayList <String> cats = new ArrayList <String>(); //new
         String day = "";
         String month = "";
         String year = "";
@@ -102,20 +103,30 @@ public class XMLForm2
                     answers.add(line3);
                 }
             }
-            while(scan5.hasNextLine()){
-                String line4 = scan5.nextLine();
-                if(line4.contains("Category: ")){
-                    String lineL = "\t\t<Category> "+ category +" </Category>\n";
-                    category.add(line4);
-
-                
-                
-                
-                }
-            }
-            int var1 = 0;
+             int var1 = 0;
             int var2 = 0;
             int var3 = 0;
+
+            while(scan4.hasNextLine()){
+                
+                String line4 = scan4.nextLine();
+                
+                if(line4.contains("Category: \"category\":\"")){
+                    line4 = line4.replace("Category: \"category\":\"","<Category cat = ");
+                    line4 = line4 + "> </Category>";
+
+                }
+                
+                //if(line4.contains("Savage \"savage\":")){
+                //line4 = line4.replace("Savage \"savage\":","<Savage level = ");
+                //line4 = line4 + "> </Savage>";
+
+                //}
+                //System.out.println(line4);
+                //pwrite.println(line4);
+                
+                cats.add(line4);
+            }
             while(var1<dates.size()){
                 System.out.println(dates.get(var1));
                 System.out.println(questions.get(var1));
@@ -133,6 +144,14 @@ public class XMLForm2
                 pwrite.println("</Game>");
                 var1++;
                 var2+=3;
+            }
+            while(scan4.hasNextLine()){
+                String line4 = scan4.nextLine();
+                if(line4.contains("Category: \"category\":")){
+                    line4 = line4.replace("Category: \"category\":","<Category cat = ");
+                    line4 = line4 + "> </Category>";
+
+                }
             }
             pwrite.close();
             fwrite.close();
