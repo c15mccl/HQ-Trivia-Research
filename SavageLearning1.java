@@ -13,8 +13,10 @@ import java.util.regex.*;
 public class SavageLearning1
 {
     public static void main (String[]args) throws FileNotFoundException{
-        File myfile = new File("xmlForm1.txt");
-        Scanner in = new Scanner(myfile);
+        File myfile1 = new File("xmlForm1.txt");
+        File myfile2 = new File("xmlForm2.txt");
+        Scanner in1 = new Scanner(myfile1);
+        Scanner in2 = new Scanner(myfile2);
         ArrayList <String> alldata = new ArrayList <String>();
         ArrayList <String> countString = new ArrayList <String>();
         ArrayList <Integer> countInt = new ArrayList <Integer>();
@@ -36,8 +38,14 @@ public class SavageLearning1
         String helperString3  = "";
         CharSequence comma = ",";
         System.out.println("START");
-        while(in.hasNextLine()){
-            String line = in.nextLine();
+        while(in1.hasNextLine()){
+            String line = in1.nextLine();
+            if(line.contains("<answer")){
+                alldata.add(line);
+            }
+        }
+        while(in2.hasNextLine()){
+            String line = in2.nextLine();
             if(line.contains("<answer")){
                 alldata.add(line);
             }
