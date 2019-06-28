@@ -15,8 +15,10 @@ public class SavageLearning1
     public static void main (String[]args) throws FileNotFoundException{
         File myfile1 = new File("xmlForm1.txt");
         File myfile2 = new File("xmlForm2.txt");
+        File myfile3 = new File("XMLForm3.txt");
         Scanner in1 = new Scanner(myfile1);
         Scanner in2 = new Scanner(myfile2);
+        Scanner in3 = new Scanner(myfile3);
         ArrayList <String> alldata = new ArrayList <String>();
         ArrayList <String> countString = new ArrayList <String>();
         ArrayList <Integer> countInt = new ArrayList <Integer>();
@@ -37,7 +39,6 @@ public class SavageLearning1
         String helperString2  = "";
         String helperString3  = "";
         CharSequence comma = ",";
-        System.out.println("START");
         while(in1.hasNextLine()){
             String line = in1.nextLine();
             if(line.contains("<answer")){
@@ -46,6 +47,12 @@ public class SavageLearning1
         }
         while(in2.hasNextLine()){
             String line = in2.nextLine();
+            if(line.contains("<answer")){
+                alldata.add(line);
+            }
+        }
+        while(in3.hasNextLine()){
+            String line = in3.nextLine();
             if(line.contains("<answer")){
                 alldata.add(line);
             }
@@ -76,31 +83,23 @@ public class SavageLearning1
             count2 = countInt.get(i+1);
             count3 = countInt.get(i+2);
             total = count1 + count2 + count3;
-            System.out.println("total: "+total);
             if(count1 < (total/3)){
                 if((alldata.get(i)).contains("correct = true")){
                     aCount++;
                 }
-                System.out.println("Checked for A");
             }
             else if(count2 < (total/3)){
                 if((alldata.get(i+1)).contains("correct = true")){
                     bCount++;
                 }
-                System.out.println("Checked for B");
             }
             else if (count3 < (total/3)){
-                System.out.println("Checked for C");
                 cCount++; 
             }
-            System.out.println("aCount: "+aCount);
-            System.out.println("bCount: "+bCount);
-            System.out.println("cCount: "+cCount);
         }
-        System.out.println("DONE");
-        System.out.println("A was the correct answer for a savage question "+aCount+" times.");
-        System.out.println("B was the correct answer for a savage question "+bCount+" times.");
-        System.out.println("C was the correct answer for a savage question "+cCount+" times.");
+        System.out.println("A was the correct answer for a savage question "+aCount+" out of "+total+" times.");
+        System.out.println("B was the correct answer for a savage question "+bCount+" out of "+total+" times.");
+        System.out.println("C was the correct answer for a savage question "+cCount+" out of "+total+" times.");
     }
 }
 
