@@ -34928,7 +34928,7 @@
 		<answerB correct = true "Barium","correct":true,"count":"11,171"> </answerB>
 		<answerC correct = false "Freon","correct":false,"count":"982"}]> </answerC>
 	</Question>
-</Game>
+</Game
 <Game>
 	<Dates>
 		<month> 08 </month>
@@ -34938,10 +34938,10 @@
 	<GameNumber num = 1 </GameNumber>
 	<Question> "Which of these classic arcade games is a sequel?" </Question>
 		<answerA correct = false "Joust","correct":false,"count":"3,429"> </answerA>
-		<answerB correct = true "Ghouls ’N Ghosts","correct":true,"count":"6,550"> </answerB>
+		<answerB correct = true "Ghouls 'N Ghosts","correct":true,"count":"6,550"> </answerB>
 		<answerC correct = false "Track & Field","correct":false,"count":"1,611"}]> </answerC>
 	</Question>
-</Game>
+</Game
 <Game>
 	<Dates>
 		<month> 08 </month>
@@ -34954,7 +34954,7 @@
 		<answerB correct = false "LP","correct":false,"count":"1,738"> </answerB>
 		<answerC correct = false "SP","correct":false,"count":"854"}]> </answerC>
 	</Question>
-</Game>
+</Game
 <Game>
 	<Dates>
 		<month> 08 </month>
@@ -34967,7 +34967,7 @@
 		<answerB correct = false "Rob Schneider","correct":false,"count":"1,022"> </answerB>
 		<answerC correct = true "Adam Sandler","correct":true,"count":"2,278"}]> </answerC>
 	</Question>
-</Game>
+</Game
 <Game>
 	<Dates>
 		<month> 08 </month>
@@ -34977,7 +34977,7 @@
 	<GameNumber num = 1 </GameNumber>
 	<Question> "After first reading the manuscript of “Moby-Dick,” what suggestion did the publisher make?" </Question>
 		<answerA correct = false "Make Ahab younger","correct":false,"count":"510"> </answerA>
-		<answerB correct = true "Lose the whale","correct":true,"count":"1,957"> </answerB>
+		<answerB correct = true ""Lose the whale","correct":true,"count":"1,957"> </answerB>
 		<answerC correct = false "Have female narrator","correct":false,"count":"235"}]> </answerC>
 	</Question>
-</Game>
+</Game

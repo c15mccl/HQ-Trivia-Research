@@ -5,9 +5,9 @@
 		<year> 2019 </year>
 	</Dates>
 	<GameNumber num = 2 </GameNumber>
-﻿<Category cat = Language","> </Category>
-﻿	<Question> "An old saying says “charity begins” where?" </Question>
-		<answerA correct = false ﻿"Western Pennsylvania","correct":false,"count":"4,703"> </answerA>
+?<Category cat = Language","> </Category>
+?	<Question> "An old saying says “charity begins” where?" </Question>
+		<answerA correct = false ?"Western Pennsylvania","correct":false,"count":"4,703"> </answerA>
 		<answerB correct = false "In your DMs","correct":false,"count":"2,456"> </answerB>
 		<answerC correct = true "At home","correct":true,"count":"264,432"}]> </answerC>
 	</Question>
@@ -21667,7 +21667,7 @@
 	<Question> "Who holds the record for most World Cup women’s season titles in downhill skiing?" </Question>
 		<answerA correct = true "Lindsey Vonn","correct":true,"count":"71,886"> </answerA>
 		<answerB correct = false "Annemarie Moser-Pröll","correct":false,"count":"8,285"> </answerB>
-		<answerC correct = false "Janica Kostelić","correct":false,"count":"5,807"}]> </answerC>
+		<answerC correct = false "Janica Kostelic","correct":false,"count":"5,807"}]> </answerC>
 	</Question>
 </Game>
 <Game>
@@ -23304,8 +23304,8 @@
 <Category cat = Math","> </Category>
 	<Question> "In mathematical terms, which number is NOT transcendental?" </Question>
 		<answerA correct = false "e","correct":false,"count":"3,012"> </answerA>
-		<answerB correct = true "√2","correct":true,"count":"7,503"> </answerB>
-		<answerC correct = false "π","correct":false,"count":"6,294"}]> </answerC>
+		<answerB correct = true "v2","correct":true,"count":"7,503"> </answerB>
+		<answerC correct = false "p","correct":false,"count":"6,294"}]> </answerC>
 	</Question>
 </Game>
 <Game>

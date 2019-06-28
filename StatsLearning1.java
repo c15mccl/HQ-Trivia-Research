@@ -13,8 +13,10 @@ import java.util.regex.*;
 public class StatsLearning1
 {
     public static void main (String[]args) throws FileNotFoundException{
-        File myfile = new File("xmlForm1.txt");
-        Scanner in = new Scanner(myfile);
+        File myfile1 = new File("xmlForm1.txt");
+        File myfile2 = new File("xmlForm2.txt");
+        Scanner in1 = new Scanner(myfile1);
+        Scanner in2 = new Scanner(myfile2);
         ArrayList <String> alldata = new ArrayList <String>();
         ArrayList <String> correctA = new ArrayList <String>();
         ArrayList <String> correctB = new ArrayList <String>();
@@ -26,8 +28,29 @@ public class StatsLearning1
         int prevBcount = 0;
         int prevCcount = 0;
         int total = 0;
-        while(in.hasNextLine()){
-            String line = in.nextLine();
+        while(in1.hasNextLine()){
+            String line = in1.nextLine();
+            if(line.contains("correct = true")){
+                alldata.add(line);
+            }
+            if(line.contains("<answerA")){
+                if(line.contains("correct = true")){
+                    correctA.add(line);
+                }
+            }
+            if(line.contains("<answerB")){
+                if(line.contains("correct = true")){
+                    correctB.add(line);
+                }
+            }
+            if(line.contains("<answerC")){
+                if(line.contains("correct = true")){
+                    correctC.add(line);
+                }
+            }
+        }
+        while(in2.hasNextLine()){
+            String line = in2.nextLine();
             if(line.contains("correct = true")){
                 alldata.add(line);
             }
